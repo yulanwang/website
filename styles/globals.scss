@@ -1,0 +1,192 @@
+@import url("https://use.typekit.net/fxj7ric.css");
+@import "./tokens.scss";
+
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+  }
+
+a,
+body,
+button,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+header,
+html,
+img,
+li,
+input,
+label,
+nav,
+p,
+select,
+span,
+table,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+  body,
+html {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 66px;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: basic-sans, sans-serif;
+  font-size: 40px;
+}
+
+a,
+img,
+picture,
+svg,
+video {
+  display: block;
+}
+
+div {
+  font-family: "mr";
+}
+
+h1 {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 96px; // 96
+  line-height: 100px;
+  text-transform: none;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 106px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 50px; // 
+  }
+}
+
+li {
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+h2 {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 420;
+  font-style: normal;
+  font-size: 64px; // 76
+  line-height: 120px;
+  text-transform: none;
+
+//   @media screen and (max-width: $breakpoint-mobile) {
+//     font-size: $font-size-mobileheading;
+//     line-height: 36px;
+//   }
+}
+
+h3 {
+  font-family: sigurd, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: -5%;
+  font-size: 47px;
+  line-height: 90px;
+  text-transform: none;
+
+  @media screen and (max-width: 640px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+h4 {
+  font-family: basic-sans, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 80px;
+  text-transform: none;
+
+  @media screen and (max-width: 640px) {
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
+p {
+  font-family: basic-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 60px;
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+section {
+  padding: 64px;
+
+  @media screen and (max-width: 1000px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

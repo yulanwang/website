@@ -1,0 +1,33 @@
+.contentBlockContainerDefault {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 100%;
+  height: fit-content;
+}
+
+h2 {
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 420;
+  font-size: 64px;
+  line-height: 92px;
+  margin: 0;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #002642;
+}
+
+p {
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 390;
+  font-size: 28px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #002642;
+}
