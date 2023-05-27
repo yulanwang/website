@@ -1,7 +1,7 @@
-.aboutSectionOne, .mission {
+.aboutSectionOne, .mission, .ourTeam {
         display: flex;
         flex-direction: column;
-        row-gap: 70px;
+        row-gap: 40px;
         position: relative;
         padding: 64px;
         background-color: white;
@@ -53,4 +53,9 @@ span.circleYellow {
     width: 73px;
     position: absolute;
     background-color: #F2D16B;
+}
+
+.teamGridContainer {
+        display: flex;
+        justify-content: center;
 }

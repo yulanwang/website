@@ -4,6 +4,7 @@ import TitleBlock from "../components/common/Title.jsx"
 import ContentBlock from '../components/common/ContentBlock.jsx'
 
 import './about.css'
+import MemberCard from '../components/card/MemberCard.jsx'
 
 
 export default function About() {
@@ -18,7 +19,14 @@ export default function About() {
                         Nemo enim ipsam voluptatem quia voluptas"
                     />
                 </div>
-                <div className='mission'>
+                
+            </>
+        )
+    }
+
+    const OasisMission = () => {
+        return(
+            <div className='mission'>
                     <ContentBlock 
                         title="Mission"
                     />
@@ -57,14 +65,29 @@ export default function About() {
                             />
                         </div>
                     </div>
+            </div>
+        )
+    }
+
+    const OasisTeam = () => {
+        return(
+            <div className='ourTeam'>
+                    <ContentBlock 
+                        title='Our Team'
+                    />
+                    <div className='teamGridContainer'>
+                    <MemberCard />
+                    </div>
+                 
                 </div>
-            </>
         )
     }
     
     return (
         <>
             {renderTop()} 
+            {OasisMission()}
+            {OasisTeam()}
         </>
     )
 }
