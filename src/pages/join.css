@@ -1,0 +1,49 @@
+.section1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    position: relative;
+    padding: 64px 64px 100px 64px;
+    background-color: white;
+    z-index:1;
+
+    @media screen and (min-width: 1000px) {
+        margin-bottom: 100px;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -200px;
+          width: 300%;
+          background-color: inherit;
+          z-index: 0;
+          transform-origin: left;
+        }
+      }
+  }
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 85px;
+}
+
+.row {
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+}
+
+.grid1 .circlePosition {
+    position: relative;
+    left: -10%;
+}
+
+span.circleTurquoise {
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 73px;
+    width: 73px;
+    position: absolute;
+    background-color: #B8D8CA;
+}

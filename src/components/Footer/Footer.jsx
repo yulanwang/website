@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Logo from '../../images/Logo';
 import LogoGreen from '../../images/GreenLogo.svg';
 import InstagramIcon from '../../images/InstagramIcon';
-// import { footerContainer, logoContainer, linksContainer, col,
-//         logo, mediaIconContainer, iconCol, circle, greenLogo } from './Footer.module.scss'
 import './Footer.css'
 
 export default function Footer() {

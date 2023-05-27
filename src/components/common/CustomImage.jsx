@@ -1,8 +1,8 @@
 import { useState } from "react";
 // import { customImageDefault } from "./CustomImage.module.scss"
-import './CustomImage.css'
 import {GatsbyImage} from "gatsby-plugin-image"
 import React from 'react'
+import './CustomImage.css'
 
 export default function CustomImage({
   src,

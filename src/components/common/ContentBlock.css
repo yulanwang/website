@@ -6,7 +6,7 @@
   height: fit-content;
 }
 
-h2 {
+.contentBlockContainerDefault h2 {
   font-family: 'Brandon Grotesque';
   font-style: normal;
   font-weight: 420;
@@ -21,7 +21,7 @@ h2 {
   color: #002642;
 }
 
-p {
+.contentBlockContainerDefault p {
   font-family: 'Brandon Grotesque';
   font-style: normal;
   font-weight: 390;
@@ -30,4 +30,5 @@ p {
   display: flex;
   align-items: center;
   color: #002642;
+  margin: 0;
 }

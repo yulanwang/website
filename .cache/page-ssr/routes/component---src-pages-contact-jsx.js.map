@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-contact-jsx.js","mappings":";;;;;;;;;;;;;;;AAAe,SAASA,OAAOA,CAAA,EAAG,CAElC","sources":["webpack://oasis-site/./src/pages/contact.jsx"],"sourcesContent":["export default function Contact() {\n    \n}"],"names":["Contact"],"sourceRoot":""}

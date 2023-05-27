@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../images/Logo';
 import { BREAKPOINT } from '../helpers/types';
 import useBreakpoint from '../helpers/userBreakpoint';
-import NavBarMobile from './NavBarMobile.jsx'
+import NavBarMobile from './NavBarMobile.jsx';
 import './NavBar.css';
 
 export default function NavBar({ isStatic = false}) {

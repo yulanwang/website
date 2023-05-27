@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkoasis_site=self.webpackChunkoasis_site||[]).push([[230],{610:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var u=t(7294),s=t(9244),l=(t(9572),t(1319),t(2328),t(9655));function r(){return u.createElement(l.VK,null,u.createElement(s.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-jsx-0159c81ca1ca751cd847.js.map

@@ -1,3 +1,56 @@
-.about {
+.aboutSectionOne, .mission {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+        position: relative;
+        padding: 64px;
         background-color: white;
+        z-index:1;
+    
+        @media screen and (min-width: 1000px) {
+            margin-bottom: 100px;
+            &:before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: -200px;
+              width: 300%;
+              background-color: inherit;
+              z-index: 0;
+              transform-origin: left;
+            }
+          }
+}
+
+.mission {
+        row-gap: 20px;
+}
+
+.gridMission {
+        display: grid;
+        grid-template-columns: 10% 80%;
+        column-gap: 85px;
+        row-gap: 50px;
+        align-items: center;
+
+}
+
+.gridMission .circlePosition {
+        position: relative;
+        top: -20px;
+            
+}
+
+.row {
+    display: grid;
+    justify-items: center;    
+}
+
+span.circleYellow {
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 73px;
+    width: 73px;
+    position: absolute;
+    background-color: #F2D16B;
 }

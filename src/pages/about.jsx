@@ -1,35 +1,70 @@
-import TitleBlock from "../components/common/ContentBlock"
 import React from 'react'
-// import { about } from './about.module.scss'
+
+import TitleBlock from "../components/common/Title.jsx"
+import ContentBlock from '../components/common/ContentBlock.jsx'
+
 import './about.css'
-import NavBar from "../components/Navbar/Navbar"
-import Sock from "../components/Footer/Sock"
-import Footer from "../components/Footer/Footer"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 export default function About() {
     const renderTop = () => {
         return (
-            <TitleBlock
-                title="About"
-                body={
-                    <>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                    Nemo enim ipsam voluptatem quia voluptas
-                    </>
-                }
-            />
+            <>
+                <div className='aboutSectionOne'>
+                    <TitleBlock
+                        title="About"
+                        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+                        Nemo enim ipsam voluptatem quia voluptas"
+                    />
+                </div>
+                <div className='mission'>
+                    <ContentBlock 
+                        title="Mission"
+                    />
+                    <div className='gridMission'>
+                        <div className='row'>
+                            <div className='circlePosition'><span className='circleYellow' /></div>
+                        </div>
+                        <div>
+                            <ContentBlock
+                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                                voluptatem sequi nesciunt."
+                            />
+                        </div>
+                        <div className='row'>
+                            <div className='circlePosition'><span className='circleYellow' /></div>
+                        </div>
+                        <div>
+                            <ContentBlock
+                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                                voluptatem sequi nesciunt."
+                            />
+                        </div>
+                        <div className='row'>
+                            <div className='circlePosition'><span className='circleYellow' /></div>
+                        </div>
+                        <div>
+                            <ContentBlock
+                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
+                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
+                                voluptatem sequi nesciunt."
+                            />
+                        </div>
+                    </div>
+                </div>
+            </>
         )
     }
     
     return (
         <>
-            <NavBar isStatic="true"/>
             {renderTop()} 
-            <Sock />
-            <Footer />
         </>
     )
 }

@@ -16,7 +16,19 @@
   align-items: center;
 }
 
-.navWrapper .navMobileOpenContainer .logo {
+.navWrapper {
+  margin-left: 12px;
+  height: 61px;
+  width: 61px;
+}
+
+.navMobileOpenContainer .logo {
+  margin-left: 12px;
+  height: 61px;
+  width: 61px;
+}
+
+.logo {
   margin-left: 12px;
   height: 61px;
   width: 61px;

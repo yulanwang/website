@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 import Logo from '../../images/Logo'
 import Close from '../../images/Close'
 import Burger from '../../images/Burger'
+
 import './NavBarMobile.css';
 
 export default function NavBarMobile({isStatic =false}) {

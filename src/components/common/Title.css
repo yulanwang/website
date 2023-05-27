@@ -1,8 +1,25 @@
-.contentBlockContainerDefault {
+.titleBlockContainerDefault {
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: 20px;
     width: 100%;
     height: fit-content;
-  }
+}
+
+.titleBlockContainerDefault h2 {
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 420;
+  font-size: 96px;
+  color: #002642;
+  margin: 0;
+}
   
+.titleBlockContainerDefault p {
+  font-family: 'Brandon Grotesque';
+  font-style: normal;
+  font-weight: 420;
+  font-size: 32px;
+  line-height: 46px;
+  color: #002642;
+}

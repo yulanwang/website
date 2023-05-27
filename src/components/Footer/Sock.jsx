@@ -1,7 +1,6 @@
 import React from 'react';
-// import { emailInput, active, submitButton, sockContainer, formContainer,
-//         text, inputContainer, formInputContainer } from './Sock.module.scss'
 import { BaseSyntheticEvent, useState } from "react";
+
 import './Sock.css'
 
 export default function Sock({onSubmit}) {
