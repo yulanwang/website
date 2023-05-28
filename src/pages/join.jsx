@@ -2,6 +2,7 @@ import React from 'react'
 
 import TitleBlock from '../components/common/Title.jsx'
 import ContentBlock from '../components/common/ContentBlock.jsx'
+import Table from '../components/Table/Table.jsx'
 
 import './join.css'
 
@@ -19,16 +20,13 @@ export default function Join() {
                         <div className='circlePosition'><span className='circleTurquoise' /></div>
                         <div>
                             <ContentBlock
-                                body={
-                                    <>
-                                    Bridge the gap between classes and co-op. Nemo enim ipsam voluptatem quia voluptas. 
-                                    Nemo enim ipsam voluptatem quia voluptas.
-                                    </>}
+                                body="Bridge the gap between classes and co-op. Nemo enim ipsam voluptatem quia voluptas. 
+                                Nemo enim ipsam voluptatem quia voluptas."
                             />
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='circlePosition'><span className='circle' /></div>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
                         <div>
                             <ContentBlock
                                 body={
@@ -40,14 +38,12 @@ export default function Join() {
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='circlePosition'><span className='circle' /></div>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
                         <div>
                             <ContentBlock
-                                body={
-                                    <>
-                                    Designed for any experience level. Nemo enim ipsam voluptatem quia voluptas. 
-                                    Nemo enim ipsam voluptatem quia voluptas.
-                                    </>}
+                                body="Designed for any experience level. Nemo enim ipsam voluptatem quia voluptas. 
+                                Nemo enim ipsam voluptatem quia voluptas."
+                                    
                             />
                         </div>
                     </div>
@@ -56,9 +52,22 @@ export default function Join() {
         )
     }
 
+    const JoinTimeline = () => {
+        return (
+            <div className='timelineContainer'>
+            <ContentBlock 
+                title='Timeline'
+            />
+            <Table />
+            <p>* Dates are subject to change.</p>
+            </div>
+        )
+    }
+
     return (
         <>
             {JoinTopSection()}
+            {JoinTimeline()}
         </>
     )
 }

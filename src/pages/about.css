@@ -22,6 +22,10 @@
           }
 }
 
+.aboutHero {
+        width: 60%;
+        align-self: center;
+}
 .mission {
         row-gap: 20px;
 }

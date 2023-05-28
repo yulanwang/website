@@ -1,7 +1,7 @@
-.section1 {
+.section1, .timelineContainer {
     display: flex;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 50px;
     position: relative;
     padding: 64px 64px 100px 64px;
     background-color: white;
@@ -22,9 +22,18 @@
       }
   }
 
+p {
+    font-family: 'Brandon Grotesque';
+    font-style: normal;
+    font-weight: 390;
+    font-size: 28px;
+    color: #002642;
+}
+
 .grid1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
     column-gap: 85px;
 }
 
@@ -35,8 +44,13 @@
 }
 
 .grid1 .circlePosition {
-    position: relative;
     left: -10%;
+}
+
+.circlePosition {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 span.circleTurquoise {
