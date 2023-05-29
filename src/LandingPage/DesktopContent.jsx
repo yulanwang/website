@@ -15,7 +15,7 @@ import NavBar from '../components/Navbar/Navbar'
 export default function DesktopContent() {
     const AboutSection = () => {
         return (
-                <div className='section1'>
+                <div className='aboutContainer'>
                     <div className='grid'>
                         <ContentBlock
                             title="About"
@@ -64,9 +64,9 @@ export default function DesktopContent() {
     const TimelineSection = () => {
         return(
             <div className='section2'>
-                <div className='title'>
-                    <h2>Semester at a Glance</h2>
-                </div>
+                <ContentBlock 
+                    title="Semester at a Glance"
+                />
                 <div className='timelineContainer'>
                     <Timeline />
                 </div>

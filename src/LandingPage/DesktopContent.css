@@ -1,9 +1,9 @@
-.section1 {
+.aboutContainer {
     display: flex;
     flex-direction: column;
     row-gap: 70px;
     position: relative;
-    padding: 64px 64px 100px 64px;
+    padding: 64px 138px 100px 138px;
     background-color: white;
     z-index:1;
 
@@ -22,7 +22,7 @@
       }
   }
 
-.section1 .grid {
+.aboutContainer .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 130px;
@@ -37,7 +37,7 @@
     }
 }
 
-.section1 .grid .image {
+.aboutContainer .grid .image {
     width: 100%;
     height: 100%;    
   
@@ -78,7 +78,7 @@
     flex-direction: column;
     row-gap: 40px;
     position: relative;
-    padding: 0px 64px 100px 64px;
+    padding: 0px 128px 100px 128px;
     background-color: white;
 
     @media screen and (min-width: 1000px) {
@@ -108,7 +108,7 @@
     flex-direction: column;
     row-gap: 70px;
     position: relative;
-    padding: 0px 64px 100px 64px;
+    padding: 0px 128px 100px 128px;
     background-color: white;
     z-index: 1;
 

@@ -3,8 +3,11 @@ import React from 'react'
 import TitleBlock from '../components/common/Title.jsx'
 import ContentBlock from '../components/common/ContentBlock.jsx'
 import Table from '../components/Table/Table.jsx'
-
+import NavBar from '../components/Navbar/Navbar.jsx'
+import Sock from '../components/Footer/Sock.jsx'
+import Footer from '../components/Footer/Footer.jsx'
 import './join.css'
+
 
 export default function Join() {
     const JoinTopSection  = () => {
@@ -65,9 +68,12 @@ export default function Join() {
     }
 
     return (
-        <>
+        <>  
+            {NavBar()}
             {JoinTopSection()}
             {JoinTimeline()}
+            {Sock()}
+            {Footer()}
         </>
     )
 }

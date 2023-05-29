@@ -6,36 +6,37 @@ import useBreakpoint from '../helpers/userBreakpoint';
 import NavBarMobile from './NavBarMobile.jsx';
 import './NavBar.css';
 
-export default function NavBar({ isStatic = false}) {
+export default function NavBar() {
     const breakpoint= useBreakpoint()
-    if (breakpoint === BREAKPOINT.MOBILE) return <NavBarMobile isStatic={isStatic} />;
+    // if (breakpoint === BREAKPOINT.MOBILE) return <NavBarMobile isStatic={isStatic} />;
     
+
     return(
         <nav className='navContainer'>
             <ul className='logoContainer'>
-                <li to='/'>
+                <a href='/'>
                     <Logo className='logo' />
-                </li>
+                </a>
             </ul>
             <ul className='navLinks'>
-                <Link to='/'>
-                    <li>Home</li>
-                </Link>
-                    <Link to='/about'>
-                        <li>About</li>
-                    </Link>
-                <Link to='/join'>
-                    <li>Join</li>
-                </Link>
-                <Link to='/mentor'>
-                    <li>Mentor</li>
-                </Link>
-                <Link to='https://hub.oasisneu.com/resources'>
-                    <li>Resources</li>
-                </Link>
-                <Link to='/contact'>
-                    <li>Contact</li>
-                </Link>
+                <li>
+                    <a href='/'>Home</a>
+                </li>
+                <li>
+                    <a href='/about'>About</a>
+                </li>
+                <li>
+                    <a href='/join'>Join</a>
+                </li>
+                <li>
+                    <a href='/mentor'>Mentor</a>
+                </li>
+                <li>
+                    <a href='https://hub.oasisneu.com/resources'>Resources</a>
+                </li>
+                <li>
+                    <a href='/contact'>Contact</a>
+                </li>
             </ul>
         </nav>
     )

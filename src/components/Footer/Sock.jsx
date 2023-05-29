@@ -3,8 +3,8 @@ import { BaseSyntheticEvent, useState } from "react";
 
 import './Sock.css'
 
-export default function Sock({onSubmit}) {
-    const [email, setEmail] = useState("")
+export default function Sock() {
+    const {email, setEmail} = useState("")
     const handleChange = e => {
         setEmail(e.target.value)
     }

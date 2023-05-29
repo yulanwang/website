@@ -1,21 +1,19 @@
 .navContainer {
     position: relative;
     z-index: 100;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #397367;
     align-items: center;
-    /* padding-left: 70px; 
-    padding-right: 70px; */
+    padding: 10px 128px 10px 128px;
 }
 
 .navContainer ul.logoContainer {
   display: flex;
   flex-direction: row;
-  padding-left: 66px;  
   width: 70px;
+  padding: 0;
 }
 
 .navContainer ul.logoContainer .logo {
@@ -40,8 +38,6 @@ ul {
     z-index: 0;
 }
 
-
-
 a.navLinks {
   text-decoration: none;
 }
@@ -49,7 +45,6 @@ a.navLinks {
 ul.navLinks {
   display: flex;
   flex-direction: row;
-  padding-right: 70px;
   /* padding-top: 24px; */
   margin: 0;
 }

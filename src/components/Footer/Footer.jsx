@@ -9,47 +9,47 @@ export default function Footer() {
     return (
         <footer className='footerContainer'>
             <ul className='logoContainer'>
-                <Link to='/'>
+                <a href='/'>
                     <Logo className='logo'/>
-                </Link>
+                </a>
             </ul>
             <ul className='linksContainer'>
                 <div className='col'>
-                    <Link to='/'>
-                        <li>Home</li>
-                    </Link>
-                    <Link to='/about'>
-                        <li>About</li>
-                    </Link>
-                    <Link to='/join'>
-                        <li>Join</li>
-                    </Link>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/about'>About</a>
+                    </li>
+                    <li>
+                        <a href='/join'>Join</a>
+                    </li>
                 </div>
                 <div className='col'>
-                    <Link to='/mentor'>
-                        <li>Mentor</li>
-                    </Link>
-                    <Link to='/resources'>
-                        <li>Resources</li>
-                    </Link>
-                    <Link to='/contact'>
-                        <li>Contact</li>
-                    </Link>
+                    <li>
+                        <a href='/mentor'>Mentor</a>
+                    </li>
+                    <li>
+                        <a href='https://hub.oasisneu.com/resources'>Resources</a>
+                    </li>
+                    <li>
+                        <a href='/contact'>Contact</a>
+                    </li>
                 </div>
             </ul>
             <div className='mediaIconContainer'>
                 <div className='iconCol'>
                     <div className='circle'>
-                        <Link to='/'>
+                        <a href='/'>
                             <InstagramIcon />
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className='iconCol'>
                     <div className='circle'>
-                        <Link to='/'>
+                        <a href='/'>
                             <img className='greenLogo' src={LogoGreen}/>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
         flex-direction: column;
         row-gap: 40px;
         position: relative;
-        padding: 64px;
+        padding: 64px 128px 64px 128px;
         background-color: white;
         z-index:1;
     
