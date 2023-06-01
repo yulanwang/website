@@ -11,7 +11,7 @@ import Sock from '../components/Footer/Sock.jsx'
 export default function Mentor() {
     const MentorTopSection = () => {
         return (
-            <div className='section1'>
+            <div className='mentorSectionOne'>
                 <TitleBlock
                     title="Mentor"
                     body="Teach participants how to learn the skills 
@@ -19,6 +19,32 @@ export default function Mentor() {
                     completed a co-op and are free from 12-2pm on Sundays, 
                     then you're ready to mentor."
                 />
+                <div className='memberGridOne'>
+                    <div className='memberGridRow'>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
+                        <ContentBlock
+                            body="Any Northeastern student who has completed at least one computer science co-op."
+                        />
+                    </div>
+                    <div className='memberGridRow'>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
+                        <ContentBlock
+                            body="Mentors work with two teams to guide them through their making first web app."
+                        />
+                    </div>
+                    <div className='memberGridRow'>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
+                        <ContentBlock
+                            body="A low-commitment chance to mentor students and help them make their ideas into reality!"
+                        />
+                    </div>
+                    <div className='memberGridRow'>
+                        <div className='circlePosition'><span className='circleTurquoise' /></div>
+                        <ContentBlock
+                            body="There are 8 weekly hack sessions. Mentors must be available most Sundays from 11:30 AM to 2PM."
+                        />
+                    </div>
+                </div>
             </div>
         )
     }

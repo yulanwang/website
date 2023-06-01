@@ -1,0 +1,64 @@
+.faqContainer {
+    display: grid;
+    grid-template-columns: 40% 40px;
+    padding: 64px 128px 64px 128px;
+    background-color: white;
+    transition: background-color 0.1s ease-out;
+    cursor: pointer;
+    border-top: 3px solid #002642;
+    justify-content: space-between;
+    width: 70%;
+    @media screen and (max-width: $breakpoint-mobile),
+      screen and (max-width: $breakpoint-midsize) {
+      display: flex;
+      flex-direction: row;
+      row-gap: 16px;
+      padding: 32px;
+    }
+  }
+  
+  .faqContainer h3 {
+    font-family: 'Brandon Grotesque';
+    font-style: medium;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    color: #002642;
+  }
+
+  .faqContainer h2 {
+    color: #002642;
+    margin: 0;
+    font-weight: 500px;
+  }
+
+  .faqContainer p {
+    font-family: 'Brandon Grotesque';
+    font-style: normal;
+    font-weight: 390;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .faqContainer:hover {
+    background-color: #B8D8CA
+  }
+  .expanded {
+    display: grid;
+    grid-template-columns: 40% 40px;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    column-gap: 64px;
+    row-gap: 30px;
+  }
+
+  .icon {
+    color: black;
+    cursor: pointer;
+    width: 500%;
+  
+    @media screen and (max-width: $breakpoint-mobile),
+      screen and (max-width: $breakpoint-midsize) {
+      display: none;
+    }
+  }

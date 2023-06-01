@@ -1,9 +1,8 @@
 .contentBlockContainerDefault {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  /* row-gap: 20px; */
   width: 100%;
-  height: fit-content;
 }
 
 .contentBlockContainerDefault h2 {
@@ -11,13 +10,9 @@
   font-style: normal;
   font-weight: 420;
   font-size: 64px;
-  line-height: 92px;
-  margin: 0;
-  /* identical to box height */
-
+  margin: 0 0 0px 0;
   display: flex;
   align-items: center;
-
   color: #002642;
 }
 
