@@ -28,6 +28,10 @@
   width: 61px;
 }
 
+.navMobileOpenContainer .open {
+  transform: translateY(0);
+}
+
 .logo {
   margin-left: 12px;
   height: 61px;

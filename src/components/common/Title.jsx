@@ -8,9 +8,10 @@ export default function TitleBlock({
     className = ""
   }) {
     return (
-      <div className='titleBlockContainerDefault'>
-        {title && <h2>{title}</h2>}
-        {body && <p>{body}</p>}
-      </div>
-    )
+      React.createElement("div", {className: `${'titleBlockContainerDefault'} ${className}`},
+      title && React.createElement("h2", null, title),
+      body && React.createElement("p", null, body)
+      )
+    );
   }
+

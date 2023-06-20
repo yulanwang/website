@@ -2,11 +2,12 @@ import React from 'react'
 
 import TitleBlock from '../components/common/Title.jsx'
 import ContentBlock from '../components/common/ContentBlock.jsx'
-
-import './mentor.css'
 import NavBar from '../components/Navbar/Navbar.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import Sock from '../components/Footer/Sock.jsx'
+
+import './mentor.css'
+
 
 export default function Mentor() {
     const MentorTopSection = () => {

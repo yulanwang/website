@@ -1,7 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import Expand from '../../images/Expand.jsx';
-import Minimize from '../../images/Minimize.jsx';
 import './faq.css'
 
 export default function FaqComponent({
@@ -9,7 +7,6 @@ export default function FaqComponent({
     answer,
     isExpanded,
     onClick,
-    button,
     className,
   }) {
     return (

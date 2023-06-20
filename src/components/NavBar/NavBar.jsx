@@ -1,43 +1,48 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import Logo from '../../images/Logo';
 import { BREAKPOINT } from '../helpers/types';
 import useBreakpoint from '../helpers/userBreakpoint';
 import NavBarMobile from './NavBarMobile.jsx';
 import './NavBar.css';
 
-export default function NavBar() {
-    const breakpoint= useBreakpoint()
-    // if (breakpoint === BREAKPOINT.MOBILE) return <NavBarMobile isStatic={isStatic} />;
-    
-
-    return(
+export default function NavBar(isStatic = false) {
+    const breakpoint= useBreakpoint();
+     if (breakpoint === BREAKPOINT.MOBILE)
+        return React.createElement(NavBarMobile, {isStatic : isStatic });
+    const navStyling = isStatic
+        ? `${'navContainer'} ${'staticNav'}`
+        : 'navContainer';
+        return(
+        <>
         <nav className='navContainer'>
             <ul className='logoContainer'>
-                <a href='/'>
+                <Link to='/'>
                     <Logo className='logo' />
-                </a>
+                </Link>
             </ul>
             <ul className='navLinks'>
                 <li>
-                    <a href='/'>Home</a>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <a href='/about'>About</a>
+                    <Link to='/about'>About</Link>
                 </li>
                 <li>
-                    <a href='/join'>Join</a>
+                    <Link to='/join'>Join</Link>
                 </li>
                 <li>
-                    <a href='/mentor'>Mentor</a>
+                    <Link to='/mentor'>Mentor</Link>
                 </li>
                 <li>
                     <a href='https://hub.oasisneu.com/resources'>Resources</a>
                 </li>
                 <li>
-                    <a href='/contact'>Contact</a>
+                    <Link to='/contact'>Contact</Link>
                 </li>
             </ul>
         </nav>
+        <Outlet />
+        </>
     )
-}
+        }

@@ -10,7 +10,7 @@ import OasisImage2 from '../images/OasisCrowd2.png'
 import Footer from '../components/Footer/Footer'
 import Sock from '../components/Footer/Sock'
 import './DesktopContent.css'
-import NavBar from '../components/Navbar/Navbar'
+import NavBar from '../components/Navbar/Navbar.jsx'
 
 export default function DesktopContent() {
     const AboutSection = () => {

@@ -5,12 +5,12 @@ import './ContentBlock.css';
 export default function ContentBlock({
   title = "",
   body = "",
-  className = ""
+  className = "",
 }) {
   return (
-    <div className='contentBlockContainerDefault'>
-      <h2>{title}</h2>
-      <p>{body}</p>
-    </div>
-  )
+    React.createElement("div", { className: `${'contentBlockContainerDefault'} ${className}`},
+    title && React.createElement("h2", null, title),
+    body && React.createElement("p", null, body)
+    )
+  );
 }

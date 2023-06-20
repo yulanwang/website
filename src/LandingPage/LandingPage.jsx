@@ -5,6 +5,7 @@ import { BREAKPOINT } from '../components/helpers/types';
 import ArrowDown from '../images/ArrowDown';
 import NavBar from '../components/Navbar/Navbar';
 import DesktopContent from '../LandingPage/DesktopContent'
+import MobileContent from '../LandingPage/MobileContent'
 import Typewriter from 'typewriter-effect'
 import Parallax from '../components/parallax';
 import { Link } from 'react-router-dom';
@@ -88,9 +89,13 @@ const LandingPage = () => {
                 </div>
             </div>
             <div ref={navRef}>
-              <NavBar isStatic={true}/>
+              <NavBar />
+              {breakpoint === BREAKPOINT.MOBILE
+              ? <MobileContent/>
+              : <DesktopContent/>
+              }
             </div>
-            <DesktopContent/>
+            
         </>
     )
 }

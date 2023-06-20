@@ -22,10 +22,15 @@
           }
 }
 
+.aboutSectionOne {
+        padding-top: 120px;
+}
+
 .aboutHero {
         width: 60%;
         align-self: center;
 }
+
 .mission {
         row-gap: 20px;
 }
@@ -35,15 +40,14 @@
         grid-template-columns: 10% 80%;
         column-gap: 85px;
         row-gap: 50px;
-        align-items: center;
-
+        align-items: baseline;
 }
 
-.gridMission .circlePosition {
+/* .gridMission .circlePosition {
         position: relative;
         top: -20px;
             
-}
+} */
 
 .row {
     display: grid;
