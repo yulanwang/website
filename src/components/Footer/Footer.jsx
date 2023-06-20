@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Logo from '../../images/Logo';
 import LogoGreen from '../../images/GreenLogo.svg';
 import InstagramIcon from '../../images/InstagramIcon';

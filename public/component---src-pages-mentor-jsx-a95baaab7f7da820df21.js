@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkoasis_site=self.webpackChunkoasis_site||[]).push([[458],{9349:function(s,e,n){n.r(e),n.d(e,{default:function(){return t}});n(7294);function t(){}}}]);
-//# sourceMappingURL=component---src-pages-mentor-jsx-a95baaab7f7da820df21.js.map

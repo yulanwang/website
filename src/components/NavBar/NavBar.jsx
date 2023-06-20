@@ -1,5 +1,4 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
 import Logo from '../../images/Logo';
 import { BREAKPOINT } from '../helpers/types';
 import useBreakpoint from '../helpers/userBreakpoint';
@@ -17,12 +16,12 @@ export default function NavBar(isStatic = false) {
         <>
         <nav className='navContainer'>
             <ul className='logoContainer'>
-                <Link to='/'>
+                {/* <Link to='/'>
                     <Logo className='logo' />
-                </Link>
+                </Link> */}
             </ul>
             <ul className='navLinks'>
-                <li>
+                {/* <li>
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
@@ -39,7 +38,7 @@ export default function NavBar(isStatic = false) {
                 </li>
                 <li>
                     <Link to='/contact'>Contact</Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
         <Outlet />

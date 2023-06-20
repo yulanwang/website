@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import useBreakpoint from "../components/helpers/userBreakpoint";
@@ -8,8 +10,8 @@ import DesktopContent from '../LandingPage/DesktopContent'
 import MobileContent from '../LandingPage/MobileContent'
 import Typewriter from 'typewriter-effect'
 import Parallax from '../components/parallax';
-import { Link } from 'react-router-dom';
 import './LandingPage.css'
+import Link from 'next/link';
 
 import OasisHero from '../images/OasisHero';
 
