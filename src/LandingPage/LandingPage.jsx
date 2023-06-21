@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import useBreakpoint from "../components/helpers/userBreakpoint";
@@ -82,10 +80,10 @@ const LandingPage = () => {
                 {renderText()}              
                   <div className='bottomRow'>
                     <div className='dateAndLocation'>
-                      <Link onClick={handleClickScroll} className='linkContainer'>
+                      <a onClick={handleClickScroll} className='linkContainer'>
                         <li>Learn More</li>
                         <ArrowDown className='arrow' />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

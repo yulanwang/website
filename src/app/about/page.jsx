@@ -1,13 +1,5 @@
+import NavBar from '@/components/Navbar/Navbar'
 import React from 'react'
-
-import TitleBlock from "../components/common/Title.jsx"
-import ContentBlock from '../components/common/ContentBlock.jsx'
-import ComputerGraphic from '../images/ComputerGraphic.svg'
-import './about.css'
-import MemberCard from '../components/card/MemberCard.jsx'
-import NavBar from '../components/Navbar/Navbar.jsx'
-import Sock from '../components/Footer/Sock.jsx'
-import Footer from '../components/Footer/Footer.jsx'
 
 
 export default function About() {

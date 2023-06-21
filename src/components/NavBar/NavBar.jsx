@@ -4,9 +4,10 @@ import { BREAKPOINT } from '../helpers/types';
 import useBreakpoint from '../helpers/userBreakpoint';
 import NavBarMobile from './NavBarMobile.jsx';
 import './NavBar.css';
+import Link from 'next/link';
 
 export default function NavBar(isStatic = false) {
-    const breakpoint= useBreakpoint();
+    const breakpoint = useBreakpoint();
      if (breakpoint === BREAKPOINT.MOBILE)
         return React.createElement(NavBarMobile, {isStatic : isStatic });
     const navStyling = isStatic
@@ -16,12 +17,12 @@ export default function NavBar(isStatic = false) {
         <>
         <nav className='navContainer'>
             <ul className='logoContainer'>
-                {/* <Link to='/'>
+                <Link to='/'>
                     <Logo className='logo' />
-                </Link> */}
+                </Link>
             </ul>
             <ul className='navLinks'>
-                {/* <li>
+                <li>
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
@@ -38,10 +39,9 @@ export default function NavBar(isStatic = false) {
                 </li>
                 <li>
                     <Link to='/contact'>Contact</Link>
-                </li> */}
+                </li>
             </ul>
         </nav>
-        <Outlet />
         </>
     )
         }
