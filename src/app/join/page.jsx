@@ -1,15 +1,17 @@
+"use client"
+
 import React from "react"
 import {useState} from "react"
-import Faq from '../components/faq/faq'
 
-import TitleBlock from '../components/common/Title.jsx'
-import ContentBlock from '../components/common/ContentBlock.jsx'
-import Table from '../components/Table/Table.jsx'
-import NavBar from '../components/Navbar/Navbar.jsx'
-import Sock from '../components/Footer/Sock.jsx'
-import Footer from '../components/Footer/Footer.jsx'
+import Faq from '../../components/faq/faq'
+import TitleBlock from '../../components/common/Title'
+import ContentBlock from '../../components/common/ContentBlock.jsx'
+import Table from '../../components/Table/Table.jsx'
+import NavBar from '../../components/Navbar/Navbar.jsx'
+import Sock from '../../components/Footer/Sock.jsx'
+import Footer from '../../components/Footer/Footer.jsx'
 import './join.css'
-import ProjectCard from '../components/card/ProjectCard.jsx'
+import ProjectCard from '../../components/card/ProjectCard.jsx'
 
 
 export default function Join() {

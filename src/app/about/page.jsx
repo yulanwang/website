@@ -1,4 +1,12 @@
+"use client"
+
+import TitleBlock from '../../components/common/Title'
 import NavBar from '@/components/Navbar/Navbar'
+import ComputerGraphic from '@/images/ComputerGraphic.svg'
+import ContentBlock from '@/components/common/ContentBlock'
+import MemberCard from '@/components/card/MemberCard'
+import Sock from '@/components/Footer/Sock'
+import Footer from '@/components/Footer/Footer'
 import React from 'react'
 
 

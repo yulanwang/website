@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import Logo from '../../images/Logo';
 import { BREAKPOINT } from '../helpers/types';
@@ -17,29 +19,29 @@ export default function NavBar(isStatic = false) {
         <>
         <nav className='navContainer'>
             <ul className='logoContainer'>
-                <Link to='/'>
+                <Link href='/'>
                     <Logo className='logo' />
                 </Link>
             </ul>
             <ul className='navLinks'>
-                <li>
-                    <Link to='/'>Home</Link>
+                {/* <li>
+                    <Link href='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/about'>About</Link>
+                    <Link href='/about'>About</Link>
                 </li>
                 <li>
-                    <Link to='/join'>Join</Link>
+                    <Link href='/join'>Join</Link>
                 </li>
                 <li>
-                    <Link to='/mentor'>Mentor</Link>
+                    <Link href='/mentor'>Mentor</Link>
                 </li>
                 <li>
-                    <a href='https://hub.oasisneu.com/resources'>Resources</a>
+                    <Link href='https://hub.oasisneu.com/resources'>Resources</Link>
                 </li>
                 <li>
-                    <Link to='/contact'>Contact</Link>
-                </li>
+                    <Link href='/contact'>Contact</Link>
+                </li> */}
             </ul>
         </nav>
         </>
