@@ -1,16 +1,16 @@
 import React from 'react'
-import CustomImage from '../components/common/CustomImage'
+import CustomImage from '../common/CustomImage'
 // import { container, section1, row, image, text1, text2, col,
 //         section2, reverse, grid, title, timelineContainer, section3} from './DesktopContent.module.scss'
-import Timeline from '../components/Timeline/Timeline'
-import Card from '../components/card/Card'
-import ContentBlock from '../components/common/ContentBlock'
-import OasisImage1 from '../images/OasisCrowd1.png'
-import OasisImage2 from '../images/OasisCrowd2.png'
-import Footer from '../components/Footer/Footer'
-import Sock from '../components/Footer/Sock'
+import Timeline from '../../components/Timeline/Timeline'
+import Card from '../../components/card/Card'
+import ContentBlock from '../../components/common/ContentBlock'
+import OasisImage1 from '../../images/OasisCrowd1.png'
+import OasisImage2 from '../../images/OasisCrowd2.png'
+import Footer from '../../components/Footer/Footer'
+import Sock from '../../components/Footer/Sock'
 import './DesktopContent.css'
-import NavBar from '../components/Navbar/Navbar.jsx'
+import NavBar from '../../components/Navbar/Navbar.jsx'
 
 export default function DesktopContent() {
     const AboutSection = () => {

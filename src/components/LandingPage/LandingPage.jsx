@@ -2,18 +2,18 @@
 
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
-import useBreakpoint from "../components/helpers/userBreakpoint";
-import { BREAKPOINT } from '../components/helpers/types';
-import ArrowDown from '../images/ArrowDown';
-import NavBar from '../components/Navbar/Navbar';
-import DesktopContent from '../LandingPage/DesktopContent'
-import MobileContent from '../LandingPage/MobileContent'
+import useBreakpoint from "../../components/helpers/userBreakpoint";
+import { BREAKPOINT } from '../../components/helpers/types';
+import ArrowDown from '../../images/ArrowDown';
+import NavBar from '../../components/Navbar/Navbar';
+import DesktopContent from './DesktopContent';
+import MobileContent from './MobileContent'
 import Typewriter from 'typewriter-effect'
-import Parallax from '../components/parallax';
+import Parallax from '../../components/parallax';
 import './LandingPage.css'
 import Link from 'next/link';
 
-import OasisHero from '../images/OasisHero';
+import OasisHero from '../../images/OasisHero';
 
 const LOGO_ZOOM_FULL_SCALE = 3;
 

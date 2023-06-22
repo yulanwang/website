@@ -19,7 +19,7 @@ body .landingPage {
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  background-image: url('../images//OasisHero2.svg');
+  background-image: url('../../images/OasisHero2.svg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
