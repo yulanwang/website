@@ -1,5 +1,5 @@
 .sockContainer {
-     background-color: #ECF0F1;
+     background-color: var(--oasis-light);
      display: grid;
      grid-template-columns: 20% 55% 25%;
      padding: 64px 64px 64px 64px;
@@ -18,7 +18,7 @@ h3 {
     font-weight: 420;
     font-size: 38px;
     display: flex;
-    color: #002642;
+    color: var(--oasis-blue);
     margin: 5px;
 }
 
@@ -34,7 +34,7 @@ h3 {
     font-weight: 390;
     font-size: 20px;
     line-height: 29px;
-    color: #002642;
+    color: var(--oasis-blue);
     width: 50%;
 }
 
@@ -54,7 +54,7 @@ h3 {
     font-style: normal;
     font-weight: 420;
     font-size: 28px;
-    color:#002642;
+    color:var(--oasis-blue);
 }
 
 .text p {
@@ -63,7 +63,7 @@ h3 {
     font-weight: 390;
     font-size: 20px;
     line-height: 29px;
-    color: #002642;
+    color: var(--oasis-blue);
     width: 50%;
 }
 
@@ -76,15 +76,15 @@ h3 {
 .emailInput {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    color: white;
+    color: var(--oasis-light);
     column-gap: 25px;
     width: 80%
 }
 
 .submitButton {
-    background-color: white;
+    background-color: var(--oasis-light);
     border-radius: 20px;
-    border: 2.5px solid #002642;
+    border: 2.5px solid var(--oasis-blue);
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
@@ -92,7 +92,7 @@ h3 {
 }
 
 .submitButton:hover {
-    border: 3.5px solid #397367;
+    border: 3.5px solid var(--oasis-green);
     transition: transform 0.3s smooth;
     padding: 9px 0 9px 0;
 }
@@ -102,7 +102,7 @@ h3 {
     font-style: normal;
     font-weight: 420;
     font-size: 28px;
-    color: #002642;
+    color: var(--oasis-blue);
     margin: 0;
 }
 

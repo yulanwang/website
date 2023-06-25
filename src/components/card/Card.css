@@ -1,6 +1,6 @@
 .cardContainer {
-  background-color: #FFFFFF;
-  color: #002642;
+  background-color: var(--oasis-light);
+  color: var(--oasis-blue);
   position: relative;
   z-index: 2;
 
@@ -39,7 +39,7 @@
 }
 
 .cardBlock {
-  background-color: #B8D8CA;
+  background-color: var(--oasis-green-pastel);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 0px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .cardBlock p {
@@ -88,7 +88,7 @@
 .pageController div {
   height: 12px;
   width: 12px;
-  border: 2px solid #002642;
+  border: 2px solid var(--oasis-blue);
   border-radius: 100%;
 
 
@@ -102,5 +102,5 @@
 }
 
 .pageController div:selected {
-  background-color: #002642;
+  background-color: var(--oasis-blue);
 }

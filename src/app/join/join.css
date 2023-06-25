@@ -4,7 +4,7 @@
     row-gap: 30px;
     position: relative;
     padding: 64px 128px 64px 128px;
-    background-color: white;
+    background-color: var(--oasis-light);
     z-index: 1;
 
     @media screen and (min-width: 1000px) {
@@ -27,7 +27,7 @@ p {
     font-style: normal;
     font-weight: 390;
     font-size: 28px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .joinGridOne {
@@ -55,13 +55,13 @@ p {
     height: 73px;
     width: 73px;
     position: relative;
-    background-color: #B8D8CA;
+    background-color: var(--oasis-green-pastel);
 }
 
 .projectButton {
-    background-color: #B8D8CA;
+    background-color: var(--oasis-green-pastel);
     border-radius: 20px;
-    border: 2.5px solid #002642;
+    border: 2.5px solid var(--oasis-blue);
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
@@ -70,7 +70,7 @@ p {
 }
 
 .projectButton:hover {
-    border: 3.5px solid #002642;
+    border: 3.5px solid var(--oasis-blue);
     transition: transform 0.4s smooth;
     padding: 9px 0 9px 0;
 }
@@ -80,7 +80,7 @@ p {
     font-style: normal;
     font-weight: 420;
     font-size: 28px;
-    color: #002642;
+    color: var(--oasis-blue);
     margin: 0;
 }
 

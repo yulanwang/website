@@ -4,7 +4,7 @@
     row-gap: 70px;
     position: relative;
     padding: 64px 138px 100px 138px;
-    background-color: white;
+    background-color: var(--oasis-light);
     z-index:1;
 
     @media screen and (min-width: 1000px) {
@@ -68,7 +68,7 @@
     font-size: 64px;
     line-height: 92px;
     /* identical to box height */
-    color: #002642;
+    color: var(--oasis-blue);
     display: flex;
     align-items: center;
   }
@@ -79,7 +79,7 @@
     row-gap: 40px;
     position: relative;
     padding: 0px 128px 100px 128px;
-    background-color: white;
+    background-color: var(--oasis-light);
 
     @media screen and (min-width: 1000px) {
         margin-bottom: 100px;
@@ -109,7 +109,7 @@
     row-gap: 70px;
     position: relative;
     padding: 0px 128px 100px 128px;
-    background-color: white;
+    background-color: var(--oasis-light);
     z-index: 1;
 
     @media screen and (min-width: 1000px) {

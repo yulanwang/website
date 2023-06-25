@@ -3,7 +3,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 20% 55% 25%;
-    background-color: #397367;
+    background-color: var(--oasis-green);
     padding: 64px 64px 32px 128px;
     z-index: 1;
 
@@ -45,7 +45,7 @@ ul.linksContainer .col {
     display: flex;
     flex-direction: row;
     column-gap: 4px;
-    color: white;
+    color: var(--oasis-light);
     font-family: 'Brandon Grotesque', sans-serif;
     font-weight: 420;
     font-style: normal;
@@ -74,7 +74,7 @@ ul.linksContainer .col {
     font-style: normal;
     font-weight: 420;
     font-size: 28px;
-    color: #FFFFFF;
+    color: var(--oasis-light);
     margin-top: 0;
 }
 
@@ -94,7 +94,7 @@ ul.linksContainer .col {
 .mediaIconContainer .iconCol .circle {
     width: 75px;
     height: 75px;
-    background-color: #FFFFFF;
+    background-color: var(--oasis-light);
     border-radius: 50%;
     display: flex;
     align-items: center;

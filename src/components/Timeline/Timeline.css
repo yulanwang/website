@@ -4,7 +4,7 @@
     width: 100%;
     height: 200px;
     margin: 200px 0 0;
-    border-top: 2.5px solid #002642;
+    border-top: 2.5px solid var(--oasis-blue);
     border-spacing: 30px 0;
 }
 
@@ -13,14 +13,14 @@
     display: table-cell;
     position: relative;
     min-width: 100px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepDown {
     display: table-cell;
     position: relative;
     min-width: 100px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepUp .timelineStepContent {
@@ -36,7 +36,7 @@
     left: 50%;
     margin-left: -2px;
     position: absolute;
-    border-left: 2.5px solid #002642;
+    border-left: 2.5px solid var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepUp .timelineStepContent .text {
@@ -51,7 +51,7 @@
     right: 0;
     text-align: center;
     line-height: 30px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepUp .timelineStepContent .text p{
@@ -69,7 +69,7 @@
     right: 0;
     text-align: center;
     line-height: 30px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepDown .timelineStepContent {
@@ -85,7 +85,7 @@
     left: 50%;
     margin-left: -2px;
     position: absolute;
-    border-left: 2.5px solid #002642;
+    border-left: 2.5px solid var(--oasis-blue);
 }
 
 
@@ -101,7 +101,7 @@
     right: 0;
     text-align: center;
     line-height: 30px;
-    color: #002642;
+    color: var(--oasis-blue);
 } 
 */
 
@@ -117,7 +117,7 @@
     right: 0;
     text-align: center;
     line-height: 30px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepDown .timelineStepContent .text p {
@@ -135,7 +135,7 @@
     right: 0;
     text-align: center;
     line-height: 30px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .timelineComponent ul.container li.timelineStepDown .dot {
@@ -159,9 +159,9 @@
     align-items: center;
     display: block;
     position: absolute;
-    border: 2.5px solid #002642;
+    border: 2.5px solid var(--oasis-blue);
     justify-content: center;
-    background-color: #B8D8CA;
+    background-color: var(--oasis-green-pastel);
 }
 
 .timelineComponent ul.container li.timelineStepUp .dot span.circleUp {
@@ -175,9 +175,9 @@
     align-items: center;
     display: block;
     position: absolute;
-    border: 2.5px solid #002642;
+    border: 2.5px solid var(--oasis-blue);
     justify-content: center;
-    background-color: #B8D8CA;
+    background-color: var(--oasis-green-pastel);
 }
 
 .circleUp h4 {
@@ -189,7 +189,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 .circleDown h4 {
@@ -201,5 +201,5 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    color: #002642;
+    color: var(--oasis-blue);
 }

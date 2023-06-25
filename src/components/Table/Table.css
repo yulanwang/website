@@ -13,7 +13,7 @@ table h4 {
     font-style: normal;
     font-weight: 420;
     font-size: 38px;
-    color: #002642;
+    color: var(--oasis-blue);
     margin: 0;
 }
 
@@ -22,12 +22,12 @@ table p {
     font-style: normal;
     font-weight: 390;
     font-size: 28px;
-    color: #002642;
+    color: var(--oasis-blue);
 }
 
 th {
-    border-right: 2.5px solid #002642;
-    border-bottom: 2.5px solid #002642;
+    border-right: 2.5px solid var(--oasis-blue);
+    border-bottom: 2.5px solid var(--oasis-blue);
 }
 
 td, th {
@@ -35,15 +35,15 @@ td, th {
 }
 
 .semesterCell {
-    border-right: 2.5px solid #002642;
+    border-right: 2.5px solid var(--oasis-blue);
 }
 
 .infoSessionCell {
-    border-right: 2.5px solid #002642;
+    border-right: 2.5px solid var(--oasis-blue);
 }
 
 .startCell {
-    border-right: 2.5px solid #002642;
+    border-right: 2.5px solid var(--oasis-blue);
 }
 
 .endCell {

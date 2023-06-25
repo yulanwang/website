@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 420;
   font-size: 96px;
-  color: #002642;
+  color: var(--oasis-blue);
   margin: 0;
 }
   
@@ -21,5 +21,5 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 46px;
-  color: #002642;
+  color: var(--oasis-blue);
 }

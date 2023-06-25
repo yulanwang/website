@@ -1,7 +1,7 @@
 .projectCardContainer {
     width: 90%;
-    background-color: #FFFFFF;
-    color: #002642;
+    background-color: var(--oasis-light);
+    color: var(--oasis-blue);
     position: relative;
     z-index: 2;
     align-self: center;
@@ -50,7 +50,7 @@
       align-items: center;
       margin-top: 30px;
       margin-bottom: 0px;
-      color: #002642;
+      color: var(--oasis-blue);
   }
   
   .projectCard p {
@@ -62,7 +62,7 @@
       margin-top: 10px;
       align-items: start;
       text-align: left;
-      color: #002642;
+      color: var(--oasis-blue);
   }
   
   .pageController {
@@ -83,7 +83,7 @@
   .pageController div {
     height: 12px;
     width: 12px;
-    border: 2px solid #002642;
+    border: 2px solid var(--oasis-blue);
     border-radius: 100%;
   
   
@@ -97,5 +97,5 @@
   }
   
   .pageController div:selected {
-    background-color: #002642;
+    background-color: var(--oasis-blue);
   }

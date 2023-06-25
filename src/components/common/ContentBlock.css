@@ -13,7 +13,7 @@
   margin: 0 0 0px 0;
   display: flex;
   align-items: center;
-  color: #002642;
+  color: var(--oasis-blue);
 }
 
 .contentBlockContainerDefault p {
@@ -24,6 +24,6 @@
   line-height: 40px;
   display: flex;
   align-items: center;
-  color: #002642;
+  color: var(--oasis-blue);
   margin: 0;
 }

@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --oasis-yellow: theme(colors.oasis-yellow);
+  --oasis-yellow-pastel: theme(colors.oasis-yellow-pastel);
+  --oasis-green: theme(colors.oasis-green);
+  --oasis-green-pastel: theme(colors.oasis-green-pastel);
+  --oasis-blue: theme(colors.oasis-blue);
+  --oasis-extra-dark: theme(colors.oasis-extra-dark);
+  --oasis-dark: theme(colors.oasis-dark);
+  --oasis-gray: theme(colors.oasis-gray);
+  --oasis-light: theme(colors.oasis-light);
+  --oasis-extra-light: theme(colors.oasis-extra-light);
+}
+
+* {
+  font-family: "Brandon Grotesque";
+  font-weight: 420;
+}
+
+svg {
+   fill: currentColor;
+}
