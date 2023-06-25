@@ -61,7 +61,7 @@ const LandingPage = () => {
 
   const renderText = () => {
     return (
-      <div className="textSplash absolute bottom-1/2 left-10">
+      <div className="textSplash absolute bottom-1/2 left-10 text-oasis-blue">
         <h1 className="h-[16rem] text-[150px]">
           <Typewriter
             options={{
@@ -73,7 +73,7 @@ const LandingPage = () => {
             }}
           />
         </h1>
-        <p className="text-2xl">Ready to make your ideas reality?</p>
+        <p className="text-2xl pl-1">Ready to make your ideas reality?</p>
       </div>
     );
   };
@@ -84,7 +84,7 @@ const LandingPage = () => {
           {renderText()}
           <a
             onClick={handleClickScroll}
-            className="text-oasis-extra-light hover:text--oasis-light linkContainer cursor-pointer mb-4 flex flex-row items-center gap-2 absolute bottom-10 bg-emerald-50"
+            className="text-oasis-extra-light hover:text--oasis-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-14 left-1/2 -translate-x-1/2 text-2xl"
           >
             <li>Learn More</li>
             <ArrowDown className="arrow" />
@@ -94,7 +94,7 @@ const LandingPage = () => {
       <div ref={navRef}>
         <NavBar />
         {
-          breakpoint === BREAKPOINT.MOBILE ? <MobileContent /> : <></> //<DesktopContent/>
+          breakpoint === BREAKPOINT.MOBILE ? <MobileContent /> : <DesktopContent/>
         }
       </div>
     </>
