@@ -24,7 +24,7 @@ export default function NavBar(isStatic = false) {
                 </Link>
             </ul>
             <ul className='navLinks'>
-                {/* <li>
+                <li>
                     <Link href='/'>Home</Link>
                 </li>
                 <li>
@@ -41,7 +41,7 @@ export default function NavBar(isStatic = false) {
                 </li>
                 <li>
                     <Link href='/contact'>Contact</Link>
-                </li> */}
+                </li>
             </ul>
         </nav>
         </>

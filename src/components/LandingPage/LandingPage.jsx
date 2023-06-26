@@ -84,7 +84,7 @@ const LandingPage = () => {
           {renderText()}
           <a
             onClick={handleClickScroll}
-            className="text-oasis-extra-light hover:text--oasis-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-14 left-1/2 -translate-x-1/2 text-2xl"
+            className="hover:text-oasis-extra-light text-oasis-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-14 left-1/2 -translate-x-1/2 text-2xl hover:drop-shadow-xl"
           >
             <li>Learn More</li>
             <ArrowDown className="arrow" />

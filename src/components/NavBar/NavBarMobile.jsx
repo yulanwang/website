@@ -7,8 +7,9 @@ import Close from '../../images/Close'
 import Burger from '../../images/Burger'
 
 import './NavBarMobile.css';
+import Link from 'next/link';
 
-export default function NavBarMobile(isStatic =false) {
+export default function NavBarMobile(isStatic = false) {
     const [isOpen, setIsOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
     const open = () => {
@@ -29,78 +30,25 @@ export default function NavBarMobile(isStatic =false) {
             window.scrollTo(0, scrollY)
         }
     }, [isOpen, scrollY]);
-    
-    return (React.createElement(React.Fragment, null,
-        React.createElement("nav", { className : `
-        ${'navWrapper'}
-        ${isStatic && 'staticNav'}
-        ${isOpen && 'open'}
-        `},
-            React.createElement("div", { className: `${'navMobileOpenContainer'} ${isOpen && 'open'}` },
-                React.createElement("div", { className: 'navMobileContainer'},
-                    React.createElement(Logo, {className: 'logo'}),
-                    React.createElement("ul", {className: 'navMobileLinks'},
-                        React.createElement("li", {onClick: !isOpen ? open : close},
-                            React.createElement(Close, null)))),
-                React.createElement("ul", {className: 'navMobileOpenLinks'},
-                    React.createElement(Link)))
-        )))
 
-    // return (
-    //     <>
-    //     <nav
-    //         className='navWrapper isStacxctic staticNav isOpen open'
-    //         // ${navWrapper}
-    //         // ${isStatic && staticNav}
-    //         // ${isOpen && open}
-    //         // `}
-    //     >
-    //         <div
-    //             className='navMobileOpenContainer isOpen open'
-    //                 // `${navMobileOpenContainer} ${isOpen &&
-    //                 // open}`}
-    //         >
-    //         <div className='navMobileOpenContainer'>
-    //             <Logo className='logo' />
-    //             <ul className='navMobileLinks'>
-    //                 <li onClick={!isOpen ? open : close}>
-    //                     <Close /> 
-    //                 </li>
-    //             </ul>
-    //         </div>
-    //         <ul className='navMobileOpenLinks'>
-    //             <Link href='/' onClick={!isOpen ? open : close}>
-    //                 <li>Home</li>
-    //             </Link>
-    //             <Link href='/about' onClick={!isOpen ? open : close}>
-    //                 <li>About</li>
-    //             </Link>
-    //             <Link href='/join' onClick={!isOpen ? open : close}>
-    //                 <li>Join</li>
-    //             </Link>
-    //             <Link href='/mentor' onClick={!isOpen ? open : close}>
-    //                 <li>Mentor</li>
-    //             </Link>
-    //             <Link href='/resources' onClick={!isOpen ? open : close}>
-    //                 <li>Resources</li>
-    //             </Link>
-    //             <Link href='/Contact' onClick={!isOpen ? open : close}>
-    //                 <li>Contact</li>
-    //             </Link>
-    //         </ul>
-    //         </div>
-    //         <div className='navMobileContainer isStatic navTopBorder'
-    //         // {`
-    //         //     ${navMobileContainer}
-    //         //     ${isStatic && navTopBorder}`}
-    //             >
-    //             <Logo className='logo' />
-    //             <li className='burger'
-    //             onClick={!isOpen ? open : close}>
-    //                 <Burger />
-    //             </li>
-    //         </div>
-    //     </nav>
-    //     </>
-    // )
+    return (
+        <>
+        </>
+    )
+    
+    // return (React.createElement(React.Fragment, null,
+    //     React.createElement("nav", { className : `
+    //     ${'navWrapper'}
+    //     ${isStatic && 'staticNav'}
+    //     ${isOpen && 'open'}
+    //     `},
+    //         React.createElement("div", { className: `${'navMobileOpenContainer'} ${isOpen && 'open'}` },
+    //             React.createElement("div", { className: 'navMobileContainer'},
+    //                 React.createElement(Logo, {className: 'logo'}),
+    //                 React.createElement("ul", {className: 'navMobileLinks'},
+    //                     React.createElement("li", {onClick: !isOpen ? open : close},
+    //                         React.createElement(Close, null)))),
+    //             React.createElement("ul", {className: 'navMobileOpenLinks'},
+    //                 React.createElement(Link)))
+    //     )))
 }
