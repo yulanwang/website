@@ -2,12 +2,13 @@
 
 import TitleBlock from '../../components/common/Title'
 import NavBar from '@/components/Navbar/Navbar'
-import ComputerGraphic from '@/images/ComputerGraphic.svg'
+import ComputerGraphic from "../../../public/images/ComputerGraphic.svg"
 import ContentBlock from '@/components/common/ContentBlock'
 import MemberCard from '@/components/card/MemberCard'
 import Sock from '@/components/Footer/Sock'
 import Footer from '@/components/Footer/Footer'
 import React from 'react'
+import Image from 'next/image'
 
 
 export default function About() {
@@ -21,7 +22,7 @@ export default function About() {
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
                         Nemo enim ipsam voluptatem quia voluptas"
                     />
-                    <img className='aboutHero' src={ComputerGraphic} />
+                    <Image className='aboutHero' src={ComputerGraphic} />
 
                 </div>
             </>

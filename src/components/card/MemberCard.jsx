@@ -2,7 +2,8 @@ import React from "react"
 import { useEffect, useState } from "react"
 import { BREAKPOINT } from "../helpers/types"
 import useBreakpoint from "../helpers/userBreakpoint"
-import Frank from '../../images/EBoard/Frank.png'
+import Frank from '../../../public/images/EBoard/Frank.png'
+import Image from "next/image"
 import './MemberCard.css';
 
 const memberData = [
@@ -82,7 +83,7 @@ export default function MemberCard() {
         const renderCardBlock = (name, description, image, key) => {
           return (
             <div className="memberCard" key="key">
-              <img src={image} />
+              <Image src={image} />
               <h4>{name}</h4>
               <p>{description}</p>
             </div>

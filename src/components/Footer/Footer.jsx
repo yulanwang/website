@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Logo from '../../../public/images/Logo';
 import LogoGreen from '../../../public/images/GreenLogo.svg';
 import InstagramIcon from '../../../public/images/InstagramIcon';
@@ -47,7 +48,7 @@ export default function Footer() {
                 <div className='iconCol'>
                     <div className='circle'>
                         <a href='/'>
-                            <img className='greenLogo' src={LogoGreen}/>
+                            <Image className='greenLogo' src={LogoGreen}/>
                         </a>
                     </div>
                 </div>

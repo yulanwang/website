@@ -2,10 +2,11 @@ import React from "react"
 import { useEffect, useState } from "react"
 import { BREAKPOINT } from "../helpers/types"
 import useBreakpoint from "../helpers/userBreakpoint"
-import Marino from '../../images/Projects/HowBusyIsMarino.png'
-import RoomieHub from '../../images/Projects/RoomieHub.png'
-import TransitNU from '../../images/Projects/TransitNU.png'
+import Marino from '../../../public/images/Projects/HowBusyIsMarino.png'
+import RoomieHub from '../../../public/images/Projects/RoomieHub.png'
+import TransitNU from '../../../public/images/Projects/TransitNU.png'
 import './ProjectCard.css';
+import Image from "next/image"
 
 const projectData = [
     {
@@ -54,7 +55,7 @@ export default function ProjectCard() {
         const renderCardBlock = (name, description, image, key) => {
           return (
             <div className="projectCard" key="key">
-              <img src={image} />
+              <Image src={image} />
               <h4>{name}</h4>
               <p>{description}</p>
             </div>
