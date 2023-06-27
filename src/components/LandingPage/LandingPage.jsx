@@ -4,7 +4,7 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import useBreakpoint from "../../components/helpers/userBreakpoint";
 import { BREAKPOINT } from "../../components/helpers/types";
-import ArrowDown from "../../images/ArrowDown";
+import ArrowDown from "../../../public/images/ArrowDown";
 import NavBar from "../../components/Navbar/Navbar";
 import DesktopContent from "./DesktopContent";
 import MobileContent from "./MobileContent";
@@ -13,7 +13,7 @@ import Parallax from "../../components/parallax";
 import "./LandingPage.css";
 import Link from "next/link";
 
-import OasisHero from "../../images/OasisHero";
+import OasisHero from "../../../public/images/OasisHero";
 
 const LOGO_ZOOM_FULL_SCALE = 3;
 

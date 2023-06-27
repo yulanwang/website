@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import Logo from '../../images/Logo';
+import Logo from '../../../public/images/Logo';
 import { BREAKPOINT } from '../helpers/types';
 import useBreakpoint from '../helpers/userBreakpoint';
 import NavBarMobile from './NavBarMobile.jsx';

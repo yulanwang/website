@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 
-import Logo from '../../images/Logo'
-import Close from '../../images/Close'
-import Burger from '../../images/Burger'
+import Logo from '../../../public/images/Logo'
+import Close from '../../../public/images/Close'
+import Burger from '../../../public/images/Burger'
 
 import './NavBarMobile.css';
 import Link from 'next/link';
