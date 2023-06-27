@@ -66,36 +66,41 @@ const LandingPage = () => {
           <Typewriter
             options={{
               autoStart: true,
-              loop: false,
+              loop: true,
               delay: 100,
-              pauseFor: 100000,
+              pauseFor: 10000,
               strings: ["Oasis"],
             }}
           />
         </h1>
-        <p className="text-2xl pl-1">Ready to make your ideas reality?</p>
+        <p className="text-2xl pl-1 text-oasis-blue">
+          Ready to make your ideas reality?
+        </p>
       </div>
     );
   };
   return (
     <>
-      <div className="landingPage h-screen relative">
-        <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd">
+      <div className="landingPage h-[90vh] relative">
+        <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[90vh]">
           {renderText()}
           <a
             onClick={handleClickScroll}
-            className="hover:text-oasis-extra-light text-oasis-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-14 left-1/2 -translate-x-1/2 text-2xl hover:drop-shadow-xl"
+            className="text-oasis-extra-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-24 left-1/2 -translate-x-1/2 text-2xl hover:drop-shadow-xl"
           >
             <li>Learn More</li>
             <ArrowDown className="arrow" />
           </a>
         </div>
       </div>
+      <NavBar />
       <div ref={navRef}>
-        <NavBar />
-        {
-          breakpoint === BREAKPOINT.MOBILE ? <MobileContent /> : <DesktopContent/>
-        }
+        
+        {breakpoint === BREAKPOINT.MOBILE ? (
+          <MobileContent />
+        ) : (
+          <DesktopContent />
+        )}
       </div>
     </>
   );

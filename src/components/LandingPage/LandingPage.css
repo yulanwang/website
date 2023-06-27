@@ -58,3 +58,9 @@ li {
   color: var(--oasis-light);
   margin: 0;
 }
+
+.Typewriter__cursor {
+  font-size: 165px;
+  vertical-align: -5px;
+  transform: translateY(200px);
+}
