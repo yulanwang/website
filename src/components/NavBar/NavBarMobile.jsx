@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-import Logo from '../../../public/images/Logo'
+import Logo from '../common/Logo'
 import Close from '../../../public/images/Close'
 import Burger from '../../../public/images/Burger'
 

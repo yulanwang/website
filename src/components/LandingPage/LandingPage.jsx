@@ -81,7 +81,7 @@ const LandingPage = () => {
   };
   return (
     <>
-      <div className="landingPage h-[90vh] relative">
+      {/* <div className="landingPage h-[90vh] relative">
         <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[90vh]">
           {renderText()}
           <a
@@ -92,10 +92,9 @@ const LandingPage = () => {
             <ArrowDown className="arrow" />
           </a>
         </div>
-      </div>
-      <NavBar />
+      </div> */}
+      {/* <NavBar /> */}
       <div ref={navRef}>
-        
         {breakpoint === BREAKPOINT.MOBILE ? (
           <MobileContent />
         ) : (

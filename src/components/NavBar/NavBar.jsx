@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Logo from "../../../public/images/Logo";
+import Logo from "../common/Logo";
 import { BREAKPOINT } from "../helpers/types";
 import useBreakpoint from "../helpers/userBreakpoint";
 import NavBarMobile from "./NavBarMobile.jsx";
@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function NavBar(isStatic = false) {
   const breakpoint = useBreakpoint();
-
+  
   if (breakpoint === BREAKPOINT.MOBILE)
     return React.createElement(NavBarMobile, { isStatic: isStatic });
   const navStyling = isStatic
@@ -22,7 +22,7 @@ export default function NavBar(isStatic = false) {
       <nav className="navContainer">
         <ul className="logoContainer">
           <Link href="/">
-            <Logo className="logo" />
+            <Logo className="w-10 h-10" />
           </Link>
         </ul>
         <ul className="navLinks">

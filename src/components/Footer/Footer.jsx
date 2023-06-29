@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from '../../../public/images/Logo';
+import Logo from '../common/Logo';
 import LogoGreen from '../../../public/images/GreenLogo.svg';
 import InstagramIcon from '../../../public/images/InstagramIcon';
 import './Footer.css'
