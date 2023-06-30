@@ -19,6 +19,9 @@ module.exports = {
         'oasis-light': '#ecf0f1',
         'oasis-extra-light': '#FFFFFF'
       },
+      fontFamily: {
+        'sans': 'brandon grotesque'
+      }
     },
   },
   variants: {

@@ -1,6 +1,9 @@
+@import url("https://use.typekit.net/bvx7lxn.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --oasis-yellow: theme(colors.oasis-yellow);
@@ -16,10 +19,19 @@
 }
 
 * {
-  font-family: "Brandon Grotesque";
-  font-weight: 420;
+  font-family: "brandon-grotesque";
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: theme(colors.oasis-green)
+}
+
+p {
+  font-weight: 400;
 }
 
 svg {
-   fill: currentColor;
+  fill: currentColor;
 }
