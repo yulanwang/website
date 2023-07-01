@@ -73,7 +73,7 @@ const LandingPage = () => {
             }}
           />
         </h1>
-        <p className="text-2xl pl-1 text-oasis-blue">
+        <p className="text-2xl pl-2 text-oasis-blue">
           Ready to make your ideas reality?
         </p>
       </div>

@@ -1,47 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .landingPageImage {
   background-image: url("../../../public/images/OasisHero2.svg");
-}
-
-.logo {
-  color: var(--oasis-light);
-  margin: 0px auto;
-}
-
-.landgingPage .animatedScrollContainer .bottomRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  z-index: 1;
-}
-
-.arrowContainer {
-  display: flex;
-  margin-top: 8px;
-}
-
-.animatedScrollContainer .bottomRow .dateAndLocation {
-  padding-bottom: 70px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-li {
-  font-family: "Brandon Grotesque";
-  font-style: normal;
-  list-style: none;
-}
-
-.linkContainer h4 {
-  font-family: "Brandon Grotesque";
-  font-style: normal;
-  font-weight: 420;
-  line-height: 40px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  color: var(--oasis-light);
-  margin: 0;
 }
 
 .Typewriter__cursor {

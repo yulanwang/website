@@ -129,14 +129,14 @@ export default function DesktopContent() {
 
   const email = (
     <div className=" text-oasis-blue flex flex-row gap-6 py-32 justify-center">
-      <div className="flex flex-col gap-2 max-w-md">
+      <div className="flex flex-col gap-2 max-w-md w-2/3">
         <h2 className="text-3xl">Join our mailing list!</h2>
         <p>
           Sign up to get the latest updates on Oasis, including application
           dates for both mentors and participants.
         </p>
       </div>
-      <div className="">
+      <div className="w-1/3">
         <p className="text-xl m-1">Enter your email:</p>
         <input
           className="p-2 rounded-lg m-1 hover:ring-2 transition-all duration-150 shadow-sm outline-oasis-green ring-oasis-green"
