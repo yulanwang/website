@@ -7,11 +7,11 @@ import "./page.css";
 import OasisTypewriter from "@/components/OasisTypewriter";
 
 export default function Home() {
-
   const hook = (
     <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage h-[70vh] relative">
-        <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[70vh]">
-          <div className="textSplash absolute bottom-1/3 left-10 text-oasis-blue">
+      <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[70vh] flex flex-col justify-center items-center">
+        <div className="w-full max-w-[96rem] px-16 flex flex-row items-center justify-start">
+          <div className="textSplash bottom-1/3 left-10 text-oasis-blue">
             <OasisTypewriter />
             <p className="text-2xl pl-2 text-oasis-blue">
               Ready to make your ideas reality?
@@ -19,6 +19,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
   );
 
   const about = (
@@ -158,9 +159,7 @@ export default function Home() {
           type="email"
           placeholder="oasisneu@gmail.com"
         />
-        <button
-          className="hover:shadow-md shadow-sm m-1 text-oasis-green hover:ring-2 transition-all duration-150 hover:ring-oasis-green bg-oasis-extra-light font-bold p-2 px-4 rounded-lg w-fit"
-        >
+        <button className="hover:shadow-md shadow-sm m-1 text-oasis-green hover:ring-2 transition-all duration-150 hover:ring-oasis-green bg-oasis-extra-light font-bold p-2 px-4 rounded-lg w-fit">
           Submit
         </button>
       </div>
