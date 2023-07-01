@@ -226,11 +226,12 @@ export default function Home() {
       <NavBar />
       <div className="bg-oasis-light mx-auto">
         <div className="max-w-4xl px-6 mx-auto">
+          {/* I tried merging About and this page since it was unclear how they differentiated. I think we should talk in a meeting about what goes on the homepage. My thought is that the homepage "advertises" our services (normal cohort, explore, resources, mentoring), and then about talks about who Oasis is (history, mission, people). Then more of the "How it works" can move to the subpages, since those are looking a little sparse. Shouldn't be too hard to adjust since everything is just components. */}
           {about}
           {timeline}
-          {/* put projects here */}
           {projects}
-          {numbers}
+          {/* {numbers} */}
+          {/* add a "who we are" */}
           {email}
         </div>
       </div>

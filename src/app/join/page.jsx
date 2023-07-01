@@ -3,11 +3,8 @@
 import React from "react";
 import { useState } from "react";
 
-import Faq from "../../components/faq/faq";
-import ContentBlock from "../../components/common/ContentBlock.jsx";
-import NavBar from "../../components/Navbar/Navbar.jsx";
-import Footer from "../../components/Footer";
-import "./join.css";
+import NavBar from "@/components/NavBar/NavBar";
+import Footer from "@/components/Footer";
 import Sock from "@/components/Sock";
 
 export default function Join() {
@@ -59,8 +56,9 @@ export default function Join() {
         many students we can accept due to a limited number of available
         mentors. This process is subject to change each semester, but this is
         the typical series of events.
-        <br />
-        <b className="text-oasis-green">
+      </p>
+      <p className="mt-1">
+        <b className="text-oasis-green p">
           Acceptance is is first-come-first-serve; it is not based on your
           abilities or background.
         </b>
@@ -107,62 +105,36 @@ export default function Join() {
     </div>
   );
 
-  const JoinFAQ = () => {
-    return (
-      <div className="joinFAQContainer">
-        <ContentBlock title="FAQ" />
-      </div>
-    );
-  };
+  const faqs = (
+    <div className="w-full">
+      <h1>FAQs</h1>
+      {[
+        {
+          q: "How do you assess applications?",
+          a: "We don't asses them in the traditional sense. We pride ourselves on being open to students from all backgrounds and experience levels, so our application is first-come first-serve to keep it simple and fair for everybody.",
+        },
+        {
+          q: "How many students are in a normal cohort?",
+          a: "A typical semester is roughly 80 students. We target 10 mentors each semester, and each mentor takes two groups of four students each.",
+        },
+      ].map(({ q, a }, i) => {
+        const [isOpen, setIsOpen] = useState(false);
 
-  const RenderFaqs = () => {
-    const faqData = [
-      {
-        question: "Lorem ipsum dolor sit amet?",
-        answer: "Bla bla bla.",
-      },
-      {
-        question: "Lorem ipsum dolor sit amet?",
-        answer: "Bla bla bla.",
-      },
-      {
-        question: "Lorem ipsum dolor sit amet?",
-        answer: "Bla bla bla.",
-      },
-      {
-        question: "Lorem ipsum dolor sit amet?",
-        answer: "Bla bla bla.",
-      },
-    ];
-    const [expandedFaq, setExpandedFaq] = useState(null);
-    const expandFaq = (index) => {
-      setExpandedFaq(index);
-    };
-    const minimizeFaq = () => {
-      setExpandedFaq(null);
-    };
-    const handleFaqClick = (index) => {
-      expandedFaq === index ? minimizeFaq() : expandFaq(index);
-    };
-
-    return React.createElement(
-      "div",
-      { className: "faqsContainer" },
-      faqData.map((faq, index) => {
-        return React.createElement(Faq, {
-          key: index,
-          question: faq.question,
-          answer: faq.answer,
-          button: faq === null || faq === void 0 ? void 0 : faq.button,
-          isExpanded: expandedFaq === index,
-          onClick: () => {
-            handleFaqClick(index);
-          },
-          className: faq === null || faq === void 0 ? void 0 : faq.className,
-        });
-      })
-    );
-  };
+        return (
+          <div
+            key={i}
+            className="border-t-2 border-oasis-green-pastel py-4"
+          >
+            <button onClick={() => {setIsOpen(!isOpen)}} className="w-full flex flex-row justify-between items-center">
+              <h4 className="text-xl">{q}</h4>
+              <p className={"px-2 transition-all duration-300 text-oasis-green-pastel" + (isOpen ? " rotate-180 " : " ")}>{isOpen ? "-" : "+"}</p>
+            </button>
+            <p className={"text-lg pt-2 transition-all duration-300 text-oasis-blue" + (isOpen ? "" : " scale-y-0 hidden")}>{a}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 
   return (
     <div className="bg-oasis-light">
@@ -171,8 +143,7 @@ export default function Join() {
         {/* we need something fun up here; maybe a photo collage */}
         {why}
         {timeline}
-        {JoinFAQ()}
-        {RenderFaqs()}
+        {faqs}
         <Sock />
       </div>
       <Footer />
