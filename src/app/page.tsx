@@ -8,12 +8,12 @@ import OasisTypewriter from "@/components/OasisTypewriter";
 
 export default function Home() {
   const hook = (
-    <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage h-[70vh] relative">
-      <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[70vh] flex flex-col justify-center items-center">
-        <div className="w-full max-w-[96rem] px-16 flex flex-row items-center justify-start">
+    <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage min-h-[360px] h-[70vh] relative">
+      <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd min-h-[360px] h-[70vh] flex flex-col justify-center items-center">
+        <div className="w-full min-h-[360px] max-w-[96rem] px-16 flex flex-row items-center justify-start">
           <div className="textSplash bottom-1/3 left-10 text-oasis-blue">
             <OasisTypewriter />
-            <p className="text-2xl pl-2 text-oasis-blue">
+            <p className="text-2xl pl-2 pt-2 text-oasis-blue text-shadow-sm shadow-oasis-light">
               Ready to make your ideas reality?
             </p>
           </div>
