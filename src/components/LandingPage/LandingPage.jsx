@@ -81,8 +81,8 @@ const LandingPage = () => {
   };
   return (
     <>
-      <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage h-[90vh] relative">
-        <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[90vh]">
+      <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage h-[70vh] relative">
+        <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[70vh]">
           {renderText()}
           {/* <a
             onClick={handleClickScroll}
