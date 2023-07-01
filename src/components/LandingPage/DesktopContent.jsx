@@ -1,22 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import CustomImage from "../common/CustomImage";
-// import { container, section1, row, image, text1, text2, col,
-//         section2, reverse, grid, title, timelineContainer, section3} from './DesktopContent.module.scss'
-import Timeline from "../../components/Timeline/Timeline";
-import Card from "../../components/card/Card";
-import ContentBlock from "../../components/common/ContentBlock";
 import OasisImage1 from "../../../public/images/OasisCrowd1.png";
 import OasisImage2 from "../../../public/images/OasisCrowd2.png";
 import Footer from "../../components/Footer/Footer";
-// import Sock from "../../components/Footer/Sock";
 import "./DesktopContent.css";
-import NavBar from "../../components/Navbar/Navbar.jsx";
 
 export default function DesktopContent() {
-  const AboutSection = (
-    <div className="bg-oasis-light">
-      <div className="flex flex-col gap-16">
+  const about = (
+    <div className="bg-oasis-light pt-20">
+      <div className="flex flex-col gap-24">
         <div className="flex flex-row gap-8">
           <div>
             <h1 className="text-6xl mb-3">About</h1>
@@ -56,20 +48,66 @@ export default function DesktopContent() {
     </div>
   );
 
-  const TimelineSection = () => {
-    return (
-      <div className="section2">
-        <ContentBlock title="Semester at a Glance" />
-        <div className="timelineContainer">
-          <Timeline />
+  const timeline = (
+    <div className="flex flex-col items-center pt-28">
+      <h1 className="text-6xl mb-3">Session by Session</h1>
+
+      <div className="max-w-3xl flex items-center justify-center pb-16">
+        <div className="grid grid-cols-9 grid-rows-2">
+          <div className="row-start-1 row-end-3 row-span-1 flex items-center justify-center col-start-1 col-end-10">
+            <div className="w-full mx-4 h-1 bg-oasis-green"></div>
+          </div>
+          <div className="flex flex-row gap-6 row-start-1 row-end-3 row-span-1 col-start-1 col-end-10">
+            {[
+              { num: "0", hook: "Git-ing Started" },
+              { num: "1", hook: "Shoot Your Shot" },
+              { num: "2", hook: "Data for Design" },
+              { num: "3", hook: "Call and Response" },
+              { num: "4", hook: "Data-BASED" },
+              { num: "5", hook: "Mid-Semester Showcase" },
+              { num: "6", hook: "Reeling it in" },
+              { num: "7", hook: "Mindset to Grindset" },
+              { num: "8", hook: "Presentation Preparation" },
+              { num: "D", hook: "Demo Day!" },
+            ].map(({ num, hook }, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center justify-center w-28 group"
+              >
+                <div
+                  className={
+                    "h-20 text-center flex text-sm items-end mb-4" +
+                    (i % 2 === 0 ? " opacity-0 " : "")
+                  }
+                >
+                  {hook}
+                </div>
+                <div
+                  className={
+                    "rounded-full p-2 w-10 h-10 bg-oasis-green-pastel flex items-center justify-center border-2 border-oasis-green shadow-md"
+                  }
+                >
+                  {num}
+                </div>
+                <div
+                  className={
+                    "h-20 text-center flex text-sm items-start mt-4" +
+                    (i % 2 !== 0 ? " opacity-0 " : "")
+                  }
+                >
+                  {hook}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
 
-  const OasisNumbersSection = (
-    <div className="bg-oasis-light flex flex-col items-center pt-24">
-      <h1 className="text-4xl text-oasis-blue mb-8">Oasis by the Numbers</h1>
+  const numbers = (
+    <div className="flex flex-col items-center">
+      <h1 className="text-6xl mb-8">By the Numbers</h1>
       <div className="max-w-3xl flex flex-row gap-16 items-center justify-center">
         {[
           { count: 75, content: "Total Oasis Projects" },
@@ -79,7 +117,7 @@ export default function DesktopContent() {
         ].map((obj, i) => (
           <div
             key={i}
-            className="bg-oasis-green-pastel rounded-3xl flex flex-col items-center justify-center max-w-md w-full p-4 h-48"
+            className="bg-oasis-green-pastel rounded-3xl flex flex-col items-center justify-center max-w-md w-full p-4 h-48 shadow-md"
           >
             <h2 className="text-oasis-blue text-6xl mb-2">{obj.count}</h2>
             <p className="text-oasis-blue text-center">{obj.content}</p>
@@ -89,77 +127,43 @@ export default function DesktopContent() {
     </div>
   );
 
-  const Bottom = () => {
-    return (
-      <div className="section4">
-        {/* <Sock /> */}
-        <Footer />
+  const email = (
+    <div className=" text-oasis-blue flex flex-row gap-6 py-32 justify-center">
+      <div className="flex flex-col gap-2 max-w-md">
+        <h2 className="text-3xl">Join our mailing list!</h2>
+        <p>
+          Sign up to get the latest updates on Oasis, including application
+          dates for both mentors and participants.
+        </p>
       </div>
-    );
-  };
+      <div className="">
+        <p className="text-xl m-1">Enter your email:</p>
+        <input
+          className="p-2 rounded-lg m-1 hover:ring-2 transition-all duration-150 shadow-sm outline-oasis-green ring-oasis-green"
+          type="email"
+          placeholder="oasisneu@gmail.com"
+        />
+        <button
+          className="hover:shadow-md shadow-sm m-1 text-oasis-green hover:ring-2 transition-all duration-150 hover:ring-oasis-green bg-oasis-extra-light font-bold p-2 px-4 rounded-lg w-fit"
+          onClick={() => console.log("Submit pressed")}
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  );
 
   return (
     <div>
       <div className="bg-oasis-light mx-auto">
         <div className="max-w-4xl px-6 mx-auto">
-          {AboutSection}
-          <div className="flex flex-col items-center pt-24">
-            <h1 className="text-4xl text-oasis-blue mb-8">
-              Session by Session
-            </h1>
-
-            <div className="max-w-3xl flex items-center justify-center">
-              <div className="grid grid-cols-9 grid-rows-3">
-                <div className="row-start-1 row-end-3 row-span-1 flex items-center justify-center col-start-1 col-end-10">
-                  <div className="w-full h-1 bg-oasis-green"></div>
-                </div>
-                <div className="flex flex-row gap-6 row-start-1 row-end-3 row-span-1 col-start-1 col-end-10">
-                  {["0", "1", "2", "3", "4", "5", "6", "7", "8", "D"].map(
-                    (char, i) => (
-                      <div>
-                        <div
-                          className={
-                            "rounded-full p-2 w-10 h-10 bg-oasis-green-pastel flex items-center justify-center border-2 border-oasis-green"
-                          }
-                          key={i}
-                        >
-                          {char}
-                        </div>
-                      </div>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* {TimelineSection()} */}
-
-          <div className=" text-oasis-blue flex flex-row gap-6 py-16 justify-center">
-            <div className="flex flex-col gap-2 max-w-md">
-              <h2 className="text-3xl">Join our mailing list!</h2>
-              <p>
-                Sign up to get the latest updates on Oasis, including
-                application dates for both mentors and participants.
-              </p>
-            </div>
-            <div className="">
-              <p className="text-xl m-1">Enter your email:</p>
-              <input
-                className="p-2 rounded-lg m-1 hover:ring-2 outline-oasis-green ring-oasis-green"
-                type="email"
-                placeholder="oasisneu@gmail.com"
-              />
-              <button
-                className="hover:shadow-sm m-1 text-oasis-green hover:ring-2 hover:ring-oasis-green bg-oasis-extra-light font-bold p-2 px-4 rounded-lg w-fit"
-                onClick={() => console.log("Submit pressed")}
-              >
-                Submit
-              </button>
-            </div>
-          </div>
+          {about}
+          {timeline}
+          {numbers}
+          {email}
         </div>
       </div>
-      {Bottom()}
+      <Footer />
     </div>
   );
 }

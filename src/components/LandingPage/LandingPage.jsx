@@ -61,7 +61,7 @@ const LandingPage = () => {
 
   const renderText = () => {
     return (
-      <div className="textSplash absolute bottom-1/2 left-10 text-oasis-blue">
+      <div className="textSplash absolute bottom-1/3 left-10 text-oasis-blue">
         <h1 className="h-[16rem] text-[150px]">
           <Typewriter
             options={{
@@ -81,19 +81,19 @@ const LandingPage = () => {
   };
   return (
     <>
-      {/* <div className="landingPage h-[90vh] relative">
+      <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage h-[90vh] relative">
         <div className="animatedScrollContainer scrollAnimationComplete stickToParentEnd h-[90vh]">
           {renderText()}
-          <a
+          {/* <a
             onClick={handleClickScroll}
-            className="text-oasis-extra-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-24 left-1/2 -translate-x-1/2 text-2xl hover:drop-shadow-xl"
+            className="text-oasis-extra-light linkContainer cursor-pointer flex flex-row items-center gap-2 absolute bottom-12 left-1/2 -translate-x-1/2 text-2xl hover:drop-shadow-xl"
           >
             <li>Learn More</li>
             <ArrowDown className="arrow" />
-          </a>
+          </a> */}
         </div>
-      </div> */}
-      {/* <NavBar /> */}
+      </div>
+      <NavBar />
       <div ref={navRef}>
         {breakpoint === BREAKPOINT.MOBILE ? (
           <MobileContent />
