@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: 40% 40px;
     padding: 64px 128px 64px 128px;
-    background-color: white;
+    background-color: var(--oasis-light);
     transition: background-color 0.1s ease-out;
     cursor: pointer;
-    border-top: 3px solid #002642;
+    border-top: 3px solid var(--oasis-blue);
     justify-content: space-between;
     width: 70%;
     @media screen and (max-width: $breakpoint-mobile),
@@ -23,11 +23,11 @@
     font-weight: 500;
     font-size: 28px;
     margin: 0;
-    color: #002642;
+    color: var(--oasis-blue);
   }
 
   .faqContainer h2 {
-    color: #002642;
+    color: var(--oasis-blue);
     margin: 0;
     font-weight: 500px;
   }
@@ -41,19 +41,19 @@
   }
 
   .faqContainer:hover {
-    background-color: #B8D8CA
+    background-color: var(--oasis-green-pastel);
   }
   .expanded {
     display: grid;
     grid-template-columns: 40% 40px;
     grid-template-rows: 1fr 1fr;
-    background-color: white;
+    background-color: var(--oasis-light);
     column-gap: 64px;
     row-gap: 30px;
   }
 
   .icon {
-    color: black;
+    color: var(--oasis-dark);
     cursor: pointer;
     width: 500%;
   

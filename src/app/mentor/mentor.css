@@ -4,7 +4,7 @@
     row-gap: 100px;
     position: relative;
     padding: 64px 128px 64px 128px;
-    background-color: white;
+    background-color: var(--oasis-light);
     z-index: 1;
 
     @media screen and (min-width: 1000px) {
@@ -42,5 +42,5 @@ span.circleTurquoise {
     height: 73px;
     width: 73px;
     position: absolute;
-    background-color: #B8D8CA;
+    background-color: var(--oasis-green-pastel);
 }

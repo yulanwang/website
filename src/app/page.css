@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landingPageImage {
+  background-image: url("../../public/images/OasisHero2.svg");
+}
+
+.Typewriter__cursor {
+  font-size: 165px;
+  vertical-align: -5px;
+  transform: translateY(200px);
+}

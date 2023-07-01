@@ -6,7 +6,7 @@
   row-gap: 40px;
   position: relative;
   padding: 64px 128px 64px 128px;
-  background-color: white;
+  background-color: var(--oasis-light);
   z-index: 1;
 
   @media screen and (min-width: 1000px) {
@@ -62,7 +62,7 @@ span.circleYellow {
   height: 73px;
   width: 73px;
   position: absolute;
-  background-color: #f2d16b;
+  background-color: var(--oasis-yellow-pastel);
 }
 
 .teamGridContainer {
