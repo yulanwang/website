@@ -4,9 +4,8 @@ import React from 'react'
 
 import TitleBlock from '../../components/common/Title.jsx'
 import ContentBlock from '../../components/common/ContentBlock.jsx'
-import NavBar from '../../components/Navbar/Navbar.jsx'
-import Footer from '../../components/Footer/Footer.jsx'
-import Sock from '../../components/Footer/Sock.jsx'
+import NavBar from '@/components/NavBar/NavBar.jsx'
+import Footer from '@/components/Footer.jsx'
 
 import './mentor.css'
 
@@ -55,7 +54,7 @@ export default function Mentor() {
         <>
             {NavBar()}
             {MentorTopSection()}
-            {Sock()}
+            {/* {Sock()} */}
             {Footer()}
         </>
     )

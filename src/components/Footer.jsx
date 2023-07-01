@@ -1,9 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Logo from "../common/Logo";
-import LogoGreen from "../../../public/images/GreenLogo.svg";
-import InstagramIcon from "../common/InstagramIcon";
-import "./Footer.css";
+import Logo from "./common/Logo";
+import InstagramIcon from "./common/InstagramIcon";
 import Link from "next/link";
 
 export default function Footer() {

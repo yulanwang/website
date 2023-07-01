@@ -46,5 +46,10 @@ module.exports = {
         { values: theme('textShadow') }
       )
     }),
+    plugin(function({ addBase, theme }) {
+      addBase({
+        'h1': {fontSize: theme('fontSize.6xl'), marginBottom: '0.25rem'}
+      })
+    })
   ],
 }

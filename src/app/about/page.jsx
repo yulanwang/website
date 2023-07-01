@@ -5,8 +5,7 @@ import NavBar from '@/components/Navbar/Navbar'
 import ComputerGraphic from "../../../public/images/ComputerGraphic.svg"
 import ContentBlock from '@/components/common/ContentBlock'
 import MemberCard from '@/components/card/MemberCard'
-import Sock from '@/components/Footer/Sock'
-import Footer from '@/components/Footer/Footer'
+import Footer from '@/components/Footer'
 import React from 'react'
 import Image from 'next/image'
 
@@ -94,7 +93,6 @@ export default function About() {
             {renderTop()} 
             {OasisMission()}
             {OasisTeam()}
-            {Sock()}
             {Footer()}
         </>
     )

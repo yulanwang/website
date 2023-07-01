@@ -43,3 +43,7 @@ p {
 svg {
   fill: currentColor;
 }
+
+.windowless {
+  widows: 3;
+}
