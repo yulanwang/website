@@ -4,13 +4,11 @@ import React from "react";
 import { useState } from "react";
 
 import Faq from "../../components/faq/faq";
-import TitleBlock from "../../components/common/Title";
 import ContentBlock from "../../components/common/ContentBlock.jsx";
-import Table from "../../components/Table/Table.jsx";
 import NavBar from "../../components/Navbar/Navbar.jsx";
 import Footer from "../../components/Footer";
 import "./join.css";
-import ProjectCard from "../../components/card/ProjectCard.jsx";
+import Sock from "@/components/Sock";
 
 export default function Join() {
   const why = (
@@ -175,6 +173,7 @@ export default function Join() {
         {timeline}
         {JoinFAQ()}
         {RenderFaqs()}
+        <Sock />
       </div>
       <Footer />
     </div>
