@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .landingPageImage {
-  background-image: url("../../../public/images/OasisHero2.svg");
+  background-image: url("../../public/images/OasisHero2.svg");
 }
 
 .Typewriter__cursor {
