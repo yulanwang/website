@@ -129,7 +129,7 @@ export default function Join() {
               <h4 className="text-xl">{q}</h4>
               <p className={"px-2 transition-all duration-300 text-oasis-green-pastel" + (isOpen ? " rotate-180 " : " ")}>{isOpen ? "-" : "+"}</p>
             </button>
-            <p className={"text-lg pt-2 transition-all duration-300 text-oasis-blue" + (isOpen ? "" : " scale-y-0 hidden")}>{a}</p>
+            <p className={"text-lg pt-2 transition-all duration-300 text-oasis-blue" + (isOpen ? "" : " scale-y-0 h-0 opacity-0 ")}>{a}</p>
           </div>
         );
       })}
