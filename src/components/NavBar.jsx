@@ -1,9 +1,5 @@
 import React from "react";
-import Logo from "../common/Logo";
-// import { BREAKPOINT } from "../helpers/types";
-// import useBreakpoint from "../helpers/userBreakpoint";
-// import NavBarMobile from "./NavBarMobile.jsx";
-// import "./NavBar.css";
+import Logo from "./common/Logo";
 import Link from "next/link";
 
 export default function NavBar() {

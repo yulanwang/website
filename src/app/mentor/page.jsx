@@ -4,7 +4,7 @@ import React from 'react'
 
 import TitleBlock from '../../components/common/Title.jsx'
 import ContentBlock from '../../components/common/ContentBlock.jsx'
-import NavBar from '@/components/NavBar/NavBar.jsx'
+import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer.jsx'
 
 import './mentor.css'
