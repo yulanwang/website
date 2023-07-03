@@ -2,7 +2,7 @@ export default function OasisNumbers() {
   return (
     <div className="flex flex-col items-center pt-8">
       <h1 className="text-6xl mb-8">By the Numbers</h1>
-      <div className="max-w-3xl flex flex-row gap-8 items-center justify-center">
+      <div className="max-w-3xl grid grid-rows-2 grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 gap-8 items-center justify-center">
         {[
           { count: 75, content: "Total Oasis Projects" },
           { count: 278, content: "Total Oasis Participants" },

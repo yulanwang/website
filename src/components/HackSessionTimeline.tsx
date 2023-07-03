@@ -1,9 +1,9 @@
 export default function HackSessionTimeline() {
   return (
-    <div className="flex flex-col items-center pt-28">
+    <div className="flex flex-col items-center pt-28 md:text-left text-center">
       <h1 className="">Session by Session</h1>
 
-      <div className="max-w-3xl flex items-center justify-center pb-16">
+      <div className="max-w-3xl flex items-center justify-center pb-16 md:mt-0 mt-8">
         <div className="grid grid-cols-9 grid-rows-2">
           <div className="row-start-1 row-end-3 row-span-1 flex items-center justify-center col-start-1 col-end-10">
             <div className="md:w-full mx-4 md:h-1 w-1 h-full bg-oasis-yellow"></div>
