@@ -1,99 +1,14 @@
-"use client"
-
-import TitleBlock from '../../components/common/Title'
-import NavBar from '@/components/Navbar'
-import ComputerGraphic from "../../../public/images/ComputerGraphic.svg"
-import ContentBlock from '@/components/common/ContentBlock'
-import MemberCard from '@/components/card/MemberCard'
-import Footer from '@/components/Footer'
-import React from 'react'
-import Image from 'next/image'
-
+import React from "react";
+import Image from "next/image";
+import PageWrapper from "@/components/PageWrapper";
+import HomeAbout from "@/components/HomeAbout";
+import Eboard from "@/components/Eboard";
 
 export default function About() {
-    const renderTop = () => {
-        return (
-            <>
-                <div className='aboutSectionOne'>
-                    <TitleBlock
-                        title="About"
-                        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                        Nemo enim ipsam voluptatem quia voluptas"
-                    />
-                    <Image className='aboutHero' src={ComputerGraphic} />
-
-                </div>
-            </>
-        )
-    }
-
-    const OasisMission = () => {
-        return(
-            <div className='mission'>
-                    <ContentBlock 
-                        title="Mission"
-                    />
-                    <div className='gridMission'>
-                        <div className='row'>
-                            <div className='circlePosition'><span className='circleYellow' /></div>
-                        </div>
-                        <div>
-                            <ContentBlock
-                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt."
-                            />
-                        </div>
-                        <div className='row'>
-                            <div className='circlePosition'><span className='circleYellow' /></div>
-                        </div>
-                        <div>
-                            <ContentBlock
-                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt."
-                            />
-                        </div>
-                        <div className='row'>
-                            <div className='circlePosition'><span className='circleYellow' /></div>
-                        </div>
-                        <div>
-                            <ContentBlock
-                                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua. Nemo enim ipsam voluptatem quia voluptas 
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                                voluptatem sequi nesciunt."
-                            />
-                        </div>
-                    </div>
-            </div>
-        )
-    }
-
-    const OasisTeam = () => {
-        return(
-            <div className='ourTeam'>
-                    <ContentBlock 
-                        title='Our Team'
-                    />
-                    <div className='teamGridContainer'>
-                    <MemberCard />
-                    </div>
-                 
-                </div>
-        )
-    }
-    
-    return (
-        <>
-            {NavBar()}
-            {renderTop()} 
-            {OasisMission()}
-            {OasisTeam()}
-            {Footer()}
-        </>
-    )
+  return (
+    <PageWrapper>
+      <HomeAbout />
+      <Eboard />
+    </PageWrapper>
+  );
 }

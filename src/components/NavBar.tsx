@@ -8,15 +8,16 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar() {
   const destinations = [
-    { name: "About", link: "/#about", target: "_blank" },
-    { name: "Join", link: "/join", target: "_blank" },
-    { name: "Mentor", link: "/mentor", target: "_blank" },
+    { name: "Home", link: "/#about" },
+    { name: "About", link: "/about" },
+    { name: "Join", link: "/join" },
+    { name: "Mentor", link: "/mentor" },
     {
       name: "Resources",
       link: "https://hub.oasisneu.com/resources",
-      target: "_parent",
+      target: "_blank",
     },
-    { name: "Contact", link: "/contact", target: "_blank" },
+    { name: "Contact", link: "/contact" },
   ];
 
   const [dropdown, setDropdown] = useState(false);
@@ -25,7 +26,7 @@ export default function NavBar() {
     <>
       <nav className="sticky top-0 z-50 bg-oasis-green text-oasis-extra-light text-xl flex flex-col items-center justify-center shadow-2xl">
         <div className="flex flex-row justify-between items-center max-w-7xl w-full h-16 px-8">
-          <Link href="/">
+          <Link target="" href="/">
             <Logo className="w-10 h-10 fill-oasis-extra-light hover:drop-shadow-xl drop-shadow-md" />
           </Link>
           <ul className="flex-row sm:flex w-full justify-end hidden ">
