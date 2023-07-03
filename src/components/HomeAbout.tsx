@@ -5,8 +5,8 @@ import OasisImage2 from "../../public/images/OasisCrowd2.png";
 export default function HomeAbout() {
    return (
       <div className="bg-oasis-light pt-20" id="about">
-        <div className="flex flex-col gap-24">
-          <div className="flex flex-row gap-8">
+        <div className={"flex flex-col gap-24"}>
+          <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <div>
               <h1 className="">About</h1>
               <p className="text-xl">
@@ -19,14 +19,14 @@ export default function HomeAbout() {
             </div>
   
             <Image
-              className="shadow-xl object-cover"
+              className="aspect-[4/3] drop-shadow-xl object-scale-down"
               src={OasisImage2}
               alt={"Oasis Hack Session"}
             />
           </div>
-          <div className="flex flex-row gap-8">
+          <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <Image
-              className="shadow-xl object-cover"
+              className="aspect-[4/3] drop-shadow-xl object-scale-down sm:block hidden"
               src={OasisImage1}
               alt={"Oasis Hack Session"}
             />
@@ -50,6 +50,11 @@ export default function HomeAbout() {
                 their subsequent projects.
               </p>
             </div>
+            <Image
+              className="aspect-[4/3] drop-shadow-xl object-scale-down sm:hidden block"
+              src={OasisImage1}
+              alt={"Oasis Hack Session"}
+            />
           </div>
         </div>
       </div>
