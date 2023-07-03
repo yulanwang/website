@@ -1,7 +1,7 @@
 "use client"
 
 import TitleBlock from '../../components/common/Title'
-import NavBar from '@/components/Navbar/Navbar'
+import NavBar from '@/components/Navbar'
 import ComputerGraphic from "../../../public/images/ComputerGraphic.svg"
 import ContentBlock from '@/components/common/ContentBlock'
 import MemberCard from '@/components/card/MemberCard'

@@ -14,7 +14,7 @@ export default function Footer() {
       <ul className="flex flex-col gap-4">
         <li>
           <Link
-            className="hover:drop-shadow-xl  hover:font-semibold hover:font-semibold transition-all duration-150"
+            className="hover:drop-shadow-xl  hover:font-semibold transition-all duration-150"
             href="/"
           >
             Home
