@@ -1,19 +1,23 @@
 export default function Sock() {
   return (
-    <div className="text-oasis-blue flex flex-row gap-6 py-32 w-full justify-center">
-      <div className="flex flex-col gap-2 w-2/3">
+    <div
+      className={
+        "text-oasis-blue flex sm:flex-row flex-col gap-6 py-32 w-full justify-center items-center sm:items-start"
+      }
+    >
+      <div className="flex flex-col gap-2 sm:w-2/3 w-full">
         <h2 className="text-3xl">Join our mailing list!</h2>
         <p>
           Sign up to get the latest updates on Oasis, including application
           dates for both mentors and participants.
         </p>
       </div>
-      <div className="w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-1 ">
+      <div className="sm:w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-1 w-full">
         <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end">
           Enter your email:
         </p>
         <input
-          className="row-start-2 col-start-1 col-span-full md:col-span-5 p-2 rounded-lg hover:ring-2 transition-all duration-150 shadow-sm outline-oasis-green ring-oasis-green"
+          className="row-start-2 col-start-1 col-span-full md:col-span-5 p-2 rounded-lg hover:ring-2 transition-all duration-150 shadow-sm outline-oasis-green ring-oasis-green max-w-[16rem]"
           type="email"
           placeholder="oasisneu@gmail.com"
         />
