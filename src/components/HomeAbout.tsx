@@ -4,7 +4,7 @@ import OasisImage2 from "../../public/images/OasisCrowd2.png";
 
 export default function HomeAbout() {
    return (
-      <div className="bg-oasis-light pt-20" id="about">
+      <div className="bg-oasis-light pt-8" id="about">
         <div className={"flex flex-col gap-24"}>
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <div>

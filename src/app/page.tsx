@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hook />
       <PageWrapper>
-        <HomeAbout />
+        {/* <HomeAbout /> */}
         <HackSessionTimeline />
         <FeaturedProjects />
         <OasisNumbers />
