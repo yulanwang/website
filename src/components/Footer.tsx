@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "./common/Logo";
-import InstagramIcon from "./common/InstagramIcon";
+import Logo from "./Logo";
+import InstagramIcon from "./InstagramIcon";
 import Link from "next/link";
 
 export default function Footer() {
