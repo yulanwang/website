@@ -27,6 +27,10 @@ body {
   font-style: normal;
 }
 
+h3 {
+  @apply text-2xl
+}
+
 h1,
 h2,
 h3,
@@ -36,8 +40,14 @@ h6 {
   color: theme(colors.oasis-green);
 }
 
+b {
+  color: theme(colors.oasis-green);
+  @apply underline;
+}
+
 p {
   font-weight: 400;
+  @apply text-xl
 }
 
 svg {

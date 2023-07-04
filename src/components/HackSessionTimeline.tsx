@@ -12,7 +12,7 @@ export default function HackSessionTimeline() {
             {[
               { num: "0", hook: "Git-ing Started" },
               { num: "1", hook: "Shoot Your Shot" },
-              { num: "2", hook: "Data for Design" },
+              { num: "2", hook: "Data and Design" },
               { num: "3", hook: "(API) Call and Response" },
               { num: "4", hook: "Data-BASED" },
               { num: "5", hook: "Mid-Semester Showcase" },

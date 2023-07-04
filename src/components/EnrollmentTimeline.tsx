@@ -9,7 +9,7 @@ export default function EnrollmentTimeline() {
         the typical series of events.
       </p>
       <p className="mt-1">
-        <b className="text-oasis-green p">
+        <b>
           Acceptance is is first-come-first-serve; it is not based on your
           abilities or background.
         </b>

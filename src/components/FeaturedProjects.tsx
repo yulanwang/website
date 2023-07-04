@@ -21,19 +21,19 @@ export default function FeaturedProjects() {
             {
               title: "How Busy is Marino",
               desc: "Rollup Marino activity over time into graphical predictions for future capacity at Marino!",
-              link: "",
+              link: "https://hub.oasisneu.com/806c07c8bcd142219a01f88015b67497",
               src: Marino,
             },
             {
               title: "Roomie Hub",
               desc: "The essential tool to track chores, groceries, schedules, and more with your roommate!",
-              link: "",
+              link: "https://hub.oasisneu.com/664267296b84424a97e18944eadf74d4",
               src: RoomieHub,
             },
             {
               title: "TransitNU",
               desc: "Help students track the locations of MBTA trains in and around Boston using their API.",
-              link: "",
+              link: "https://hub.oasisneu.com/37f3b4ed2c8c48a6b8b57d309c5480d1",
               src: TransitNU,
             },
           ].map(({ title, desc, link, src }, i) => (
@@ -41,6 +41,7 @@ export default function FeaturedProjects() {
               className="flex flex-col items-center gap-4 sm:max-w-84 sm:min-w-48 sm:text-left text-center hover:bg-oasis-extra-light hover:shadow-md hover:scale-105 transition-all duration-200 p-3 rounded-md group"
               key={i}
               href={link}
+              target="_blank"
             >
               <Image
                 src={src}

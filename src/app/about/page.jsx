@@ -1,13 +1,18 @@
 import React from "react";
-import Image from "next/image";
 import PageWrapper from "@/components/PageWrapper";
-import HomeAbout from "@/components/HomeAbout";
 import Eboard from "@/components/Eboard";
+import AboutBlock from "@/components/AboutBlock";
+import MissionBlock from "@/components/MissionBlock";
+import HistoryBlock from "@/components/HistoryBlock";
 
 export default function About() {
   return (
     <PageWrapper>
-      <HomeAbout />
+      <div className={"flex flex-col gap-24"}>
+        <AboutBlock />
+        <MissionBlock />
+        <HistoryBlock />
+      </div>
       <Eboard />
     </PageWrapper>
   );

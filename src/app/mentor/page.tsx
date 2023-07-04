@@ -30,12 +30,12 @@ export default function Mentor() {
           {
             title: "Who",
             tagline:
-              "Any Northeastern student who has completed at least one computer science co-op",
+              "Any Northeastern student who has started at least one computer science co-op. Both graduate and undergraduate students are welcome!",
           },
           {
             title: "What",
             tagline:
-              "Mentors work with two teams to guide them through their making first web app.",
+              "Mentors work with two teams of four students each to guide them through their making first web apps.",
           },
           {
             title: "Why",

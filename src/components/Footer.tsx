@@ -64,7 +64,7 @@ export default function Footer() {
         </li>
       </ul>
       <ul className="flex flex-col gap-4 items-center">
-        <Link href="/">
+        <Link href="https://www.instagram.com/oasisneu/">
           <div className="rounded-[20px] transition-all duration-150 hover:rounded-[24px] p-2 w-16 h-16 flex flex-col justify-center bg-oasis-light items-center hover:shadow-lg">
             <div className="h-10 w-10 flex flex-col items-center justify-center">
               <InstagramIcon className="fill-oasis-green drop-shadow-lg" />

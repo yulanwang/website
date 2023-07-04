@@ -21,11 +21,11 @@ export default function Eboard() {
             role: "Brand Designer",
             src: "https://media.licdn.com/dms/image/C4D03AQGGDCMyVe9oaw/profile-displayphoto-shrink_400_400/0/1663201359913?e=1694044800&v=beta&t=WdDVU2dnzr3UrQekk7hhTSruSjcS4BuuDX17yteweVk",
           },
-          {
-            name: "Mahima Ramesh",
-            role: "Program Coordinator",
-            src: "https://media.licdn.com/dms/image/C4E03AQEfuwR093BwoA/profile-displayphoto-shrink_400_400/0/1659146927821?e=1694044800&v=beta&t=W_LRM-CRS-GjISMCchLMndVsO1Pkxo4CjYqfKShsOZs",
-          },
+          // {
+          //   name: "Mahima Ramesh",
+          //   role: "Program Coordinator",
+          //   src: "https://media.licdn.com/dms/image/C4E03AQEfuwR093BwoA/profile-displayphoto-shrink_400_400/0/1659146927821?e=1694044800&v=beta&t=W_LRM-CRS-GjISMCchLMndVsO1Pkxo4CjYqfKShsOZs",
+          // },
           {
             name: "Allen Lin",
             role: "Mentor Lead",
