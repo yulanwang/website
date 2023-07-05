@@ -58,7 +58,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <Image src={DecorationImage} height={280} width={480} className="" />
+        <Image src={DecorationImage} alt={"Graphic of computer"} height={280} width={480} className="" />
       </div>
     </PageWrapper>
   );

@@ -24,7 +24,7 @@ export default function ImageParagraph({
           }
           height={240}
           src={image}
-          alt={""}
+          alt={"image to complement adjacent paragraph"}
         />
         <div>
           <h1 className="">{title}</h1>
@@ -37,7 +37,7 @@ export default function ImageParagraph({
           }
           height={240}
           src={image}
-          alt={""}
+          alt={"image to complement adjacent paragraph"}
         />
       </div>
       <div className="flex flex-col md:hidden gap-6 items-center">
@@ -49,7 +49,7 @@ export default function ImageParagraph({
           className="aspect-3/4 drop-shadow-md object-scale-down"
           height={240}
           src={image}
-          alt={""}
+          alt={"image to complement adjacent paragraph"}
         />
       </div>
     </div>
