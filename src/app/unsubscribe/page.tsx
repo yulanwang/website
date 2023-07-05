@@ -10,7 +10,7 @@ import {
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
-export enum LoadingState {
+enum LoadingState {
   Waiting,
   Loading,
   Fail,
