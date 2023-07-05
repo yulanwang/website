@@ -2,10 +2,6 @@
 
 import React from "react";
 
-import TitleBlock from "../../components/common/Title.jsx";
-import ContentBlock from "../../components/common/ContentBlock.jsx";
-import NavBar from "@/components/NavBar";
-
 import "./mentor.css";
 import PageWrapper from "@/components/PageWrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,8 +13,11 @@ export default function Mentor() {
       <h1 className="w-full">Mentor</h1>
       <p>
         Teach participants how to learn the skills they need to bring their
-        projects to life! You'll guide two groups from brainstorming through delivery by teaching them how to research technologies relevant to their project, how to weigh options between features based on deadlines, and you'll help them debug as issues crop up. If you've completed a co-op and are free from 12-2pm
-        on Sundays, then you're ready to mentor.
+        projects to life! You'll guide two groups from brainstorming through
+        delivery by teaching them how to research technologies relevant to their
+        project, how to weigh options between features based on deadlines, and
+        you'll help them debug as issues crop up. If you've completed a co-op
+        and are free from 12-2pm on Sundays, then you're ready to mentor.
       </p>
       <div className="grid md:grid-cols-2 md:grid-rows-2 grid-rows-4 grid-cols-1 gap-8 mt-8">
         {[

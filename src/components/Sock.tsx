@@ -121,26 +121,6 @@ export default function Sock() {
     }
   };
 
-  const statusOutline = (rs: ResponseStatus) => {
-    switch (rs) {
-      case ResponseStatus.AddFailed: {
-        return "ring-rose-500";
-      }
-      case ResponseStatus.Ready: {
-        return "ring-oasis-green-pastel";
-      }
-      case ResponseStatus.SuccessfullyAdded: {
-        return "ring-oasis-green";
-      }
-      case ResponseStatus.Waiting: {
-        return "ring-oasis-yellow";
-      }
-      default: {
-        return "ring-rose-500";
-      }
-    }
-  };
-
   return (
     <div
       className={
@@ -168,6 +148,11 @@ export default function Sock() {
           onChange={(e) => {
             setEmail(e.target.value);
             validateEmail(email);
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              addEmail(email);
+            }
           }}
           value={email}
         />
