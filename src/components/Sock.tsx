@@ -33,7 +33,7 @@ export default function Sock() {
         attr: "placeholder",
         strings: ["oasisneu@gmail.com"],
         typeSpeed: 50,
-        backDelay: 10000,
+        backDelay: 5000,
         loop: true
       });
 
