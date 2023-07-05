@@ -10,11 +10,11 @@ import {
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
-enum LoadingState {
+export enum LoadingState {
   Waiting,
   Loading,
-  Success,
   Fail,
+  Success,
 }
 
 export default function Unsubscribe() {
@@ -68,10 +68,10 @@ export default function Unsubscribe() {
                 className="bg-oasis-light p-2 mr-2 rounded-lg ring-oasis-green outline-oasis-green-pastel"
                 value={email}
                 onChange={(e) => {
-                  if (loading !== LoadingState.Success) {
-                    setLoading(LoadingState.Waiting);
-                    setEmail(e.target.value);
-                  }
+                  // if (loading !== LoadingState.Success) {
+                  setLoading(LoadingState.Waiting);
+                  setEmail(e.target.value);
+                  // }
                 }}
                 placeholder="oasisneu@gmail.com"
               />
@@ -104,9 +104,9 @@ export default function Unsubscribe() {
                   <div
                     className={twMerge(
                       "absolute top-0 right-0 bottom-0 left-0 flex items-center justify-center transition-all duration-300",
-                      loading === LoadingState.Success
+                      /* loading === LoadingState.Success
                         ? ""
-                        : "scale-0 opacity-0"
+                        :  */ "scale-0 opacity-0"
                     )}
                   >
                     <FontAwesomeIcon className="w-6 h-6" icon={faCheckCircle} />
