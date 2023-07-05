@@ -1,5 +1,5 @@
 import ImageParagraph from "./ImageParagraph";
-import KickoffFlyer from "../../public/images/kick off flyer.png"
+import KickoffFlyer from "../../public/images/flyer.png"
 
 export default function HistoryBlock() {
   return (

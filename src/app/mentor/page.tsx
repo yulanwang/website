@@ -2,7 +2,6 @@
 
 import React from "react";
 
-import "./mentor.css";
 import PageWrapper from "@/components/PageWrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
