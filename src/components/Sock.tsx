@@ -32,7 +32,7 @@ export default function Sock() {
       const typed = new Typed(ref.current, {
         attr: "placeholder",
         strings: ["oasisneu@gmail.com"],
-        typeSpeed: 50,
+        typeSpeed: 100,
         backDelay: 5000,
         loop: true
       });
