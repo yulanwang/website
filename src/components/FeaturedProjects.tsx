@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function FeaturedProjects() {
    return (
       <div className="mt-12 mb-24">
-        <h1>Featured Projects</h1>
+        <h1 className="mb-6">Featured Projects</h1>
         <Link
           href="https://hub.oasisneu.com/"
           target="_blank"
