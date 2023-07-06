@@ -14,7 +14,7 @@ export default function NavBar() {
     { name: "Mentor", link: "/mentor" },
     {
       name: "Resources",
-      link: "https://hub.oasisneu.com/resources",
+      link: "/resources",
       target: "_blank",
     },
     { name: "Contact", link: "/contact" },

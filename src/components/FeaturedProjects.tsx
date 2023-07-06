@@ -10,7 +10,7 @@ export default function FeaturedProjects() {
       <div className="mt-12 mb-24">
         <h1 className="mb-6">Featured Projects</h1>
         <Link
-          href="https://hub.oasisneu.com/"
+          href="/projects"
           target="_blank"
           className="p-2 bg-oasis-yellow rounded-lg shadow-sm hover:shadow-md hover:ring-2 ring-oasis-extra-light transition-all duration-150 text-oasis-extra-light"
         >

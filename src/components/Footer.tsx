@@ -49,7 +49,7 @@ export default function Footer() {
         <li>
           <Link
             className="hover:drop-shadow-xl  hover:font-semibold transition-all duration-150"
-            href="https://hub.oasisneu.com/resources"
+            href="/resources"
           >
             Resources
           </Link>
