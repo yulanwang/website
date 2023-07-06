@@ -1,5 +1,5 @@
 import ImageParagraph from "./ImageParagraph";
-import KickoffFlyer from "../../public/images/flyer.png"
+import KickoffFlyer from "../../public/images/flyer.png";
 
 export default function HistoryBlock() {
   return (
@@ -8,10 +8,10 @@ export default function HistoryBlock() {
       body={
         <>
           Oasis was founded in the Fall of 2020 as a Sandbox program. Originally
-          it was just a series of virtual workshops which had time for people to
-          network afterwards. Over time, it's evolved into the project
-          accelerator and larger organization it is today and become an
-          independent club in Spring 2023.
+          it was a series of virtual workshops and a network of mentors and
+          project groups to help each other out. Over time, it's evolved into
+          the project accelerator and larger organization it is today and become
+          an independent club in Spring 2023.
         </>
       }
       image={KickoffFlyer}
