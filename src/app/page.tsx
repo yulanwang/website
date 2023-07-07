@@ -5,7 +5,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import AboutBlock from "@/components/AboutBlock"
 // import HackSessionTimeline from "@/components/HackSessionTimeline";
 // import ProjectSeriesBlock from "@/components/ProjectSeriesBlock";
-import OasisNumbers from "@/components/OasisNumbers";
+// import OasisNumbers from "@/components/OasisNumbers";
 
 export default function Home() {
   return (
