@@ -1,4 +1,5 @@
 import { useState } from "react";
+import JoinFaqQuestion from "./JoinFaqQuestion";
 
 export default function JoinFaqs() {
   return (
@@ -17,48 +18,11 @@ export default function JoinFaqs() {
           q: "Do I have to be at the Info Session?",
           a: "Sort of. We don't require you come to the Info Session, but we would like to warn that it's highly unlikely you'll be able to reserve a spot if you're not because we open Registration at the Info Session.",
         },
-      ].map(({ q, a }, i) => {
-        const [isOpen, setIsOpen] = useState(false);
-
-        return (
-          <div key={i} className="border-t-2 border-oasis-green-pastel py-4">
-            <button
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-              className="w-full flex flex-row justify-between items-center"
-            >
-              <h4 className="text-xl">{q}</h4>{" "}
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div
-                  className={
-                    "absolute flex justify-center items-center top-0 left-0 w-full text-oasis-green-pastel transition-all duration-300" +
-                    (isOpen ? " opacity-0 rotate-180 " : "  ")
-                  }
-                >
-                  +
-                </div>
-                <div
-                  className={
-                    "absolute flex justify-center items-center top-0 left-0 w-full -translate-y-[1.5px] scale-x-150 text-oasis-green-pastel transition-all duration-300" +
-                    (isOpen ? " " : " opacity-0 ")
-                  }
-                >
-                  -
-                </div>
-              </div>
-            </button>
-            <p
-              className={
-                "text-lg pt-2 transition-all duration-300 text-oasis-blue" +
-                (isOpen ? "" : " scale-y-0 h-0 opacity-0 ")
-              }
-            >
-              {a}
-            </p>
-          </div>
-        );
-      })}
+      ].map(({ q, a }, i) => (
+        <div key={i}>
+          <JoinFaqQuestion question={q} answer={a} />
+        </div>
+      ))}
     </div>
   );
 }
