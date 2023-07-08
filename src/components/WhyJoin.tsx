@@ -2,14 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBridge } from "@fortawesome/free-solid-svg-icons";
 import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import strings from "@/app/strings";
 
 export default function WhyJoin() {
   return (
     <div className="w-full">
-      <h1>Why join?</h1>
+      <h1>{strings.WhyJoin.title}</h1>
       <p>
-        With support from our mentors, your group, and the Oasis community,
-        bring your software idea to life.
+        {strings.WhyJoin.tagline}
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pt-16">
         {[

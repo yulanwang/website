@@ -5,21 +5,9 @@ import Logo from "./Logo";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import strings from "@/app/strings";
 
 export default function NavBar() {
-  const destinations = [
-    { name: "Home", link: "/#about" },
-    { name: "About", link: "/about" },
-    { name: "Join", link: "/join" },
-    { name: "Mentor", link: "/mentor" },
-    {
-      name: "Resources",
-      link: "/resources",
-      target: "_blank",
-    },
-    { name: "Contact", link: "/contact" },
-  ];
-
   const [dropdown, setDropdown] = useState(false);
 
   return (
@@ -30,7 +18,7 @@ export default function NavBar() {
             <Logo className="w-10 h-10 fill-oasis-extra-light hover:drop-shadow-xl drop-shadow-md" />
           </Link>
           <ul className="flex-row sm:flex w-full justify-end hidden ">
-            {destinations.map(({ name, link, target }, i) => (
+            {strings.NavBar.destinations.map(({ name, link, target }, i) => (
               <Link
                 className="shadow-sm hover:shadow-md hover:text-oasis-green transition-all duration-150 hover:bg-oasis-green-pastel hover:rounded-md p-2 px-4"
                 href={link}
@@ -58,7 +46,7 @@ export default function NavBar() {
                 (dropdown ? "  " : " scale-0 -translate-y-12 opacity-0 ")
               }
             >
-              {destinations.map(({ name, link, target }, i) => (
+              {strings.NavBar.destinations.map(({ name, link, target }, i) => (
                 <Link
                   className="hover:shadow-md hover:text-oasis-green transition-all duration-150 hover:bg-oasis-green-pastel hover:rounded-md p-2 px-4"
                   href={link}

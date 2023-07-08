@@ -1,5 +1,6 @@
 import OasisTypewriter from "@/components/OasisTypewriter";
 import "./Hook.css"
+import strings from "@/app/strings";
 
 export default function Hook() {
    return (
@@ -9,7 +10,7 @@ export default function Hook() {
             <div className="bottom-1/3 left-10 text-oasis-blue">
               <OasisTypewriter />
               <p className="text-2xl pl-2 pt-4 text-oasis-blue text-shadow-sm shadow-oasis-light">
-                Ready to make your ideas reality?
+                {strings.Hook.tagline}
               </p>
             </div>
           </div>

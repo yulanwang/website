@@ -1,7 +1,9 @@
+import strings from "@/app/strings";
+
 export default function HackSessionTimeline() {
   return (
     <div className="flex flex-col items-center pt-12 md:text-left text-center">
-      <h1 className="">Session by Session</h1>
+      <h1 className="">{strings.HackSessionTimeline.title}</h1>
 
       <div className="max-w-3xl flex items-center justify-center pb-10 md:mt-0 mt-8">
         <div className="grid grid-cols-9 grid-rows-2">
@@ -9,18 +11,7 @@ export default function HackSessionTimeline() {
             <div className="md:w-full mx-4 md:h-1 w-1 h-full bg-oasis-yellow"></div>
           </div>
           <div className="flex flex-col md:flex-row gap-6 row-start-1 row-end-3 row-span-1 col-start-1 col-end-10">
-            {[
-              { num: "0", hook: "Git-ing Started" },
-              { num: "1", hook: "Shoot Your Shot" },
-              { num: "2", hook: "Data and Design" },
-              { num: "3", hook: "(API) Call and Response" },
-              { num: "4", hook: "Data-BASED" },
-              { num: "5", hook: "Mid-Semester Showcase" },
-              { num: "6", hook: "Reeling things in" },
-              { num: "7", hook: "Mindset to Grindset" },
-              { num: "8", hook: "Presentation Preparation" },
-              { num: "D", hook: "Demo Day!" },
-            ].map(({ num, hook }, i) => (
+            {strings.HackSessionTimeline.days.map(({ num, hook }, i) => (
               <div
                 key={i}
                 className="flex flex-row md:flex-col items-center justify-center md:w-28 group relative group h-10 md:h-auto"
