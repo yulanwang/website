@@ -4,9 +4,9 @@ const strings = {
     body: "Oasis helps students learn to build their first website and apps. To do this, we pair you with a team and a mentor, and then teach you the skills you need through Hack Sessions every Sunday. At each Hack Session you receive a 30-minute workshop, and then spend 90 minutes with your team building on your project.",
   },
   ContactBlock: {
-   title: "Contact Us!",
-   headline: "Send us a message!",
-   body: "Have a question we haven't managed to answer? Have a proposition you want us to take a look at? Either send us an "
+    title: "Contact Us!",
+    headline: "Send us a message!",
+    body: "Have a question we haven't managed to answer? Have a proposition you want us to take a look at? Either send us an ",
   },
   Eboard: {
     title: "Our Team",
@@ -157,9 +157,35 @@ const strings = {
     ],
   },
   Logo: {},
+  MentorBlock: {
+    title: "Mentor",
+    body: "Teach participants how to learn the skills they need to bring their projects to life! You'll guide two groups from brainstorming through delivery by teaching them how to research technologies relevant to their project, how to weigh options between features based on deadlines, and you'll help them debug as issues crop up. If you've completed a co-op and are free from 12-2pm on Sundays, then you're ready to mentor.",
+    points: [
+      {
+        title: "Why",
+        tagline:
+          "Teach participants how to learn the skills they need to bring their projects to life! If you've completed a co-op and are free from 12-2pm on Sundays, then you're ready to mentor.",
+      },
+      {
+        title: "Who",
+        tagline:
+          "Any Northeastern student who has started at least one computer science co-op. Both graduate and undergraduate students are welcome!",
+      },
+      {
+        title: "What",
+        tagline:
+          "Mentors work with two teams of four students each to guide them through their making first web apps.",
+      },
+      {
+        title: "Why",
+        tagline:
+          "A low-commitment chance to mentor students and help them make their ideas into reality!",
+      },
+    ],
+  },
   MissionBlock: {},
   NavBar: {
-   destinations: [
+    destinations: [
       { name: "Home", link: "/#about" },
       { name: "About", link: "/about" },
       { name: "Join", link: "/join" },
@@ -170,23 +196,24 @@ const strings = {
         target: "_blank",
       },
       { name: "Contact", link: "/contact" },
-    ]
+    ],
   },
   OasisNumbers: {
-   title: "By the Numbers",
-   stats: [
+    title: "By the Numbers",
+    stats: [
       { count: 72, content: "Total Oasis Projects" },
       { count: 272, content: "Total Oasis Participants" },
       { count: 44, content: "Participants this Semester" },
       { count: 12, content: "Projects this Semester" },
-    ]
+    ],
   },
   OasisTypewriter: {},
   PageWrapper: {},
   Sock: {},
   WhyJoin: {
-   title: "Why join?",
-   tagline: "With support from our mentors, your group, and the Oasis community, bring your software idea to life.",
+    title: "Why join?",
+    tagline:
+      "With support from our mentors, your group, and the Oasis community, bring your software idea to life.",
   },
 };
 
