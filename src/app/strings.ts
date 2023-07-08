@@ -186,7 +186,7 @@ const strings = {
   MissionBlock: {},
   NavBar: {
     destinations: [
-      { name: "Home", link: "/#about" },
+      { name: "Home", link: "/" },
       { name: "About", link: "/about" },
       { name: "Join", link: "/join" },
       { name: "Mentor", link: "/mentor" },
