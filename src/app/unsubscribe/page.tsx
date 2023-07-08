@@ -9,6 +9,7 @@ import {
   faSpinner,
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import strings from "../strings";
 
 enum LoadingState {
   Waiting,
@@ -55,12 +56,12 @@ export default function Unsubscribe() {
     <div className="w-full min-h-screen bg-oasis-light flex flex-col justify-center items-center">
       <div className="max-w-lg bg-oasis-extra-light shadow-lg p-8 rounded-lg">
         <p className="mb-2">
-          Enter your email to unsubscribe from our mailing list.
+          {strings.Unsubscribe.instruction}
         </p>
         <div className="flex flex-row max-w-lg w-full justify-center">
           {loading === LoadingState.Success ? (
             <div className="text-oasis-green">
-              You've been successfully unsubscribed.
+              {strings.Unsubscribe.confirmation}
             </div>
           ) : (
             <>

@@ -209,6 +209,10 @@ const strings = {
   },
   OasisTypewriter: {},
   PageWrapper: {},
+  Unsubscribe: {
+   instruction: "Enter your email to unsubscribe from our mailing list.",
+   confirmation: "You've been successfully unsubscribed."
+  },
   Sock: {},
   WhyJoin: {
     title: "Why join?",
