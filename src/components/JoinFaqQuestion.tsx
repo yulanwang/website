@@ -17,7 +17,7 @@ export default function JoinFaqQuestion({ question, answer }: Props) {
           }}
           className="w-full flex flex-row justify-between items-center"
         >
-          <h4 className="text-xl">{question}</h4>{" "}
+          <h4 className="text-xl text-left">{question}</h4>{" "}
           <div className="relative w-10 h-10 flex items-center justify-center">
             <div
               className={

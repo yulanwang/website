@@ -25,7 +25,7 @@ export default function ContactBlock() {
               !
             </p>
           </div>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4 max-w-fit">
             {[
               {
                 destination: "https://www.instagram.com/oasisneu/",
@@ -58,7 +58,7 @@ export default function ContactBlock() {
         alt={"Graphic of computer"}
         height={280}
         width={480}
-        className=""
+        className="md:mb-0 mb-16"
       />
     </div>
   );

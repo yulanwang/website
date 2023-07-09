@@ -9,10 +9,10 @@ export default function MentorBlock() {
       <p>
         {strings.MentorBlock.body}
       </p>
-      <div className="grid md:grid-cols-2 md:grid-rows-2 grid-rows-4 grid-cols-1 gap-8 mt-8">
+      <div className="md:grid flex flex-col md:grid-cols-2 md:grid-rows-2 grid-rows-4 grid-cols-1 gap-8 mt-8 md:mb-0 mb-16">
         {strings.MentorBlock.points.map(({ title, tagline }, i) => (
           <div
-            className="flex flex-row items-start justify-start gap-4"
+            className="flex flex-row items-start justify-start gap-4 h-fit"
             key={i}
           >
             <FontAwesomeIcon

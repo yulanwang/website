@@ -18,11 +18,11 @@ export default function HackSessionTimeline() {
               >
                 <div
                   className={
-                    "md:h-20 text-center whitespace-nowrap absolute md:top-0 right-0 md:right-auto mr-12 md:mr-0 flex flex-row md:flex-col text-sm items-center gap-2 md:mt-4" +
+                    "md:h-20 text-center sm:whitespace-nowrap absolute md:top-0 right-0 md:right-auto mr-12 md:mr-0 flex flex-row md:flex-col sm:text-sm text-xs items-center gap-2 md:mt-4" +
                     (i % 2 !== 0 ? " hidden " : "")
                   }
                 >
-                  <span className="group-hover:scale-110 duration-200 transition-all">
+                  <span className="group-hover:scale-110 duration-200 transition-all w-16">
                     {hook}
                   </span>
                   <div className="md:w-[2px] h-[2px] rounded-full md:h-8 w-8 bg-oasis-yellow"></div>
@@ -36,7 +36,7 @@ export default function HackSessionTimeline() {
                 </div>
                 <div
                   className={
-                    "md:h-20 text-center whitespace-nowrap absolute md:bottom-0 md:left-auto left-0 ml-12 md:ml-0 flex flex-row md:flex-col text-sm items-center gap-2 md:mt-4" +
+                    "md:h-20 text-center sm:whitespace-nowrap absolute md:bottom-0 md:left-auto left-0 ml-12 md:ml-0 flex flex-row md:flex-col text-xs sm:text-sm items-center gap-2 md:mt-4" +
                     (i % 2 === 0 ? " hidden " : "")
                   }
                 >

@@ -31,7 +31,7 @@ export default function WhyJoin() {
           },
         ].map(({ icon, head, body }, i) => (
           <div
-            className="flex flex-col items-center gap-4 sm:max-w-84 sm:min-w-48 sm:text-left text-center"
+            className="flex flex-col items-center gap-4 sm:max-w-84 sm:min-w-48 sm:text-left text-center sm:mb-0 mb-12"
             key={i}
           >
             <div className="h-16 w-16 rounded-full bg-oasis-yellow-pastel ring-8 ring-oasis-extra-light shadow-lg mb-2 flex items-center justify-center">{icon}</div>

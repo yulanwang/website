@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Eboard() {
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-20 pb-16 sm:pb-0">
       <h1 className="">{strings.Eboard.title}</h1>
       <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-8">
         {strings.Eboard.members.map(({ name, role, src }, i) => (

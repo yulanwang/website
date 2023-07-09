@@ -18,7 +18,6 @@ enum ResponseStatus {
 
 export default function Sock() {
   const [email, setEmail] = useState<string>("");
-  const [placeholder, setPlaceholder] = useState<string>("");
   const [status, setStatus] = useState<ResponseStatus>(ResponseStatus.Waiting);
 
   const selectAll = "*";
@@ -60,10 +59,6 @@ export default function Sock() {
     }
   };
 
-  useEffect(() => {
-    validateEmail(email);
-  }, [email]);
-
   const checkExists = async (email: string) => {
     let { data: emails, error } = await supabase
       .from(dbName)
@@ -103,30 +98,10 @@ export default function Sock() {
     }
   };
 
-  const formatRS = (rs: ResponseStatus) => {
-    switch (rs) {
-      case ResponseStatus.AddFailed: {
-        return "Add Failed";
-      }
-      case ResponseStatus.Ready: {
-        return "Ready";
-      }
-      case ResponseStatus.SuccessfullyAdded: {
-        return "Successfully Added";
-      }
-      case ResponseStatus.Waiting: {
-        return "Waiting";
-      }
-      default: {
-        return "ERROR";
-      }
-    }
-  };
-
   return (
     <div
       className={
-        "text-oasis-blue flex sm:flex-row flex-col gap-6 py-32 w-full justify-center items-center sm:items-start"
+        "text-oasis-blue flex sm:flex-row flex-col gap-6 sm:py-32 pb-24 w-full justify-center items-center sm:items-start"
       }
     >
       <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start">
