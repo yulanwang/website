@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function ContactBlock() {
   return (
-    <div className="flex xl:flex-row flex-col w-full justify-center xl:justify-between xl:gap-12 gap-24 items-center">
-      <div>
+    <div className="flex lg:flex-row flex-col w-full justify-center lg:justify-between lg:gap-12 gap-12 items-center">
+      <div className="w-fit">
         <h1 className="w-full">{strings.ContactBlock.title}</h1>
         <div className="flex flex-col gap-4 w-full">
           <div className="max-w-lg">
@@ -25,7 +25,7 @@ export default function ContactBlock() {
               !
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 max-w-fit">
+          <div className="flex flex-col xs:flex-row gap-4 max-w-fit">
             {[
               {
                 destination: "https://www.instagram.com/oasisneu/",
@@ -58,7 +58,7 @@ export default function ContactBlock() {
         alt={"Graphic of computer"}
         height={280}
         width={480}
-        className="md:mb-0 mb-16"
+        className="xs:mb-0 mb-16 max-w-sm"
       />
     </div>
   );

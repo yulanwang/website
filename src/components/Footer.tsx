@@ -14,13 +14,14 @@ export default function Footer() {
         </Link>
       </ul>
       <ul className="grid xs:grid-cols-2 grid-cols-1 gap-4 w-full max-w-xl px-4">
-        {strings.Footer.links.map(({ title, dest }, i) => (
+        {strings.NavBar.destinations.map(({ name, link, target }, i) => (
           <li key={i} className="w-full xs:text-left text-center">
             <Link
               className="hover:drop-shadow-xl  hover:font-semibold transition-all duration-150"
-              href={dest}
+              href={link}
+              target={target}
             >
-              {title}
+              {name}
             </Link>
           </li>
         ))}

@@ -101,7 +101,7 @@ export default function Sock() {
   return (
     <div
       className={
-        "text-oasis-blue flex sm:flex-row flex-col gap-6 sm:py-32 pb-24 w-full justify-center items-center sm:items-start"
+        "text-oasis-blue flex sm:flex-row flex-col gap-6 py-24 w-full justify-center items-center sm:items-start"
       }
     >
       <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start">
