@@ -7,7 +7,7 @@ import HistoryBlock from "@/components/HistoryBlock";
 
 export default function About() {
   return (
-    <PageWrapper>
+    <PageWrapper active={"About"}>
       <div className={"flex flex-col gap-24"}>
         <AboutBlock />
         <MissionBlock />

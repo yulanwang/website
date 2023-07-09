@@ -6,8 +6,9 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import strings from "@/app/strings";
+import twMerge from "../../twMerge";
 
-export default function NavBar() {
+export default function NavBar({active}: {active: string}) {
   const [dropdown, setDropdown] = useState(false);
 
   return (
@@ -17,10 +18,10 @@ export default function NavBar() {
           <Link target="" href="/">
             <Logo className="w-10 h-10 fill-oasis-extra-light hover:drop-shadow-xl drop-shadow-md" />
           </Link>
-          <ul className="flex-row sm:flex w-full justify-end hidden ">
+          <ul className="flex-row sm:flex w-full justify-end hidden group">
             {strings.NavBar.destinations.map(({ name, link, target }, i) => (
               <Link
-                className="shadow-sm hover:shadow-md hover:text-oasis-green transition-all duration-150 hover:bg-oasis-green-pastel hover:rounded-md p-2 px-4"
+                className={twMerge("shadow-sm hover:shadow-md hover:text-oasis-green transition-all duration-150 hover:bg-oasis-green-pastel hover:rounded-md p-2 px-4", active === name ? "bg-opacity-50 bg-oasis-green-pastel rounded-md " : "")}
                 href={link}
                 target={target}
                 key={i}

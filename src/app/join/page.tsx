@@ -10,7 +10,7 @@ import HackSessionTimeline from "@/components/HackSessionTimeline";
 
 export default function Join() {
   return (
-    <PageWrapper>
+    <PageWrapper active={"Join"}>
       <WhyJoin />
       <EnrollmentTimeline />
       <HackSessionTimeline />

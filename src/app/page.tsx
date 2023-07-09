@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hook />
-      <PageWrapper>
+      <PageWrapper active="Home">
         <AboutBlock />
         <FeaturedProjects />
       </PageWrapper>

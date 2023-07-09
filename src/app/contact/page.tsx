@@ -5,7 +5,7 @@ import ContactBlock from "@/components/ContactBlock";
 
 export default function Contact() {
   return (
-    <PageWrapper>
+    <PageWrapper active={"Contact"}>
       <ContactBlock />
     </PageWrapper>
   );

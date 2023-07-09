@@ -9,7 +9,7 @@ import MentorBlock from "@/components/MentorBlock";
 
 export default function Mentor() {
   return (
-    <PageWrapper>
+    <PageWrapper active={"Mentor"}>
       <MentorBlock />
     </PageWrapper>
   );
