@@ -2,11 +2,13 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
 
-{
-  /* You've made it to the /HS-0 Page
-  All directions can be found here -> */
-}
+/*
+ * You've made it to the Hack Session 0 page! This is the page that is displayed when you visit https://oasisneu.com/hs-0
+ *
+ * If you're stuck, ask questions! Step by step directions can be found here -> _____
+ */
 
+// CHANGE YOUR GROUP MEMBER'S DATA HERE!
 const members = [
   {
     name: "Laith Taher",
@@ -38,6 +40,7 @@ const members = [
   },
 ];
 
+// The only code that should be changed below this line is on line 51.
 export default function HS0() {
   return (
     <div className="bg-[#ECF0F1]">
@@ -45,7 +48,8 @@ export default function HS0() {
       <div className="flex flex-col justify-start mt-8 mb-12">
         <h1 className="mx-auto"> 🌴 Hack Session 0 🌴</h1>
         <h3 className=" mx-auto mb-12 text-4xl">Git-ting Started</h3>
-        <h3 className=" mx-auto text-5xl mb-4">Group #</h3>
+        <h3 className=" mx-auto text-5xl mb-4">Group #</h3>{" "}
+        {/* Insert your group number after the # */}
         <div className="mx-auto flex content-center justify-center pt-6">
           <div className="grid justify-center gap-x-6 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-8">
             {members.map((member) => (
