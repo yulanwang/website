@@ -8,7 +8,7 @@ import Image from "next/image";
  * If you're stuck, ask questions! Step by step directions can be found here -> _____
  */
 
-// CHANGE YOUR GROUP MEMBER'S DATA HERE!
+// Change your group's data here!
 const members = [
   {
     name: "Laith Taher",
@@ -43,19 +43,19 @@ const members = [
 // The only code that should be changed below this line is on line 51.
 export default function HS0() {
   return (
-    <div className="bg-[#ECF0F1]">
+    <div className="bg-oasis-light">
       <NavBar active="" />
       <div className="flex flex-col justify-start mt-8 mb-12">
         <h1 className="mx-auto"> 🌴 Hack Session 0 🌴</h1>
         <h3 className=" mx-auto mb-12 text-4xl">Git-ting Started</h3>
-        <h3 className=" mx-auto text-5xl mb-4">Group #</h3>{" "}
+        <h3 className=" mx-auto text-5xl mb-4">Group #</h3>
         {/* Insert your group number after the # */}
         <div className="mx-auto flex content-center justify-center pt-6">
           <div className="grid justify-center gap-x-6 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-8">
             {members.map((member) => (
               <div
                 key={member.name}
-                className="flex h-[110px] w-[310px] flex-col rounded-lg border border-[#f0c237] p-2 bg-[#f2d16b]"
+                className="flex h-[110px] w-[310px] flex-col rounded-lg border border-oasis-yellow p-2 bg-oasis-yellow-pastel"
               >
                 <div className="flex items-center mt-2 mb-2">
                   <Image
@@ -68,7 +68,7 @@ export default function HS0() {
                   <div className="ml-3">
                     <div className="font-bold text-xl">{member.name}</div>
                     <div>{member.graduatingYear}</div>
-                    <p className="text-md text-gray-700">{member.major}</p>
+                    <p className="text-md">{member.major}</p>
                   </div>
                 </div>
               </div>
