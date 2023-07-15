@@ -83,7 +83,7 @@ const strings = {
       {
         title: "How Busy is Marino",
         desc: "Rollup Marino activity over time into graphical predictions for future capacity at Marino!",
-        link: "https://hub.oasisneu.com/806c07c8bcd142219a01f88015b67497",
+        link: "https://www.notion.so/How-Busy-Is-Marino-806c07c8bcd142219a01f88015b67497?pvs=4",
         src: "/images/Projects/HowBusyIsMarino.png",
         width: 874,
         height: 308,
@@ -91,7 +91,7 @@ const strings = {
       {
         title: "Roomie Hub",
         desc: "The essential tool to track chores, groceries, schedules, and more with your roommate!",
-        link: "https://hub.oasisneu.com/664267296b84424a97e18944eadf74d4",
+        link: "https://www.notion.so/Roomie-Hub-664267296b84424a97e18944eadf74d4?pvs=4",
         src: "/images/Projects/RoomieHub.png",
         width: 1670,
         height: 1214,
@@ -99,7 +99,7 @@ const strings = {
       {
         title: "TransitNU",
         desc: "Help students track the locations of MBTA trains in and around Boston using their API.",
-        link: "https://hub.oasisneu.com/37f3b4ed2c8c48a6b8b57d309c5480d1",
+        link: "https://www.notion.so/TransitNU-37f3b4ed2c8c48a6b8b57d309c5480d1?pvs=4",
         src: "/images/Projects/TransitNU.png",
         width: 506,
         height: 434,
