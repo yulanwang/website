@@ -5,10 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function MentorBlock() {
   return (
     <>
-      <h1 className="w-full">{strings.MentorBlock.title}</h1>
-      <p>
-        {strings.MentorBlock.body}
-      </p>
       <div className="md:grid flex flex-col md:grid-cols-2 md:grid-rows-2 grid-rows-4 grid-cols-1 gap-8 mt-8 md:mb-0 mb-16">
         {strings.MentorBlock.points.map(({ title, tagline }, i) => (
           <div
