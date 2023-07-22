@@ -1,8 +1,11 @@
+import AlertCard from "./AlertCard";
 import BannerCard from "./BannerCard";
+import Logo from "./Logo";
 
 export default function MentorAppsBanner() {
   return (
-    <BannerCard
+    <div>
+      <AlertCard
       title={"Mentor Applications are open!!"}
       body={
         <>
@@ -16,5 +19,6 @@ export default function MentorAppsBanner() {
         "https://docs.google.com/forms/d/e/1FAIpQLScRNM6L61jOBsWZZLRXU75EVRcrYAjEFxN-NC6wIHqdwhSW2Q/viewform?usp=sf_link"
       }
     />
+    </div>
   );
 }
