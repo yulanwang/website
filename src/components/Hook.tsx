@@ -2,14 +2,15 @@ import React from "react";
 import OasisTypewriter from "@/components/OasisTypewriter";
 import "./Hook.css";
 import strings from "@/app/strings";
-import MentorAppsBanner from "./MentorAppsBanner";
+import MentorAppsAlert from "./MentorAppsAlert";
 
 export default function Hook() {
   return (
     <div className="bg-no-repeat overflow-hidden bg-cover landingPageImage min-h-[360px] h-[91.5vh] relative">
       <div className="absolute top-0 right-0 mt-0 mr-10 ml-10">
-        <MentorAppsBanner />
+        <MentorAppsAlert />
       </div>
+
       <div className="min-h-[360px] h-[70vh] flex flex-col justify-end items-center"> {/* Change justify-center to justify-end */}
         <div className="w-full min-h-[300px] max-w-[96rem] px-16 flex flex-row items-center justify-start relative">
           <div className="bottom-1/6 xs:left-10 xs:text-left text-center left-0 right-0 text-oasis-blue"> {/* Adjust bottom value */}

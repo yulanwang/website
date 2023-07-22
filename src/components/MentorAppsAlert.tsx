@@ -1,9 +1,9 @@
-import BannerCard from "./BannerCard";
+import AlertCard from "./AlertCard";
 
-export default function MentorAppsBanner() {
+export default function MentorAppsAlert() {
   return (
     <div>
-      <BannerCard
+      <AlertCard
         title={"Mentor Applications are open!!"}
         body={
           <>
@@ -15,6 +15,10 @@ export default function MentorAppsBanner() {
         buttonTitle={"Click Here to Apply!"}
         href={
           "https://docs.google.com/forms/d/e/1FAIpQLScRNM6L61jOBsWZZLRXU75EVRcrYAjEFxN-NC6wIHqdwhSW2Q/viewform?usp=sf_link"
+        }
+        extraButtonTitle={"Learn More"}
+        extraButtonHref={
+          "/mentor"
         }
       />
     </div>

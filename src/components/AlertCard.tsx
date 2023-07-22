@@ -7,9 +7,18 @@ interface Props {
   body: ReactNode;
   buttonTitle: string;
   href: string;
+  extraButtonTitle?: string; 
+  extraButtonHref?: string; 
 }
 
-export default function AlertCard({ title, body, buttonTitle, href }: Props) {
+export default function AlertCard({
+  title,
+  body,
+  buttonTitle,
+  href,
+  extraButtonTitle,
+  extraButtonHref,
+}: Props) {
   const cardStyle = {
     maxWidth: "450px", // Set the maximum width here
     width: "100%", // Set to 100% to make it responsive
@@ -22,12 +31,17 @@ export default function AlertCard({ title, body, buttonTitle, href }: Props) {
     >
       <div className="flex items-center">
         <div>
-            <Image src="/alert.ico" alt="Alert" width={30} height={30} />
+          <Image src="/alert.svg" alt="Alert" width={30} height={30} />
         </div>
         <h3 className="text-3xl text-oasis-blue ml-2">{title}</h3>
       </div>
       <p>{body}</p>
-      <PrimaryButton href={href}>{buttonTitle}</PrimaryButton>
+      <div className="flex gap-4">
+        <PrimaryButton href={href}>{buttonTitle}</PrimaryButton>
+        {extraButtonTitle && extraButtonHref && (
+          <PrimaryButton href={extraButtonHref}>{extraButtonTitle}</PrimaryButton>
+        )}
+      </div>
     </div>
   );
 }
