@@ -136,7 +136,7 @@ const strings = {
     body: "Oasis was founded in the Fall of 2020 as a Sandbox program. Originally it was a series of virtual workshops and a network of mentors and project groups to help each other out. Over time, it's evolved into the project accelerator and larger organization it is today and became an independent club in Spring 2023.",
   },
   Hook: {
-    tagline: "Ready to make your ideas reality!",
+    tagline: "Ready to make your ideas reality?",
   },
   ImageParagraph: {},
   JoinFaqQuestion: {},
