@@ -24,7 +24,7 @@ export default function OasisTypewriter() {
   }, [])
 
   return (
-    <h1 className="sm:h-[220px] sm:text-[150px] text-[80px]">
+    <h1 className="sm:h-[220px] sm:text-[150px] xs:text-[80px] text-[64px]">
       <span ref={ref}></span>
     </h1>
   );
