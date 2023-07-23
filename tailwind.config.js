@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      transitionProperty: {
-        size: "width, height",
-      },
       screens: { xs: "480px" },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
