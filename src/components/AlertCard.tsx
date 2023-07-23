@@ -33,9 +33,10 @@ export default function AlertCard({
         <div>
           <Image src="/alert.svg" alt="Alert" width={30} height={30} />
         </div>
-        <h3 className="text-3xl text-oasis-blue ml-2">{title}</h3>
+        <h3 className="sm:text-[30px] xs:text-[25px] text-oasis-blue ml-2" >{title}</h3>
       </div>
-      <p>{body}</p>
+      {/* <p>{body}</p> */}
+      <p className="sm:text-[20px] xs:text-[17px] xs:leading-[1.3]">{body}</p>
       <div className="flex gap-4">
         <PrimaryButton href={href}>{buttonTitle}</PrimaryButton>
         {extraButtonTitle && extraButtonHref && (
