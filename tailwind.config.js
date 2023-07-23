@@ -21,7 +21,7 @@ module.exports = {
         "oasis-yellow-pastel": "#f2d16b",
         "oasis-green": "#397367",
         "oasis-green-pastel": "#a7cdbd",
-        "oasis-blue": "#002642",
+        "oasis-blue": "#2F4168",
         "oasis-extra-dark": "#000000",
         "oasis-dark": "#1e2019",
         "oasis-gray": "#6e7e85",
