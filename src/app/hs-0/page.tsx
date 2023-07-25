@@ -46,7 +46,7 @@ export default function HS0() {
     <div className="bg-oasis-light">
       <NavBar active="" />
       <div className="flex flex-col justify-start mt-8 mb-12">
-        <h1 className="mx-auto"> 🌴 Hack Session 0 🌴</h1>
+        <h1 className="mx-auto">🌴 Hack Session 0 🌴</h1>
         <h3 className=" mx-auto mb-12 text-4xl">Git-ting Started</h3>
         <h3 className=" mx-auto text-5xl mb-4">Group #</h3>
         {/* Insert your group number after the # */}
