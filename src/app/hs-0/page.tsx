@@ -15,28 +15,28 @@ const members = [
     major: "Computer Science",
     graduatingYear: "2026",
     image:
-      "https://oasisneu.com/_ipx/w_256,q_75/https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA&w=256&q=75",
+      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
   },
   {
     name: "Laith Taher",
     major: "Computer Science",
     graduatingYear: "2026",
     image:
-      "https://oasisneu.com/_ipx/w_256,q_75/https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA&w=256&q=75",
+      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
   },
   {
     name: "Laith Taher",
     major: "Computer Science",
     graduatingYear: "2026",
     image:
-      "https://oasisneu.com/_ipx/w_256,q_75/https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA&w=256&q=75",
+      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
   },
   {
     name: "Laith Taher",
     major: "Computer Science",
     graduatingYear: "2026",
     image:
-      "https://oasisneu.com/_ipx/w_256,q_75/https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA?url=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD4E03AQECes9egjScKw%2Fprofile-displayphoto-shrink_400_400%2F0%2F1668552656586%3Fe%3D1694044800%26v%3Dbeta%26t%3DLNNNVXFMaGa36fNqeW0T5PJ7H2Mtwl_QfpEPkCGEQzA&w=256&q=75",
+      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
   },
 ];
 

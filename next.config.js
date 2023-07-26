@@ -2,7 +2,6 @@
 nextConfig = {
   images: {
     remotePatterns: [{ hostname: "media.licdn.com" }],
-    domains: ["oasisneu.com"],
   },
   // async redirects() {
   //   return [
