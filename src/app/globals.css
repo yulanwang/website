@@ -31,6 +31,7 @@ h3 {
   @apply text-2xl
 }
 
+
 h1,
 h2,
 h3,
@@ -38,6 +39,10 @@ h4,
 h5,
 h6 {
   color: theme(colors.oasis-green);
+}
+
+h1 {
+  @apply text-6xl mb-[0.25rem]
 }
 
 b {

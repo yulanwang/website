@@ -4,7 +4,7 @@ import strings from "@/app/strings";
 
 export default function FeaturedProjects() {
   return (
-    <div className="mt-12 mb-24">
+    <div className="mt-24 mb-24">
       <h1 className="mb-6">{strings.FeaturedProjects.title}</h1>
       <Link
         href="/projects"
