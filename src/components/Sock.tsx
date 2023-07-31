@@ -101,7 +101,7 @@ export default function Sock() {
   return (
     <div
       className={
-        "text-oasis-blue flex sm:flex-row flex-col gap-6 py-24 w-full justify-center items-center sm:items-start"
+        "flex sm:flex-row flex-col gap-6 py-24 px-6 pr-10 w-full justify-center items-center sm:items-start dark:bg-oasis-dark bg-oasis-green-pastel"
       }
     >
       <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start">
@@ -112,7 +112,7 @@ export default function Sock() {
         </p>
       </div>
       <div className="sm:w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-2 w-full">
-        <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end justify-center md:justify-start">
+        <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end justify-center md:justify-start ">
           Enter your email:
         </p>
         <input
@@ -135,7 +135,7 @@ export default function Sock() {
         />
         <button
           className={
-            "row-start-3 md:row-start-2 md:col-end-7 text-oasis-green disabled:text-oasis-green-pastel bg-oasis-extra-light font-bold p-2 px-4 rounded-lg col-span-7 mx-auto md:mx-0 md:col-start-auto w-fit disabled:ring-0 transition-all duration-200 active:bg-oasis-light active:shadow-lg focus:ring-0 "
+            "row-start-3 md:row-start-2 md:col-end-7 text-oasis-green disabled:text-oasis-green-pastel bg-oasis-extra-light font-bold p-2 px-4 rounded-lg col-span-7 mx-auto md:mx-0 md:col-start-auto w-fit disabled:ring-0 transition-all duration-200 active:bg-oasis-light active:shadow-lg focus:ring-0 cursor-pointer"
           }
           disabled={status !== ResponseStatus.Ready}
           onClick={() => {
@@ -145,7 +145,7 @@ export default function Sock() {
           <div className="relative">
             <div
               className={
-                "transition-all duration-100 " +
+                "transition-all duration-100 text-oasis-green" +
                 (status !== ResponseStatus.SuccessfullyAdded &&
                 status !== ResponseStatus.AddFailed
                   ? ""

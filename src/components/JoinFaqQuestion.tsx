@@ -20,7 +20,7 @@ export default function JoinFaqQuestion({ question, answer }: Props) {
           <h4 className="text-xl text-left">{question}</h4>{" "}
           <div className="relative w-10 h-10 flex items-center justify-center">
             <div
-            data-isOpen={isOpen}
+              data-isOpen={isOpen}
               className={
                 "absolute flex justify-center items-center top-0 left-0 w-full text-oasis-green-pastel transition-all duration-300 data-[isOpen=true]:opacity-0 data-[isOpen=true]:rotate-180"
               }
@@ -28,7 +28,7 @@ export default function JoinFaqQuestion({ question, answer }: Props) {
               +
             </div>
             <div
-            data-isOpen={isOpen}
+              data-isOpen={isOpen}
               className={
                 "absolute flex justify-center items-center top-0 left-0 w-full -translate-y-[1.5px] scale-x-150 text-oasis-green-pastel transition-all duration-300 data-[isOpen=false]:opacity-0 data-[isOpen=false]:rotate-270"
               }
@@ -38,9 +38,9 @@ export default function JoinFaqQuestion({ question, answer }: Props) {
           </div>
         </button>
         <p
-        data-isOpen={isOpen}
+          data-isOpen={isOpen}
           className={
-            "text-lg pt-2 transition-all duration-300 text-oasis-blue data-[isOpen=false]:scale-y-0 data-[isOpen=false]:opacity-0 data-[isOpen=false]:max-h-0 max-h-[180px] data-[isOpen=true]:pb-4 origin-top"
+            "text-lg pt-2 transition-all duration-300 data-[isOpen=false]:scale-y-0 data-[isOpen=false]:opacity-0 data-[isOpen=false]:max-h-0 max-h-[180px] data-[isOpen=true]:pb-4 origin-top"
           }
         >
           {answer}

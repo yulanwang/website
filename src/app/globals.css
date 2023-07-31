@@ -47,7 +47,7 @@ b {
 
 p {
   font-weight: 400;
-  @apply text-xl
+  @apply text-xl dark:text-oasis-light text-oasis-dark
 }
 
 svg {
