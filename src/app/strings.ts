@@ -1,7 +1,7 @@
 const strings = {
   AboutBlock: {
     title: "What's Oasis?",
-    body: "Oasis is an eight-week program that helps students learn to build their first website or app, no experience required!. To do this, we pair you with a team and a mentor, and teach you the skills you need through Hack Sessions every Sunday. At each Hack Session you receive a 30-minute workshop, and then spend 90 minutes with your team building your project.",
+    body: "Oasis is an eight-week program that helps students learn to build their first website or app, no experience required! To do this, we pair you with a team and a mentor, and teach you the skills you need through Hack Sessions every Sunday. At each Hack Session you receive a 30-minute workshop, and then spend 90 minutes with your team building your project.",
   },
   ContactBlock: {
     title: "Contact Us!",
