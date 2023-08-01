@@ -12,7 +12,7 @@ export default function MentorBlock() {
             key={i}
           >
             <FontAwesomeIcon
-              className="p-2 bg-oasis-green-pastel ring-4 ring-oasis-extra-light h-4 w-4 flex items-center justify-center rounded-full text-oasis-green"
+              className="p-2 bg-oa-green-pastel ring-4 ring-oa-extra-light h-4 w-4 flex items-center justify-center rounded-full text-oa-green"
               icon={faCheck}
             />
             <div>

@@ -43,7 +43,7 @@ const members = [
 // The only code that should be changed below this line is on line 51.
 export default function HS0() {
   return (
-    <div className="bg-oasis-light">
+    <div className="bg-oa-light">
       <NavBar active="" />
       <div className="flex flex-col justify-start mt-8 mb-12">
         <h1 className="mx-auto">🌴 Hack Session 0 🌴</h1>
@@ -55,7 +55,7 @@ export default function HS0() {
             {members.map((member) => (
               <div
                 key={member.name}
-                className="flex h-[110px] w-[310px] flex-col rounded-lg border border-oasis-yellow p-2 bg-oasis-yellow-pastel"
+                className="flex h-[110px] w-[310px] flex-col rounded-lg border border-oa-yellow p-2 bg-oa-yellow-pastel"
               >
                 <div className="flex items-center mt-2 mb-2">
                   <Image

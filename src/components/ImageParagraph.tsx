@@ -15,7 +15,7 @@ export default function ImageParagraph({
   placement,
 }: Props) {
   return (
-    <div className="">
+    <div className="my-8">
       <div className="flex-row gap-6 hidden md:flex items-start">
         <Image
           className={

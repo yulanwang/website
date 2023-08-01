@@ -41,10 +41,10 @@ export default function ContactBlock() {
               <Link
                 key={i}
                 href={destination}
-                className="flex flex-row items-center gap-2 bg-oasis-extra-light p-3 rounded-lg group hover:shadow-lg shadow-md transition-all duration-200 hover:ring-2 ring-oasis-green"
+                className="flex flex-row items-center gap-2 bg-oa-extra-light p-3 rounded-lg group hover:shadow-lg shadow-md transition-all duration-200 hover:ring-2 ring-oa-green"
               >
                 <FontAwesomeIcon
-                  className="text-oasis-green text-2xl rounded-lg"
+                  className="text-oa-green text-2xl rounded-lg"
                   icon={icon}
                 />
                 <h4 className="rounded-lg">{text}</h4>

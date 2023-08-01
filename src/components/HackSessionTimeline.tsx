@@ -8,7 +8,7 @@ export default function HackSessionTimeline() {
       <div className="max-w-3xl flex items-center justify-center pb-10 md:mt-0 mt-8">
         <div className="grid grid-cols-9 grid-rows-2">
           <div className="row-start-1 row-end-3 row-span-1 flex items-center justify-center col-start-1 col-end-10">
-            <div className="md:w-full mx-4 md:h-1 w-1 h-full bg-oasis-yellow"></div>
+            <div className="md:w-full mx-4 md:h-1 w-1 h-full bg-oa-yellow"></div>
           </div>
           <div className="flex flex-col md:flex-row gap-6 row-start-1 row-end-3 row-span-1 col-start-1 col-end-10">
             {strings.HackSessionTimeline.days.map(({ num, hook }, i) => (
@@ -25,11 +25,11 @@ export default function HackSessionTimeline() {
                   <span className="group-hover:scale-110 duration-200 transition-all w-16">
                     {hook}
                   </span>
-                  <div className="md:w-[2px] h-[2px] rounded-full md:h-8 w-8 bg-oasis-yellow"></div>
+                  <div className="md:w-[2px] h-[2px] rounded-full md:h-8 w-8 bg-oa-yellow"></div>
                 </div>
                 <div
                   className={
-                    "rounded-full p-2 w-10 h-10 bg-oasis-extra-light flex items-center justify-center border-0 border-oasis-green shadow-md text-oasis-yellow my-24 group-hover:scale-110 duration-200 transition-all"
+                    "rounded-full p-2 w-10 h-10 bg-oa-extra-light flex items-center justify-center border-0 border-oa-green shadow-md text-oa-yellow my-24 group-hover:scale-110 duration-200 transition-all"
                   }
                 >
                   {num}
@@ -40,7 +40,7 @@ export default function HackSessionTimeline() {
                     (i % 2 === 0 ? " hidden " : "")
                   }
                 >
-                  <div className="group-hover:scale-110 duration-200 transition-all h-[2px] md:w-[2px] rounded-full md:h-8 w-8 bg-oasis-yellow"></div>
+                  <div className="group-hover:scale-110 duration-200 transition-all h-[2px] md:w-[2px] rounded-full md:h-8 w-8 bg-oa-yellow"></div>
                   <span className="group-hover:scale-110 duration-200 transition-all">
                     {hook}
                   </span>

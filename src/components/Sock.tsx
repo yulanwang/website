@@ -101,81 +101,83 @@ export default function Sock() {
   return (
     <div
       className={
-        "text-oasis-blue flex sm:flex-row flex-col gap-6 py-24 w-full justify-center items-center sm:items-start"
+        "py-24 w-full px-6 bg-oa-green-pastel"
       }
     >
-      <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start">
-        <h2 className="text-3xl">Join our mailing list!</h2>
-        <p className="text-center sm:text-left">
-          Sign up to get the latest updates on Oasis, including application
-          dates for both mentors and participants.
-        </p>
-      </div>
-      <div className="sm:w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-2 w-full">
-        <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end justify-center md:justify-start">
-          Enter your email:
-        </p>
-        <input
-          className={
-            "row-start-2 col-start-1 col-span-full mx-auto md:mx-0 md:min-w-0 min-w-[14rem] md:col-span-5 p-2 rounded-lg max-w-[16rem] outline-none transition-all duration-200 "
-          }
-          type="email"
-          ref={ref}
-          placeholder="oasisneu@gmail.com"
-          onChange={(e) => {
-            setEmail(e.target.value);
-            validateEmail(email);
-          }}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              addEmail(email);
+      <div className="text-oa-blue flex sm:flex-row flex-col gap-6 mx-auto justify-center items-center sm:items-start bg-oa-green-pastel max-w-6xl">
+        <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start ">
+          <h2 className="text-3xl">Join our mailing list!</h2>
+          <p className="text-center sm:text-left">
+            Sign up to get the latest updates on Oasis, including application
+            dates for both mentors and participants.
+          </p>
+        </div>
+        <div className="sm:w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-2 w-full">
+          <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end justify-center md:justify-start">
+            Enter your email:
+          </p>
+          <input
+            className={
+              "row-start-2 col-start-1 col-span-full mx-auto md:mx-0 md:min-w-0 min-w-[14rem] md:col-span-5 p-2 rounded-lg max-w-[16rem] outline-none transition-all duration-200 "
             }
-          }}
-          value={email}
-        />
-        <button
-          className={
-            "row-start-3 md:row-start-2 md:col-end-7 text-oasis-green disabled:text-oasis-green-pastel bg-oasis-extra-light font-bold p-2 px-4 rounded-lg col-span-7 mx-auto md:mx-0 md:col-start-auto w-fit disabled:ring-0 transition-all duration-200 active:bg-oasis-light active:shadow-lg focus:ring-0 "
-          }
-          disabled={status !== ResponseStatus.Ready}
-          onClick={() => {
-            addEmail(email);
-          }}
-        >
-          <div className="relative">
-            <div
-              className={
-                "transition-all duration-100 " +
-                (status !== ResponseStatus.SuccessfullyAdded &&
-                status !== ResponseStatus.AddFailed
-                  ? ""
-                  : "opacity-0 scale-0 ")
+            type="email"
+            ref={ref}
+            placeholder="oasisneu@gmail.com"
+            onChange={(e) => {
+              setEmail(e.target.value);
+              validateEmail(email);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                addEmail(email);
               }
-            >
-              Submit
+            }}
+            value={email}
+          />
+          <button
+            className={
+              "row-start-3 md:row-start-2 md:col-end-7 text-oa-green disabled:text-oa-green-pastel bg-oa-extra-light font-bold p-2 px-4 rounded-lg col-span-7 mx-auto md:mx-0 md:col-start-auto w-fit disabled:ring-0 transition-all duration-200 active:bg-oa-light active:shadow-lg focus:ring-0 "
+            }
+            disabled={status !== ResponseStatus.Ready}
+            onClick={() => {
+              addEmail(email);
+            }}
+          >
+            <div className="relative">
+              <div
+                className={
+                  "transition-all duration-100 " +
+                  (status !== ResponseStatus.SuccessfullyAdded &&
+                  status !== ResponseStatus.AddFailed
+                    ? ""
+                    : "opacity-0 scale-0 ")
+                }
+              >
+                Submit
+              </div>
+              <div
+                className={
+                  "absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-all duration-300 text-oa-green " +
+                  (status === ResponseStatus.SuccessfullyAdded
+                    ? ""
+                    : "opacity-0 scale-0 ")
+                }
+              >
+                <FontAwesomeIcon icon={faCheckCircle} />
+              </div>
+              <div
+                className={
+                  "absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-all duration-300 text-rose-500 " +
+                  (status === ResponseStatus.AddFailed
+                    ? ""
+                    : "opacity-0 scale-0 ")
+                }
+              >
+                <FontAwesomeIcon icon={faXmarkCircle} />
+              </div>
             </div>
-            <div
-              className={
-                "absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-all duration-300 text-oasis-green " +
-                (status === ResponseStatus.SuccessfullyAdded
-                  ? ""
-                  : "opacity-0 scale-0 ")
-              }
-            >
-              <FontAwesomeIcon icon={faCheckCircle} />
-            </div>
-            <div
-              className={
-                "absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center transition-all duration-300 text-rose-500 " +
-                (status === ResponseStatus.AddFailed
-                  ? ""
-                  : "opacity-0 scale-0 ")
-              }
-            >
-              <FontAwesomeIcon icon={faXmarkCircle} />
-            </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   );
