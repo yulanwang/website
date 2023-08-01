@@ -1,7 +1,7 @@
 const strings = {
   AboutBlock: {
     title: "What's Oasis?",
-    body: "Oasis helps students learn to build their first website and apps. To do this, we pair you with a team and a mentor, and then teach you the skills you need through Hack Sessions every Sunday. At each Hack Session you receive a 30-minute workshop, and then spend 90 minutes with your team building on your project.",
+    body: "Oasis is an eight-week program that helps students learn to build their first website or app, no experience required!. To do this, we pair you with a team and a mentor, and teach you the skills you need through Hack Sessions every Sunday. At each Hack Session you receive a 30-minute workshop, and then spend 90 minutes with your team building your project.",
   },
   ContactBlock: {
     title: "Contact Us!",
@@ -48,13 +48,13 @@ const strings = {
     title: "Enrollment Timeline",
     body: "Each semester we welcome a new cohort of students. We're limited in how many students we can accept due to a limited number of available mentors. This process is subject to change each semester, but this is the typical series of events.",
     headline:
-      "Acceptance is is first-come-first-serve; it is not based on your abilities or background.",
+      "Acceptance is is first-come-first-serve; it is not based on your technical experience or background.",
     steps: [
       {
         num: "1",
         tag: "Info Session + Registration",
         time: "1st Sunday of the semester",
-        desc: "Learn more about what Oasis is, our Hack Session timeline, new changes for this year, and meet our Eboard. At the end of the Info Session, Registration will open. It's unlikely you'll be able to join if you're not at the Info Session.",
+        desc: "Learn more about what Oasis is, our Hack Session timeline, new changes for this year, and meet our Eboard. At the end of the Info Session, Registration will open. Please keep in mind that it is unlikely you'll be able to join if you're not present at the Info Session.",
       },
       {
         num: "2",
@@ -153,6 +153,14 @@ const strings = {
       {
         q: "Do I have to be at the Info Session?",
         a: "Sort of. We don't require you come to the Info Session, but we would like to warn that it's highly unlikely you'll be able to reserve a spot if you're not because we open Registration at the Info Session.",
+      },
+      // {
+      //   q: "What technologies and languages will I learn with Oasis?",
+      //   a: "TO DO",
+      // },
+      {
+        q: "What is the expected weekly time commitment?",
+        a: "We require that all students be present at each Sunday at the two-hour Hack Sessions. You're welcome to work on your project outside of that team if you would like, but it's not required. ",
       },
     ],
   },

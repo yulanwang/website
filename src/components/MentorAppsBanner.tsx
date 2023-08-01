@@ -15,6 +15,8 @@ export default function MentorAppsBanner() {
       href={
         "https://docs.google.com/forms/d/e/1FAIpQLScRNM6L61jOBsWZZLRXU75EVRcrYAjEFxN-NC6wIHqdwhSW2Q/viewform?usp=sf_link"
       }
+      // secondButtonTitle="Learn More"
+      // secondHref="/mentor"
     />
   );
 }
