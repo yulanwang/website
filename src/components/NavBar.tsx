@@ -18,7 +18,7 @@ export default function NavBar({active}: {active: string}) {
           <Link target="" href="/">
             <Logo className="w-10 h-10 fill-oa-extra-light hover:drop-shadow-xl drop-shadow-md" />
           </Link>
-          <ul className="flex-row md:flex w-full justify-end hidden group gap-1">
+          <ul className="flex-row lg:flex w-full justify-end hidden group gap-1">
             {strings.NavBar.destinations.map(({ name, link, target }, i) => (
               <Link
                 className={twMerge("shadow-sm hover:shadow-md hover:text-oa-green transition-all duration-150 hover:bg-oa-green-pastel hover:rounded-md p-2 px-4", active === name ? "bg-opacity-50 bg-oa-green-pastel rounded-md " : "")}
@@ -31,7 +31,7 @@ export default function NavBar({active}: {active: string}) {
             ))}
           </ul>
           <div
-          className="relative pt-3 pb-2 pl-16 visible md:hidden"
+          className="relative pt-3 pb-2 pl-16 visible lg:hidden"
             onMouseOver={() => setDropdown(true)}
             onMouseLeave={() => setDropdown(false)}
           >
@@ -43,7 +43,7 @@ export default function NavBar({active}: {active: string}) {
             </div>
             <ul
               className={
-                "absolute right-0 mt-1 flex-col md:hidden flex p-2 rounded-md bg-oa-extra-light transition-all duration-300 origin-top-right text-oa-green shadow-md" +
+                "absolute right-0 mt-1 flex-col lg:hidden flex p-2 rounded-md bg-oa-extra-light transition-all duration-300 origin-top-right text-oa-green shadow-md" +
                 (dropdown ? "  " : " scale-0 -translate-y-12 opacity-0 ")
               }
             >

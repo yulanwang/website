@@ -10,8 +10,8 @@ import Link from "next/link";
 export default function SeriesBlock() {
   return (
     <div className="w-full my-16 flex items-center justify-center">
-      <div className="flex md:flex-row flex-col gap-6 w-full md:items-stretch items-center">
-        <div className="rounded-lg bg-oa-green-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
+      <div className="flex md:flex-row flex-col gap-8 w-full md:items-stretch items-center justify-center">
+        <div className="rounded-lg bg-oa-green-pastel md:w-1/2 w-full max-w-md p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
           <div>
             <h1 className="text-center mb-2">{strings.Series.project}</h1>
             <p className="font-medium text-left text-oa-green">
@@ -29,7 +29,7 @@ export default function SeriesBlock() {
             {strings.Series.projectButton}
           </Link>
         </div>
-        <div className="rounded-lg bg-ex-blue-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
+        <div className="rounded-lg bg-ex-blue-pastel md:w-1/2 w-full max-w-md p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
           <div className="/join/explore">
             <h1 className="text-center text-ex-dark mb-4">{strings.Series.explorer}</h1>
             <p className="font-medium text-left text-ex-blue-dark">
