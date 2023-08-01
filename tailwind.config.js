@@ -27,12 +27,12 @@ module.exports = {
         "oasis-gray": "#6e7e85",
         "oa-light": "#ecf0f1",
         "oa-extra-light": "#FFFFFF",
-        "ex-dark": "#365F9E",
-        "ex-blue-dark": "#4482B6",
-        "ex-blue": "#64A4D5",
-        "ex-blue-pastel": "#C3E2EB",
-        "ex-orange": "#E7D190",
-        "ex-orange-pastel": "#EAB874",
+        "ex-dark": "#195BA8",
+        "ex-blue-dark": "#0B78B6",
+        "ex-blue": "#4DaDe2",
+        "ex-blue-pastel": "#C1Ebf4",
+        "ex-orange": "#f5d88c",
+        "ex-orange-pastel": "#ffbc6d",
 
       },
       fontFamily: {
