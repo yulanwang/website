@@ -196,7 +196,8 @@ const strings = {
     destinations: [
       { name: "Home", link: "/" },
       { name: "About", link: "/about" },
-      { name: "Join", link: "/join" },
+      { name: "Project Series", link: "/join" },
+      { name: "Explorer Series", link: "/join/explorer" },
       { name: "Mentor", link: "/mentor" },
       {
         name: "Resources",
@@ -221,12 +222,26 @@ const strings = {
    instruction: "Enter your email to unsubscribe from our mailing list.",
    confirmation: "You've been successfully unsubscribed."
   },
-  Sock: {},
+  Sock: {
+    title: "Join our mailing list!",
+    body: "Sign up to get the latest updates on Oasis, including application dates for both mentors and participants.",
+    call: "Enter your email:"
+  },
   WhyJoin: {
     title: "Why join?",
     tagline:
       "With support from our mentors, your group, and the Oasis community, bring your software idea to life.",
   },
+  Series: {
+    project: "Project Series",
+    projectBody: "A semester-long curriculum to help you build your first full-stack project!",
+    projectSecondary: "Join the cohort at the start of each semester.",
+    projectButton: "Join the cohort!",
+    explorer: "Explorer Series",
+    explorerBody: "Workshops, employer events, networking, and more!",
+    explorerSecondary: "Open to all, no application required.",
+    explorerButton: "Find the next event!"
+  }
 };
 
 export default strings;

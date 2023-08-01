@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function ContactBlock() {
   return (
-    <div className="flex lg:flex-row flex-col w-full justify-center lg:justify-between lg:gap-12 gap-12 items-center">
+    <div className="flex lg:flex-row flex-col mt-12 w-full justify-center lg:justify-between lg:gap-12 gap-12 items-center">
       <div className="w-fit">
         <h1 className="w-full">{strings.ContactBlock.title}</h1>
         <div className="flex flex-col gap-4 w-full">

@@ -1,43 +1,50 @@
+import strings from "@/app/strings";
 import {
   faLightbulb,
   faProjectDiagram,
   faRocket,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function SeriesBlock() {
   return (
     <div className="w-full my-16 flex items-center justify-center">
-      <div className="flex md:flex-row flex-col gap-4 w-full items-stretch">
-        <div className="rounded-lg bg-oa-green-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between">
+      <div className="flex md:flex-row flex-col gap-6 w-full md:items-stretch items-center">
+        <div className="rounded-lg bg-oa-green-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
           <div>
-            <h1 className="text-center mb-2">Project Series</h1>
+            <h1 className="text-center mb-2">{strings.Series.project}</h1>
             <p className="font-medium text-left text-oa-green">
-              A semester-long curriculum to help you build your first full-stack
-              project!
+              {strings.Series.projectBody}
               <br />
               <i className="italic font-normal">
-                Join the cohort at the start of each semester.
+                {strings.Series.projectSecondary}
               </i>
             </p>
           </div>
-          <a href="/join" className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-oa-green p-2 px-4">
-            Learn More
-          </a>
+          <Link
+            href="/join"
+            className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-lg transition-all duration-150 text-oa-extra-light bg-oa-green p-2 px-4"
+          >
+            {strings.Series.projectButton}
+          </Link>
         </div>
-        <div className="rounded-lg bg-ex-blue-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between">
+        <div className="rounded-lg bg-ex-blue-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between shadow-md">
           <div className="/join/explore">
-            <h1 className="text-center text-ex-dark mb-4">Explorer Series</h1>
+            <h1 className="text-center text-ex-dark mb-4">{strings.Series.explorer}</h1>
             <p className="font-medium text-left text-ex-blue-dark">
-              Workshops, employer events, networking, and more!
+              {strings.Series.explorerBody}
               <br />
               <i className="italic font-normal">
-                Open to all, no application required.
+                {strings.Series.explorerSecondary}
               </i>
             </p>
           </div>
-          <a href="/join/explore" className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-ex-dark p-2 px-4">
-            Learn More
+          <a
+            href="/join/explore"
+            className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-lg transition-all duration-150 text-oa-extra-light bg-ex-dark p-2 px-4"
+          >
+            {strings.Series.explorerButton}
           </a>
         </div>
       </div>

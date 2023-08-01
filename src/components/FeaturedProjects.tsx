@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
                 height={height}
                 className="aspect-square object-contain bg-oa-extra-light rounded-md group-hover:shadow-md"
               />
-              <div className="group-hover:bg-oa-light rounded-md p-2">
+              <div className="group-hover:bg-oa-light flex-1 rounded-md p-2">
                 <h3 className="text-xl">{title}</h3>
                 <p className="text-lg">{desc}</p>
               </div>

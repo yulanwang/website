@@ -8,6 +8,7 @@ import {
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import Typed from "typed.js";
+import strings from "@/app/strings";
 
 enum ResponseStatus {
   Waiting,
@@ -106,15 +107,14 @@ export default function Sock() {
     >
       <div className="text-oa-blue flex sm:flex-row flex-col gap-6 mx-auto justify-center items-center sm:items-start bg-oa-green-pastel max-w-6xl">
         <div className="flex flex-col gap-2 sm:w-2/3 w-full items-center sm:items-start ">
-          <h2 className="text-3xl">Join our mailing list!</h2>
+          <h2 className="text-3xl">{strings.Sock.title}</h2>
           <p className="text-center sm:text-left">
-            Sign up to get the latest updates on Oasis, including application
-            dates for both mentors and participants.
+            {strings.Sock.body}
           </p>
         </div>
         <div className="sm:w-1/3 grid grid-cols-7 md:grid-rows-2 grid-rows-3 gap-2 w-full">
           <p className="text-xl col-start-1 col-span-full row-start-1 flex flex-row items-end justify-center md:justify-start">
-            Enter your email:
+            {strings.Sock.call}
           </p>
           <input
             className={
