@@ -21,12 +21,12 @@ export default function SeriesBlock() {
               </i>
             </p>
           </div>
-          <button className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-oa-green p-2 px-4">
+          <a href="/join" className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-oa-green p-2 px-4">
             Learn More
-          </button>
+          </a>
         </div>
         <div className="rounded-lg bg-ex-blue-pastel w-1/2 p-4 py-6 flex flex-col gap-6 justify-between">
-          <div className="">
+          <div className="/join/explore">
             <h1 className="text-center text-ex-dark mb-4">Explorer Series</h1>
             <p className="font-medium text-left text-ex-blue-dark">
               Workshops, employer events, networking, and more!
@@ -36,9 +36,9 @@ export default function SeriesBlock() {
               </i>
             </p>
           </div>
-          <button className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-ex-dark p-2 px-4">
+          <a href="/join/explore" className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-xl transition-all duration-150 text-oa-extra-light bg-ex-dark p-2 px-4">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </div>
