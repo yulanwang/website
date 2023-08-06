@@ -16,7 +16,7 @@ body {
   --oa-blue: theme(colors.oa-blue);
   --oa-extra-dark: theme(colors.oa-extra-dark);
   --oa-dark: theme(colors.oa-dark);
-  --oasis-gray: theme(colors.oasis-gray);
+  --oa-gray: theme(colors.oa-gray);
   --oa-light: theme(colors.oa-light);
   --oa-extra-light: theme(colors.oa-extra-light);
 }

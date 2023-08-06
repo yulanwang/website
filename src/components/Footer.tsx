@@ -4,6 +4,7 @@ import Link from "next/link";
 import strings from "@/app/strings";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Footer() {
   return (
@@ -37,10 +38,20 @@ export default function Footer() {
             </div>
           </div>
         </Link>
-        <Link href="/">
+        {/* <Link href="/">
           <div className="rounded-[20px] transition-all duration-150 hover:rounded-[24px] p-2  xs:w-16 w-10 xs:h-16 h-10 bg-oa-light flex flex-col justify-center items-center hover:shadow-lg">
             <div className="xs:h-10 h-6 xs:w-10 w-6 flex flex-col items-center justify-center">
               <Logo className="fill-oa-green drop-shadow-lg" />
+            </div>
+          </div>
+        </Link> */}
+        <Link href="mailto:oasisneu@gmail.com">
+          <div className="rounded-[20px] transition-all duration-150 hover:rounded-[24px] p-2 xs:w-16 w-10 xs:h-16 h-10 flex flex-col justify-center bg-oa-light items-center hover:shadow-lg">
+            <div className="flex flex-col items-center justify-center">
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="xs:h-10 h-6 xs:w-10 w-6 text-xl text-oa-green drop-shadow-lg"
+              />
             </div>
           </div>
         </Link>

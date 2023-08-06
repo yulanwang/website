@@ -24,7 +24,7 @@ module.exports = {
         "oa-blue": "#002642",
         "oa-extra-dark": "#000000",
         "oa-dark": "#1e2019",
-        "oasis-gray": "#6e7e85",
+        "oa-gray": "#6e7e85",
         "oa-light": "#ecf0f1",
         "oa-extra-light": "#FFFFFF",
         "ex-dark": "#195BA8",

@@ -195,7 +195,7 @@ const strings = {
   NavBar: {
     destinations: [
       { name: "Home", link: "/" },
-      { name: "About", link: "/about" },
+      // { name: "About", link: "/about" },
       { name: "Project Series", link: "/join" },
       { name: "Explorer Series", link: "/join/explorer" },
       { name: "Mentor", link: "/mentor" },
@@ -204,7 +204,7 @@ const strings = {
         link: "/resources",
         target: "_blank",
       },
-      { name: "Contact", link: "/contact" },
+      // { name: "Contact", link: "/contact" },
     ],
   },
   OasisNumbers: {

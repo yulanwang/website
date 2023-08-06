@@ -17,9 +17,9 @@ export default function EnrollmentTimeline() {
             <h3 className="flex items-center mb-1 text-lg font-semibold">
               {tag}
             </h3>
-            <time className="block mb-2 text-sm font-normal leading-none text-oasis-gray">
+            <div className="block mb-2 text-sm font-normal leading-none text-oa-gray">
               {time}
-            </time>
+            </div>
             <p className="mb-4 text-base font-normal text-oa-blue">{desc}</p>
           </div>
         ))}
