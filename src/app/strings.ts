@@ -197,7 +197,7 @@ const strings = {
       { name: "Home", link: "/" },
       // { name: "About", link: "/about" },
       { name: "Project Series", link: "/join" },
-      { name: "Explorer Series", link: "/join/explorer" },
+      { name: "Explorer Series", link: "/explorer" },
       { name: "Mentor", link: "/mentor" },
       {
         name: "Resources",
@@ -219,13 +219,13 @@ const strings = {
   OasisTypewriter: {},
   PageWrapper: {},
   Unsubscribe: {
-   instruction: "Enter your email to unsubscribe from our mailing list.",
-   confirmation: "You've been successfully unsubscribed."
+    instruction: "Enter your email to unsubscribe from our mailing list.",
+    confirmation: "You've been successfully unsubscribed.",
   },
   Sock: {
     title: "Join our mailing list!",
     body: "Sign up to get the latest updates on Oasis, including application dates for both mentors and participants.",
-    call: "Enter your email:"
+    call: "Enter your email:",
   },
   WhyJoin: {
     title: "Why join?",
@@ -234,14 +234,15 @@ const strings = {
   },
   Series: {
     project: "Project Series",
-    projectBody: "A semester-long curriculum to help you build your first full-stack project!",
+    projectBody:
+      "A semester-long curriculum to help you build your first full-stack project!",
     projectSecondary: "Join the cohort at the start of each semester.",
     projectButton: "Join the cohort!",
     explorer: "Explorer Series",
     explorerBody: "Workshops, employer events, networking, and more!",
     explorerSecondary: "Open to all, no application required.",
-    explorerButton: "Find the next event!"
-  }
+    explorerButton: "Find the next event!",
+  },
 };
 
 export default strings;

@@ -9,7 +9,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 export default function Footer() {
   return (
     <footer className="flex flex-row justify-around bg-oa-green text-xl text-oa-light py-12 pb-20 px-4">
-      <ul className="flex flex-col items-center">
+      <ul className="flex flex-col items-center pr-8">
         <Link href="/">
           <Logo className="xs:h-24 xs:w-24 h-10 w-10 fill-oa-light hover:drop-shadow-xl transition-all duration-150" />
         </Link>

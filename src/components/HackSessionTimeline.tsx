@@ -22,7 +22,7 @@ export default function HackSessionTimeline() {
                     (i % 2 !== 0 ? " hidden " : "")
                   }
                 >
-                  <span className="group-hover:scale-110 duration-200 transition-all w-16">
+                  <span className="group-hover:scale-110 duration-200 transition-all">
                     {hook}
                   </span>
                   <div className="md:w-[2px] h-[2px] rounded-full md:h-8 w-8 bg-oa-yellow"></div>

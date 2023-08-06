@@ -43,7 +43,7 @@ export default function SeriesBlock() {
               </p>
             </div>
             <Link
-              href="/join/explore"
+              href="/explorer"
               className="mx-auto ring-2 ring-oa-extra-light rounded-lg shadow-md hover:ring-4 hover:shadow-lg transition-all duration-150 z-20 text-oa-extra-light bg-ex-dark p-2 px-4"
             >
               {strings.Series.explorerButton}
