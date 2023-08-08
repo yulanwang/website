@@ -1,21 +1,6 @@
 import BannerCard from "./BannerCard";
 
-export default function MentorAppsBanner({
-  hideLearnMore,
-}: {
-  hideLearnMore?: boolean;
-}) {
-  const buttons = [
-    {
-      buttonTitle: "Click Here to Apply!",
-      href: "https://docs.google.com/forms/d/e/1FAIpQLScRNM6L61jOBsWZZLRXU75EVRcrYAjEFxN-NC6wIHqdwhSW2Q/viewform?usp=sf_link",
-    },
-    {
-      buttonTitle: "Learn more",
-      href: "/mentor",
-    },
-  ];
-
+export default function MentorAppsBanner() {
   return (
     <BannerCard
       title={"Mentor Applications are open!!"}
@@ -26,7 +11,12 @@ export default function MentorAppsBanner({
           <b className="text-oasis-blue italic">Friday, September 1st</b>.
         </>
       }
-      buttons={hideLearnMore ? buttons.slice(0, 1) : buttons.slice(0, 2)}
+      buttonTitle={"Click Here to Apply!"}
+      href={
+        "https://docs.google.com/forms/d/e/1FAIpQLScRNM6L61jOBsWZZLRXU75EVRcrYAjEFxN-NC6wIHqdwhSW2Q/viewform?usp=sf_link"
+      }
+      // secondButtonTitle="Learn More"
+      // secondHref="/mentor"
     />
   );
 }

@@ -14,7 +14,7 @@ export default function Mentor() {
   return (
     <PageWrapper active={"Mentor"}>
       <MentorHeader />
-      <MentorAppsBanner hideLearnMore={true} />
+      <MentorAppsBanner />
       <MentorBlock />
     </PageWrapper>
   );
