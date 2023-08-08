@@ -7,6 +7,7 @@ import EnrollmentTimeline from "@/components/EnrollmentTimeline";
 import JoinFaqs from "@/components/JoinFaqs";
 import PageWrapper from "@/components/PageWrapper";
 import HackSessionTimeline from "@/components/HackSessionTimeline";
+import FeaturedProjects from "@/components/FeaturedProjects";
 
 export default function Join() {
   return (
@@ -15,6 +16,7 @@ export default function Join() {
       <EnrollmentTimeline />
       <HackSessionTimeline />
       <JoinFaqs />
+      <FeaturedProjects />
     </PageWrapper>
   );
 }
