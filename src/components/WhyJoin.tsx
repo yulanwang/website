@@ -7,7 +7,7 @@ import strings from "@/app/strings";
 export default function WhyJoin() {
   return (
     <div className="w-full">
-      <h1>{strings.WhyJoin.title}</h1>
+      <h1 className="mb-4">{strings.WhyJoin.title}</h1>
       <p>
         {strings.WhyJoin.tagline}
       </p>
