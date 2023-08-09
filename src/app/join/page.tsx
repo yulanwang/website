@@ -12,7 +12,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 export default function Join() {
   return (
     <PageWrapper active={"Project Series"}>
-      <h1 className="my-4">What's the Project Series?</h1>
+      <h1 className="my-4">{"What's the Project Series?"}</h1>
       <p className="mb-12">
         Originally the only Oasis offering, the Project Series is a one-semester
         curriculum focused on building a web app alongside a team of fellow
