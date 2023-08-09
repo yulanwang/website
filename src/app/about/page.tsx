@@ -8,11 +8,9 @@ import HistoryBlock from "@/components/HistoryBlock";
 export default function About() {
   return (
     <PageWrapper active={"About"}>
-      <div className={"flex flex-col gap-24"}>
-        <AboutBlock />
-        <MissionBlock />
-        <HistoryBlock />
-      </div>
+      <AboutBlock />
+      <MissionBlock />
+      <HistoryBlock />
       <Eboard />
     </PageWrapper>
   );

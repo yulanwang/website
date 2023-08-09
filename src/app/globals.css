@@ -5,20 +5,20 @@
 @tailwind utilities;
 
 body {
-  background-color: theme(colors.oasis-green);
+  background-color: theme(colors.oa-green);
 }
 
 :root {
-  --oasis-yellow: theme(colors.oasis-yellow);
-  --oasis-yellow-pastel: theme(colors.oasis-yellow-pastel);
-  --oasis-green: theme(colors.oasis-green);
-  --oasis-green-pastel: theme(colors.oasis-green-pastel);
-  --oasis-blue: theme(colors.oasis-blue);
-  --oasis-extra-dark: theme(colors.oasis-extra-dark);
-  --oasis-dark: theme(colors.oasis-dark);
-  --oasis-gray: theme(colors.oasis-gray);
-  --oasis-light: theme(colors.oasis-light);
-  --oasis-extra-light: theme(colors.oasis-extra-light);
+  --oa-yellow: theme(colors.oa-yellow);
+  --oa-yellow-pastel: theme(colors.oa-yellow-pastel);
+  --oa-green: theme(colors.oa-green);
+  --oa-green-pastel: theme(colors.oa-green-pastel);
+  --oa-blue: theme(colors.oa-blue);
+  --oa-extra-dark: theme(colors.oa-extra-dark);
+  --oa-dark: theme(colors.oa-dark);
+  --oa-gray: theme(colors.oa-gray);
+  --oa-light: theme(colors.oa-light);
+  --oa-extra-light: theme(colors.oa-extra-light);
 }
 
 * {
@@ -31,23 +31,28 @@ h3 {
   @apply text-2xl
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: theme(colors.oasis-green);
+  color: theme(colors.oa-green);
+}
+
+h1 {
+  @apply text-6xl mb-2;
 }
 
 b {
-  color: theme(colors.oasis-green);
+  color: theme(colors.oa-green);
   @apply underline;
 }
 
 p {
   font-weight: 400;
-  @apply text-xl
+  @apply text-xl;
 }
 
 svg {

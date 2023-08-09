@@ -22,7 +22,7 @@ export default function MentorAppsBanner({
         <>
           Apply now for our mentor role for the upcoming Fall 2023 semester!
           Applications close{" "}
-          <b className="text-oasis-blue italic">Friday, September 1st</b>.
+          <b className="text-oa-blue italic">Friday, September 1st</b>.
         </>
       }
       buttons={hideLearnMore ? buttons.slice(0, 1) : buttons.slice(0, 2)}

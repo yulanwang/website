@@ -8,10 +8,10 @@ export default function OasisNumbers() {
         {strings.OasisNumbers.stats.map((obj, i) => (
           <div
             key={i}
-            className="bg-oasis-extra-light rounded-3xl flex flex-col items-center justify-center max-w-md w-full p-4 h-48 shadow-md"
+            className="bg-oa-extra-light rounded-3xl flex flex-col items-center justify-center max-w-md w-full p-4 h-48 shadow-md"
           >
-            <h2 className="text-oasis-yellow text-6xl mb-2">{obj.count}</h2>
-            <p className="text-oasis-blue text-center">{obj.content}</p>
+            <h2 className="text-oa-yellow text-6xl mb-2">{obj.count}</h2>
+            <p className="text-oa-blue text-center">{obj.content}</p>
           </div>
         ))}
       </div>

@@ -17,16 +17,23 @@ module.exports = {
         lg: "0 8px 16px var(--tw-shadow-color)",
       },
       colors: {
-        "oasis-yellow": "#f0c237",
-        "oasis-yellow-pastel": "#f2d16b",
-        "oasis-green": "#397367",
-        "oasis-green-pastel": "#a7cdbd",
-        "oasis-blue": "#002642",
-        "oasis-extra-dark": "#000000",
-        "oasis-dark": "#1e2019",
-        "oasis-gray": "#6e7e85",
-        "oasis-light": "#ecf0f1",
-        "oasis-extra-light": "#FFFFFF",
+        "oa-yellow": "#f0c237",
+        "oa-yellow-pastel": "#f2d16b",
+        "oa-green": "#397367",
+        "oa-green-pastel": "#a7cdbd",
+        "oa-blue": "#002642",
+        "oa-extra-dark": "#000000",
+        "oa-dark": "#1e2019",
+        "oa-gray": "#6e7e85",
+        "oa-light": "#ecf0f1",
+        "oa-extra-light": "#FFFFFF",
+        "ex-dark": "#195BA8",
+        "ex-blue-dark": "#0B78B6",
+        "ex-blue": "#4DaDe2",
+        "ex-blue-pastel": "#C1Ebf4",
+        "ex-orange-pastel": "#f5d88c",
+        "ex-orange": "#ffbc6d",
+
       },
       fontFamily: {
         sans: "brandon grotesque",
@@ -48,9 +55,9 @@ module.exports = {
       );
     }),
     plugin(function ({ addBase, theme }) {
-      addBase({
-        h1: { fontSize: theme("fontSize.6xl"), marginBottom: "0.25rem" },
-      });
+      // addBase({
+      //   h1: { fontSize: theme("fontSize.6xl"), marginBottom: "0.25rem" },
+      // });
     }),
   ],
 };

@@ -119,16 +119,16 @@ const strings = {
   HackSessionTimeline: {
     title: "Session by Session",
     days: [
-      { num: "0", hook: "Git-ing Started" },
-      { num: "1", hook: "Shoot Your Shot" },
-      { num: "2", hook: "Getting a Sense" },
-      { num: "3", hook: "Data-BASED" },
-      { num: "4", hook: "Wilding with Styling" },
-      { num: "5", hook: "Mid-Semester Demos" },
-      { num: "6", hook: "Reacting to Progress" },
-      { num: "7", hook: "Reeling things in" },
-      { num: "8", hook: "Presentation Prep" },
-      { num: "D", hook: "Demo Day!" },
+      { num: "0", date: "9/17", hook: "Git-ing Started" },
+      { num: "1", date: "9/24", hook: "Shoot Your Shot" },
+      { num: "2", date: "10/1", hook: "Getting a Sense" },
+      { num: "3", date: "10/15", hook: "Data-BASED" },
+      { num: "4", date: "10/22", hook: "Wilding with Styling" },
+      { num: "5", date: "10/29", hook: "Mid-Semester Demos" },
+      { num: "6", date: "11/5", hook: "Reacting to Progress" },
+      { num: "7", date: "11/12", hook: "Reeling it in" },
+      { num: "8", date: "11/19", hook: "Presentation Prep" },
+      { num: "D", date: "12/3", hook: "Demo Day!" },
     ],
   },
   HistoryBlock: {
@@ -195,15 +195,16 @@ const strings = {
   NavBar: {
     destinations: [
       { name: "Home", link: "/" },
-      { name: "About", link: "/about" },
-      { name: "Join", link: "/join" },
+      // { name: "About", link: "/about" },
+      { name: "Project Series", link: "/join" },
+      { name: "Explorer Series", link: "/explorer" },
       { name: "Mentor", link: "/mentor" },
       {
         name: "Resources",
         link: "/resources",
         target: "_blank",
       },
-      { name: "Contact", link: "/contact" },
+      // { name: "Contact", link: "/contact" },
     ],
   },
   OasisNumbers: {
@@ -218,14 +219,29 @@ const strings = {
   OasisTypewriter: {},
   PageWrapper: {},
   Unsubscribe: {
-   instruction: "Enter your email to unsubscribe from our mailing list.",
-   confirmation: "You've been successfully unsubscribed."
+    instruction: "Enter your email to unsubscribe from our mailing list.",
+    confirmation: "You've been successfully unsubscribed.",
   },
-  Sock: {},
+  Sock: {
+    title: "Join our mailing list!",
+    body: "Sign up to get the latest updates on Oasis, including application dates for both mentors and participants.",
+    call: "Enter your email:",
+  },
   WhyJoin: {
     title: "Why join?",
     tagline:
       "With support from our mentors, your group, and the Oasis community, bring your software idea to life.",
+  },
+  Series: {
+    project: "Project Series",
+    projectBody:
+      "A semester-long curriculum to help you build your first full-stack project!",
+    projectSecondary: "Join the cohort at the start of each semester.",
+    projectButton: "Join the cohort!",
+    explorer: "Explorer Series",
+    explorerBody: "Workshops, employer events, networking, and more!",
+    explorerSecondary: "Open to all, no application required.",
+    explorerButton: "Find the next event!",
   },
 };
 

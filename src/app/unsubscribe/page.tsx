@@ -53,20 +53,20 @@ export default function Unsubscribe() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-oasis-light flex flex-col justify-center items-center">
-      <div className="max-w-lg bg-oasis-extra-light shadow-lg p-8 rounded-lg">
+    <div className="w-full min-h-screen bg-oa-light flex flex-col justify-center items-center">
+      <div className="max-w-lg bg-oa-extra-light shadow-lg p-8 rounded-lg">
         <p className="mb-2">
           {strings.Unsubscribe.instruction}
         </p>
         <div className="flex flex-row max-w-lg w-full justify-center">
           {loading === LoadingState.Success ? (
-            <div className="text-oasis-green">
+            <div className="text-oa-green">
               {strings.Unsubscribe.confirmation}
             </div>
           ) : (
             <>
               <input
-                className="bg-oasis-light p-2 mr-2 rounded-lg ring-oasis-green outline-oasis-green-pastel"
+                className="bg-oa-light p-2 mr-2 rounded-lg ring-oa-green outline-oa-green-pastel"
                 value={email}
                 onChange={(e) => {
                   // if (loading !== LoadingState.Success) {
@@ -78,7 +78,7 @@ export default function Unsubscribe() {
               />
               <button
                 className={twMerge(
-                  "p-2 bg-oasis-green text-oasis-light rounded-lg shadow-md hover:text-oasis-extra-light outline-none hover:shadow-lg"
+                  "p-2 bg-oa-green text-oa-light rounded-lg shadow-md hover:text-oa-extra-light outline-none hover:shadow-lg"
                 )}
                 onClick={async () => {
                   await unsubscribe();

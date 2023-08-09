@@ -8,7 +8,7 @@ interface Button {
 interface Props {
   title: string;
   body: ReactNode;
-  buttons: Button[];
+    buttons: Button[];
 }
 
 export default function BannerCard({ title, body, buttons }: Props) {
