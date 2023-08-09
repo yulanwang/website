@@ -154,10 +154,10 @@ const strings = {
         q: "Do I have to be at the Info Session?",
         a: "Sort of. We don't require you come to the Info Session, but we would like to warn that it's highly unlikely you'll be able to reserve a spot if you're not because we open Registration at the Info Session.",
       },
-      // {
-      //   q: "What technologies and languages will I learn with Oasis?",
-      //   a: "TO DO",
-      // },
+      {
+        q: "What technologies and languages will I learn with Oasis?",
+        a: "You'll learn Git, React, Supabase. In addition, you'll learn the theory behind these technologies and some project management skills. Finally, you'll learn to research complex problems and seek out your own solutions for future projects of your own.",
+      },
       {
         q: "What is the expected weekly time commitment?",
         a: "We require that all students be present at each Sunday at the two-hour Hack Sessions. You're welcome to work on your project outside of that team if you would like, but it's not required. ",
