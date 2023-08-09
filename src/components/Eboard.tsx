@@ -19,7 +19,7 @@ export default function Eboard() {
                 height={160}
               />
             ) : (
-              <div className="rounded-md shadow-md mb-2 w-[160px] h-[160px] bg-oasis-green-pastel text-oasis-green flex items-center justify-center">
+              <div className="rounded-md shadow-md mb-2 w-[160px] h-[160px] bg-oa-green-pastel text-oa-green flex items-center justify-center">
                 <FontAwesomeIcon className="h-[120px]" icon={faUser} />
               </div>
             )}

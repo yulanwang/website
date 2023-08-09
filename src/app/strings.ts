@@ -156,7 +156,7 @@ const strings = {
       },
       {
         q: "What technologies and languages will I learn with Oasis?",
-        a: "You'll learn Git, React, Supabase. In addition, you'll learn the theory behind these technologies and some project management skills. Finally, you'll learn to research complex problems and seek out your own solutions for future projects of your own.",
+        a: "At a minimum, you'll learn Git, React, and Supabase. In addition, you'll learn the theory behind these technologies and some project management skills, as well as anything else relevant to your project. Finally, you'll learn to research complex problems and seek out your own solutions for future projects of your own.",
       },
       {
         q: "What is the expected weekly time commitment?",
@@ -167,7 +167,7 @@ const strings = {
   Logo: {},
   MentorBlock: {
     title: "Mentor",
-    body: "Teach participants how to learn the skills they need to bring their projects to life! You'll guide two groups from brainstorming through delivery by teaching them how to research technologies relevant to their project, how to weigh options between features based on deadlines, and you'll help them debug as issues crop up. If you've completed a co-op and are free from 12-2pm on Sundays, then you're ready to mentor.",
+    body: "Mentors are the life-blood of Oasis. Without them we cannot run the Project Series or our Explorer events. You'll guide two groups from brainstorming through delivery by teaching them how to research technologies relevant to their project, how to weigh options between features based on deadlines, and you'll help them debug as issues crop up. Mentors are the ones teach participants how to learn the skills they need to bring their projects to life! \nIf you've completed a co-op and are free from 12-2pm on Sundays, then you're ready to mentor.",
     points: [
       {
         title: "Why",

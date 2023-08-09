@@ -6,7 +6,7 @@ export default function EnrollmentTimeline() {
       <h1>{strings.EnrollmentTimeline.title}</h1>
       <p>{strings.EnrollmentTimeline.body}</p>
       <p className="mt-1">
-        <b>{strings.EnrollmentTimeline.headline}</b>
+        <b className="no-underline italic">{strings.EnrollmentTimeline.headline}</b>
       </p>
       <div className="relative border-l border-oa-light my-4 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 mb-12">
         {strings.EnrollmentTimeline.steps.map(({ num, tag, time, desc }, i) => (
