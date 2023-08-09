@@ -10,21 +10,24 @@ export default function ExplorerJoin() {
   const events = [
     {
       title: "Hack Session 0: Git Started",
-      body: "Cillum eu cillum deserunt non. Aute nostrud nulla qui pariatur. Pariatur magna proident aliqua veniam labore velit in occaecat labore reprehenderit. Incididunt quis eiusmod amet nostrud Lorem adipisicing deserunt consectetur qui veniam enim occaecat qui elit eu.",
+      body: "Learn the foundational basics of Git and React so you can build websites collaboratively with a team, either as part of the Project Series or on your own with the help of our Resources.",
       icon: faGithub,
-      date: "September 9th, 6-8pm in Cargill 097",
+      date: "September 17th, 12-2pm; location TBA",
+      redacted: false
     },
     {
       title: "Full Stack Launchpad",
-      body: "Cillum eu cillum deserunt non. Aute nostrud nulla qui pariatur. Pariatur magna proident aliqua veniam labore velit in occaecat labore reprehenderit. Incididunt quis eiusmod amet nostrud Lorem adipisicing deserunt consectetur qui veniam enim occaecat qui elit eu.",
+      body: "Build on your Hack Session 0 foundations with more advanced React knowledge, an intro to databases, intro to APIs, and share your projects with others after learning about deployment!",
       icon: faRocket,
-      date: "October 12th, 6-8pm in 212 WVH",
+      date: "October 12th, 6-8pm; location TBA",
+      redacted: true
     },
     {
       title: "Data Science Deep-dive",
       body: "Cillum eu cillum deserunt non. Aute nostrud nulla qui pariatur. Pariatur magna proident aliqua veniam labore velit in occaecat labore reprehenderit. Incididunt quis eiusmod amet nostrud Lorem adipisicing deserunt consectetur qui veniam enim occaecat qui elit eu.",
       icon: faFish,
-      date: "November 2nd, 6-8pm in 212 WVH",
+      date: "November 2nd, 6-8pm; location TBA",
+      redacted: true
     },
   ];
 
@@ -34,7 +37,7 @@ export default function ExplorerJoin() {
 
       <h1 className="text-ex-blue-dark">Major events, open to all.</h1>
       <div className="flex flex-col gap-8 mt-4 mb-16">
-        {events.map(({ title, body, date, icon }, i) => (
+        {events.map(({ title, body, date, icon, redacted }, i) => (
           <div
             key={i}
             className={twMerge(
@@ -56,15 +59,15 @@ export default function ExplorerJoin() {
               </div>
             )}
             <div className="rounded-lg absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-tr from-ex-blue to-oa-extra-light opacity-10 group-hover:opacity-20 transition-all duration-500"></div>
-            <div className="rounded-md shadow-md bg-oa-light p-4 flex-1 h-full z-10">
+            <div className="rounded-md shadow-md bg-oa-light p-4 z-10">
               <FontAwesomeIcon
-                className="h-16 w-24 text-ex-orange drop-shadow-sm outline-1"
+                className="h-16 w-24 text-ex-orange drop-shadow-sm"
                 icon={icon}
               />
             </div>
             <div className="flex flex-col z-10">
               <h3 className="text-ex-dark">{title}</h3>
-              <p className="text-ex-blue-dark">{body}</p>
+              {!redacted && <p className="text-ex-blue-dark">{body}</p>}
               <div className="text-oa-dark italic p-2 bg-oa-light rounded-full px-4 mt-4 w-fit shadow-sm">
                 {date}
               </div>
