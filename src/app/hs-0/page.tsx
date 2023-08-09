@@ -17,27 +17,6 @@ const members = [
     image:
       "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
   },
-  {
-    name: "Laith Taher",
-    major: "Computer Science",
-    graduatingYear: "2026",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
-  },
-  {
-    name: "Laith Taher",
-    major: "Computer Science",
-    graduatingYear: "2026",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
-  },
-  {
-    name: "Laith Taher",
-    major: "Computer Science",
-    graduatingYear: "2026",
-    image:
-      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
-  },
 ];
 
 // The only code that should be changed below this line is on line 51.
@@ -48,8 +27,6 @@ export default function HS0() {
       <div className="flex flex-col justify-start mt-8 mb-12">
         <h1 className="mx-auto">🌴 Hack Session 0 🌴</h1>
         <h3 className=" mx-auto mb-12 text-4xl">Git-ting Started</h3>
-        <h3 className=" mx-auto text-5xl mb-4">Group #</h3>
-        {/* Insert your group number after the # */}
         <div className="mx-auto flex content-center justify-center pt-6">
           <div className="grid justify-center gap-x-6 gap-y-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 xl:gap-x-8">
             {members.map((member) => (
