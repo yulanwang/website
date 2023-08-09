@@ -11,7 +11,7 @@ export default function HackSessionTimeline() {
             <div className="md:w-full mx-4 md:h-1 w-1 h-full bg-oa-yellow"></div>
           </div>
           <div className="flex flex-col md:flex-row gap-6 row-start-1 row-end-3 row-span-1 col-start-1 col-end-10">
-            {strings.HackSessionTimeline.days.map(({ num, hook }, i) => (
+            {strings.HackSessionTimeline.days.map(({ num, hook, date }, i) => (
               <div
                 key={i}
                 className="flex flex-row md:flex-col items-center justify-center md:w-28 group relative group h-10 md:h-auto"
@@ -23,7 +23,7 @@ export default function HackSessionTimeline() {
                   }
                 >
                   <span className="group-hover:scale-110 duration-200 transition-all">
-                    {hook}
+                    {hook}<br/><span className="italic font-light">{date}</span>
                   </span>
                   <div className="md:w-[2px] h-[2px] rounded-full md:h-8 w-8 bg-oa-yellow"></div>
                 </div>
@@ -42,7 +42,7 @@ export default function HackSessionTimeline() {
                 >
                   <div className="group-hover:scale-110 duration-200 transition-all h-[2px] md:w-[2px] rounded-full md:h-8 w-8 bg-oa-yellow"></div>
                   <span className="group-hover:scale-110 duration-200 transition-all">
-                    {hook}
+                  {hook}<br/><span className="italic font-light">{date}</span>
                   </span>
                 </div>
               </div>

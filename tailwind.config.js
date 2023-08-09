@@ -31,8 +31,8 @@ module.exports = {
         "ex-blue-dark": "#0B78B6",
         "ex-blue": "#4DaDe2",
         "ex-blue-pastel": "#C1Ebf4",
-        "ex-orange": "#f5d88c",
-        "ex-orange-pastel": "#ffbc6d",
+        "ex-orange-pastel": "#f5d88c",
+        "ex-orange": "#ffbc6d",
 
       },
       fontFamily: {

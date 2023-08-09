@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGit, faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { faFish, faRocket } from "@fortawesome/free-solid-svg-icons";
+import strings from "../strings";
 
 export default function ExplorerJoin() {
   const events = [
@@ -57,7 +58,7 @@ export default function ExplorerJoin() {
             <div className="rounded-lg absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-tr from-ex-blue to-oa-extra-light opacity-10 group-hover:opacity-20 transition-all duration-500"></div>
             <div className="rounded-md shadow-md bg-oa-light p-4 flex-1 h-full z-10">
               <FontAwesomeIcon
-                className="h-16 w-24 text-ex-orange-pastel drop-shadow-sm outline-1 outline-ex-orange-pastel"
+                className="h-16 w-24 text-ex-orange drop-shadow-sm outline-1"
                 icon={icon}
               />
             </div>
@@ -85,12 +86,24 @@ export default function ExplorerJoin() {
         </span>{" "}
         in mind
       </h1>
-      <p>
+      <p className="mb-12 max-w-3xl">
         Sessions are designed to set you up for success on your own. Learn the
         basics, and then use async resources to continue your journey. Our
         tailor-made resources match up with presentations and provide
         supplemental materials for you to reference long afterwards.
       </p>
+      <h1 className="text-ex-blue-dark mb-4">By the numbers</h1>
+      <div className="max-w-3xl grid grid-rows-2 grid-cols-2 md:grid-cols-3 md:grid-rows-1 gap-8 items-center justify-center">
+        {[{count: 91, content: "HS0 Attendees"}, {count: 32, content: "Resource Pages"}, {count: 5, content: "Topic Areas"}].map((obj, i) => (
+          <div
+            key={i}
+            className="bg-oa-extra-light rounded-3xl flex flex-col items-center justify-center max-w-md w-full p-4 h-48 shadow-md"
+          >
+            <h2 className="text-ex-orange text-6xl mb-2">{obj.count}</h2>
+            <p className="text-oa-gray text-center">{obj.content}</p>
+          </div>
+        ))}
+      </div>
     </PageWrapper>
   );
 }
