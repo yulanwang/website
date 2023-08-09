@@ -77,15 +77,15 @@ export default function ExplorerJoin() {
       </div>
       <h1 className="text-ex-blue-dark mb-4">
         Built with{" "}
-        <span className="relative">
+        <span className="relative group hover:drop-shadow-xl">
           <Link
             target="_blank"
-            className="text-ex-blue relative"
+            className="text-ex-blue relative group-hover:text-red-500  transition-all duration-150"
             href="/resources"
           >
             Resources
           </Link>
-          <div className="absolute left-0 right-0 h-[0.3rem] -translate-y-2 rounded-full bg-ex-blue bottom-0"></div>
+          <div className="absolute left-0 right-0 h-[0.3rem] -translate-y-2 rounded-full bg-ex-blue  group-hover:bg-red-500 group-hover:drop-shadow-md transition-all duration-150 bottom-0"></div>
         </span>{" "}
         in mind
       </h1>
