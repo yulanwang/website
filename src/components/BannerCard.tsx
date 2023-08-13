@@ -19,7 +19,7 @@ export default function BannerCard({ title, body, buttons }: Props) {
       <div className="flex gap-4">
         <div className="flex flex-row gap-4">
           {buttons.map(({ buttonTitle, href }, i) => (
-            <PrimaryButton key={i} href={href}>
+            <PrimaryButton key={i} href={href} target="_self">
               {buttonTitle}
             </PrimaryButton>
           ))}
