@@ -77,7 +77,7 @@ export default function Sock() {
   const insertEmail = async (email: string) => {
     let { data, error } = await supabase
       .from(dbName)
-      .insert({ email: email })
+      .insert({ email: email, source: "website" })
       .select(selectAll);
 
     if (data) {
