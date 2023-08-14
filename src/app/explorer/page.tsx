@@ -42,7 +42,7 @@ export default function ExplorerJoin() {
             key={i}
             className={twMerge(
               "flex gap-0 md:flex-row flex-col w-full items-start max-w-3xl p-4 bg-ex-blue-pastel bg-opacity-30 shadow-md rounded-lg relative group -ml-0",
-              i % 2 === 0 ? "md:mr-24 mr-12" : "md:ml-24 ml-6"
+              i % 2 === 0 ? "md:mr-24 mr-12" : "md:ml-24 ml-0"
             )}
           >
             {i % 2 === 0 ? (
