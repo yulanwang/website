@@ -19,10 +19,9 @@ export default function ImageParagraph({
       <div className="flex-row gap-6 hidden md:flex items-start">
         <Image
           className={
-            "mt-5 object-scale-down drop-shadow-md aspect-3/4" +
+            "mt-5 object-scale-down drop-shadow-md aspect-3/4  h-[240px] w-auto" +
             (placement === "left" ? "" : " hidden ")
           }
-          height={240}
           src={image}
           alt={"image to complement adjacent paragraph"}
         />
@@ -32,10 +31,9 @@ export default function ImageParagraph({
         </div>
         <Image
           className={
-            "mt-5 object-scale-down drop-shadow-md aspect-3/4" +
+            "mt-5 object-scale-down drop-shadow-md aspect-3/4 h-[240px] w-auto" +
             (placement === "right" ? "" : " hidden ")
           }
-          height={240}
           src={image}
           alt={"image to complement adjacent paragraph"}
         />
@@ -46,8 +44,7 @@ export default function ImageParagraph({
           <p className="text-xl">{body}</p>
         </div>
         <Image
-          className="aspect-3/4 drop-shadow-md object-scale-down"
-          height={240}
+          className="aspect-3/4 drop-shadow-md object-scale-down h-[240px] w-auto"
           src={image}
           alt={"image to complement adjacent paragraph"}
         />
