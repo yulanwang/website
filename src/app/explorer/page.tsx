@@ -1,10 +1,10 @@
 import PageWrapper from "@/components/PageWrapper";
-import twMerge from "../../twMerge";
+import twMerge from "../../../twMerge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGit, faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { faFish, faRocket } from "@fortawesome/free-solid-svg-icons";
-import strings from "./strings";
+import strings from "../strings";
 
 export default function ExplorerJoin() {
   const events = [

@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "../../lib/initSupabase";
-import twMerge from "../../twMerge";
+import { supabase } from "../../../lib/initSupabase";
+import twMerge from "../../../twMerge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
   faSpinner,
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
-import strings from "./strings";
+import strings from "../strings";
 import Head from "next/head";
 
 enum LoadingState {

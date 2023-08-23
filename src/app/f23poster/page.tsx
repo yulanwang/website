@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { useEffect } from "react";
-import { supabase } from "../../lib/initSupabase";
+import { supabase } from "../../../lib/initSupabase";
 
 const pageName = "f23poster";
 
