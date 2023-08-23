@@ -32,7 +32,7 @@ export default function ExplorerJoin() {
   ];
 
   return (
-    <PageWrapper active={"Explorer Series"}>
+    <PageWrapper active={"Explorer Series"} title={"Oasis | Explorer Series"}>
       {/* I think we should use some major graphic at the start of the explore page to make it clear that it's different */}
 
       <h1 className="text-ex-blue-dark">Major events, open to all.</h1>

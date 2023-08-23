@@ -7,7 +7,7 @@ import HistoryBlock from "@/components/HistoryBlock";
 
 export default function About() {
   return (
-    <PageWrapper active={"About"}>
+    <PageWrapper active={"About"} title={"Oasis | About"}>
       <AboutBlock />
       <MissionBlock />
       <HistoryBlock />

@@ -12,7 +12,7 @@ import MentorAppsBanner from "@/components/MentorAppsBanner";
 
 export default function Mentor() {
   return (
-    <PageWrapper active={"Mentor"}>
+    <PageWrapper active={"Mentor"} title={"Oasis | Be a mentor!"}>
       <MentorHeader />
       <MentorAppsBanner hideLearnMore={true} />
       <MentorBlock />
