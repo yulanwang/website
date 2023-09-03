@@ -18,14 +18,13 @@ export default function MentorAppsBanner({
   return (
     <BannerCard
       title={"Mentor Applications are open!!"}
-      body={
-        <>
-          Apply now for our mentor role for the upcoming Fall 2023 semester!
-          Applications close{" "}
-          <b className="text-oa-blue italic">Friday, September 1st</b>.
-        </>
-      }
       buttons={hideLearnMore ? buttons.slice(0, 1) : buttons.slice(0, 2)}
-    />
+    >
+      <>
+        Apply now for our mentor role for the upcoming Fall 2023 semester!
+        Applications close{" "}
+        <b className="text-oa-blue italic">Friday, September 1st</b>.
+      </>
+    </BannerCard>
   );
 }
