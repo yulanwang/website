@@ -3,11 +3,11 @@
 import React, { useRef } from "react";
 import Hook from "@/components/Hook";
 import PageWrapper from "@/components/PageWrapper";
-import MentorAppsBanner from "@/components/MentorAppsBanner";
 import SeriesBlock from "@/components/SeriesBlock";
 import MissionBlock from "@/components/MissionBlock";
 import Eboard from "@/components/Eboard";
 import HistoryBlock from "@/components/HistoryBlock";
+import InfoSessionBanner from "@/components/InfoSessionBanner";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement>(null);
@@ -23,7 +23,7 @@ export default function Home() {
       />
       <div ref={ref}>
         <PageWrapper active="Home">
-          <MentorAppsBanner />
+          <InfoSessionBanner />
           <SeriesBlock />
           <MissionBlock />
           <HistoryBlock />

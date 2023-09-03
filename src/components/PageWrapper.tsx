@@ -5,7 +5,7 @@ import Head from "next/head";
 import { ReactNode } from "react";
 
 type Props = {
-  title: string;
+  title?: string;
   active: string;
   children?: ReactNode;
 };
@@ -15,7 +15,7 @@ export default function PageWrapper({ title, active, children }: Props) {
     <>
       <Head>
         <meta name="robots" content="noindex,nofollow" />
-        <title>{title}</title>
+        {title && <title>{title}</title>}
       </Head>
       <div className="bg-oa-light">
         <NavBar active={active} />

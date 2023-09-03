@@ -8,7 +8,7 @@ interface ButtonProps
     React.AriaAttributes {
   bgColor?: string;
   bgColorHover?: string;
-  textColor: string;
+  textColor?: string;
 }
 
 export default function PrimaryButton({

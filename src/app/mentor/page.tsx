@@ -14,7 +14,7 @@ export default function Mentor() {
   return (
     <PageWrapper active={"Mentor"} title={"Oasis | Be a mentor!"}>
       <MentorHeader />
-      <MentorAppsBanner hideLearnMore={true} />
+      {/* <MentorAppsBanner hideLearnMore={true} /> */}
       <MentorBlock />
     </PageWrapper>
   );
