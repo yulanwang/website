@@ -14,7 +14,7 @@ const strings = {
       {
         name: "Frank Anderson",
         role: "Co-Director",
-        src: "https://media.licdn.com/dms/image/C5603AQE4cFVm1SqYVA/profile-displayphoto-shrink_400_400/0/1619473083418?e=1694044800&v=beta&t=OsnukuN1UNawaMzGeUmKFS98rE20gU2L9zqBkynfk2M",
+        src: "https://media.licdn.com/dms/image/C5603AQE4cFVm1SqYVA/profile-displayphoto-shrink_400_400/0/1619473083418?e=1700092800&v=beta&t=WnKuyLAPoBaeV2PG-en4RHNrBYekShjrYpqUvi_NxAM",
       },
       {
         name: "Sama Zaki",
