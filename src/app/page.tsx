@@ -23,7 +23,7 @@ export default function Home() {
       />
       <div ref={ref}>
         <PageWrapper active="Home">
-          <InfoSessionBanner />
+          {/* <InfoSessionBanner /> */}
           <SeriesBlock />
           <MissionBlock />
           <HistoryBlock />
