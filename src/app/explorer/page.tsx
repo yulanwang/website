@@ -12,14 +12,14 @@ export default function ExplorerJoin() {
       title: "Hack Session 0: Git Started",
       body: "Learn the foundational basics of Git and React so you can build websites collaboratively with a team, either as part of the Project Series or on your own with the help of our Resources.",
       icon: faGithub,
-      date: "September 17th, 12-2pm; location TBA",
+      date: "September 17th, 12-2pm; Behrakis 010",
       redacted: false
     },
     {
       title: "Full Stack Launchpad",
       body: "Build on your Hack Session 0 foundations with more advanced React knowledge, an intro to databases, intro to APIs, and share your projects with others after learning about deployment!",
       icon: faRocket,
-      date: "October 12th, 6-8pm; location TBA",
+      date: "October 12th, 6-8pm; Behrakis 010",
       redacted: true
     },
     {
