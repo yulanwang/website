@@ -9,12 +9,12 @@ import Image from "next/image";
 const members = [
   {
     // Change your data here!
-    name: "Laith Taher",
+    name: "Yulan Wang",
     major: "Computer Science",
-    graduatingYear: "2026",
+    graduatingYear: "2027",
     // Add your LinkedIn profile image link here. If you do not have a LinkedIn profile then skip this step.
     image:
-      "https://media.licdn.com/dms/image/D4E03AQECes9egjScKw/profile-displayphoto-shrink_800_800/0/1668552656586?e=1695859200&v=beta&t=lKPz_Un65g6Hn1ZCdtmoKV2bS86bOAj-r1ilxHjT-kQ",
+      "https://media.licdn.com/dms/image/D5603AQFbtVHv4Xg8vg/profile-displayphoto-shrink_400_400/0/1690417480899?e=1700697600&v=beta&t=TrB0SXHnuNNstsC3uH7tTPtC3m6ENM113R6BzHgxe20",
   },
 ];
 
